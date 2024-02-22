@@ -1,4 +1,11 @@
 :root{
     --system-angle: 75deg;
     --inverted-system-angle: -75deg;
+
+    --yellow-01: #ffda5fcc;
+    --yellow-02: #ffda5f;
+    --yellow-03: #ffc400;
+    --yellow-04: #ffae00;
+    --black: #000;
+    --white: #fff;
 }
