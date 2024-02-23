@@ -26,7 +26,8 @@ body{
     position: relative;
 }
 
-#sun{
+#sun,
+.planet{
     border-radius: 50%;
 }
 
@@ -64,4 +65,17 @@ body{
             0 0 70px 50px var(--yellow-03),
             0 0 90px 70px var(--yellow-04);
     }
+}
+
+/* ------- earth settings ------- */
+
+#earth{
+    background: url("../images/earth.jpg");
+    background-size: cover;
+
+    width: 10em;
+    height: 10em;
+
+    transform: rotateX(var(--inverted-system-angle))
+        rotateZ(23deg);
 }
