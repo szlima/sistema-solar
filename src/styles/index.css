@@ -67,6 +67,18 @@ body{
     }
 }
 
+/* ------------------ mercury settings ------------------ */
+
+#mercury{
+    background: url("../images/mercury.jpg");
+    background-size: cover;
+
+    width: 10em;
+    height: 10em;
+
+    transform: rotateX(var(--inverted-system-angle));
+}
+
 /* ------- earth settings ------- */
 
 #earth{
