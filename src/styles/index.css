@@ -21,13 +21,39 @@ body{
 #solar-system{
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d;
     transform: rotateX(var(--system-angle));
     position: relative;
 }
 
-#sun,
 .planet{
+    border: 2px dashed var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.planet::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+
+    transform: translate(-50%, -50%)
+        rotateX(var(--inverted-system-angle));
+}
+
+#solar-system,
+#sun,
+.planet,
+.planet::after{
+    transform-style: preserve-3d;
+}
+
+#sun,
+.planet,
+.planet::after{
     border-radius: 50%;
 }
 
@@ -70,13 +96,16 @@ body{
 /* ------------------ mercury settings ------------------ */
 
 #mercury{
+    width: 22em;
+    height: 22em;
+}
+
+#mercury::after{
     background: url("../images/mercury.jpg");
     background-size: cover;
 
-    width: 10em;
-    height: 10em;
-
-    transform: rotateX(var(--inverted-system-angle));
+    width: .8em;
+    height: .8em;
 }
 
 /* ------- earth settings ------- */
