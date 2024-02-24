@@ -6,7 +6,6 @@ body{
     color: var(--white);
     width: 100vw;
     height: 100vh;
-	font-size: 12px;
 }
 
 /* ------- space general settings ------- */
@@ -27,9 +26,6 @@ body{
 
 .planet{
     border: 2px dashed var(--white);
-    position: absolute;
-    top: 50%;
-    left: 50%;
 
     transform: translate(-50%, -50%);
 }
@@ -39,9 +35,6 @@ body{
     position: absolute;
     top: 50%;
     left: 100%;
-
-    transform: translate(-50%, -50%)
-        rotateX(var(--inverted-system-angle));
 }
 
 #solar-system,
@@ -57,6 +50,18 @@ body{
     border-radius: 50%;
 }
 
+#sun,
+.planet{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#sun,
+.planet::after{
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
+}
+
 /* ------- sun settings ------- */
 
 #sun{
@@ -64,15 +69,9 @@ body{
     background: url("../images/sun.jpg");
     background-size: cover;
 
-    width: 20em;
-    height: 20em;
+    width: 20rem;
+    height: 20rem;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%)
-        rotateX(var(--inverted-system-angle));
     animation: shine-sun 1s linear infinite alternate;
 }
 
@@ -96,27 +95,32 @@ body{
 /* ------------------ mercury settings ------------------ */
 
 #mercury{
-    width: 22em;
-    height: 22em;
+    width: 22rem;
+    height: 22rem;
 }
 
 #mercury::after{
     background: url("../images/mercury.jpg");
     background-size: cover;
 
-    width: .8em;
-    height: .8em;
+    width: .8rem;
+    height: .8rem;
 }
 
 /* ------- earth settings ------- */
 
 #earth{
+    width: 30.33rem;
+    height: 30.33rem;
+}
+
+#earth::after{
     background: url("../images/earth.jpg");
     background-size: cover;
 
-    width: 10em;
-    height: 10em;
+    width: 1.9rem;
+    height: 1.9rem;
 
-    transform: rotateX(var(--inverted-system-angle))
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
         rotateZ(23deg);
 }
