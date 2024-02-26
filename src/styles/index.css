@@ -107,6 +107,21 @@ body{
     height: .8rem;
 }
 
+/* ------- venus settings ------- */
+
+#venus{
+    width: 25.44em;
+    height: 25.44em;
+}
+
+#venus::after{
+    background: url("../images/venus.jpg");
+    background-size: cover;
+
+    width: 1.74em;
+    height: 1.74em;
+}
+
 /* ------- earth settings ------- */
 
 #earth{
