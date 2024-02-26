@@ -110,16 +110,16 @@ body{
 /* ------- venus settings ------- */
 
 #venus{
-    width: 25.44em;
-    height: 25.44em;
+    width: 25.44rem;
+    height: 25.44rem;
 }
 
 #venus::after{
     background: url("../images/venus.jpg");
     background-size: cover;
 
-    width: 1.74em;
-    height: 1.74em;
+    width: 1.74rem;
+    height: 1.74rem;
 }
 
 /* ------- earth settings ------- */
@@ -138,4 +138,19 @@ body{
 
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
         rotateZ(23deg);
+}
+
+/* ------- mars settings ------- */
+
+#mars{
+    width: 35.25rem;
+    height: 35.25rem;
+}
+
+#mars::after{
+    background: url("../images/mars.jpg");
+    background-size: cover;
+
+    width: 1.12rem;
+    height: 1.12rem;
 }
