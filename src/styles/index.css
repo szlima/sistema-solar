@@ -30,6 +30,11 @@ body{
     transform: translate(-50%, -50%);
 }
 
+.planet::before{
+    transform: translate(-50%, -50%);
+}
+
+.planet::before,
 .planet::after{
     content: "";
     position: absolute;
@@ -46,6 +51,7 @@ body{
 
 #sun,
 .planet,
+.planet::before,
 .planet::after{
     border-radius: 50%;
 }
@@ -158,28 +164,22 @@ body{
 /* ------- jupiter settings ------- */
 
 #jupiter{
+    width: 46.5rem;
+    height: 46.5rem;
+}
+
+#jupiter::after{
     background: url("../images/jupiter.jpg");
     background-size: cover;
 
     width: 7.5rem;
     height: 7.5rem;
-
-
-
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
-    border:0;
 }
 
 #jupiter::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateX(var(--system-angle));
-
     width: 9.5rem;
     height: 9.5rem;
-    border-radius: 50%;
+
     border: .2rem solid var(--gray);
     box-shadow: inset 0 0 .7rem 1px var(--brown),
         0 0 .7rem 1px var(--brown);
