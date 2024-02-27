@@ -164,54 +164,54 @@ body{
 /* ------- jupiter settings ------- */
 
 #jupiter{
-    width: 45.75rem;
-    height: 45.75rem;
+    width: 42rem;
+    height: 42rem;
 }
 
 #jupiter::after{
     background: url("../images/jupiter.jpg");
     background-size: cover;
 
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 #jupiter::before{
-    width: 7.9rem;
-    height: 7.9rem;
+    width: 5.3rem;
+    height: 5.3rem;
 
-    border: .2rem solid var(--gray);
-    box-shadow: inset 0 0 .7rem 1px var(--brown),
-        0 0 .7rem 1px var(--brown);
+    border: .05rem solid var(--gray);
+    box-shadow: inset 0 0 .1rem .05rem var(--brown),
+        0 0 .1rem .05rem var(--brown),
+        0 0 .1rem .05rem var(--gray);
 }
 
 /* ------- saturn settings ------- */
 
 #saturn{
+    width: 55rem;
+    height: 55rem;
+}
+
+#saturn::after{
     background: url("../images/saturn.jpg");
     background-size: cover;
 
-    width: 6rem;
-    height: 6rem;
-
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
-    border: 0;
+    width: 3.9rem;
+    height: 3.9rem;
 }
 
 #saturn::before{
-    width: 6.8rem;
-    height: 6.8rem;
+    width: 4.2rem;
+    height: 4.2rem;
 
     border: .1rem solid var(--beige-01);
-    box-shadow: inset 0 0 .1rem .1rem var(--beige-01),
-        0 0 .1rem .1rem var(--beige-01),
-        0 0 .1rem .6rem var(--beige-02),
-        0 0 .1rem .8rem var(--beige-01),
-        0 0 .1rem 1rem var(--beige-02),
-        0 0 .1rem 1.3rem var(--beige-01),
-        0 0 .1rem 1.5rem var(--beige-02)
+    box-shadow: inset 0 0 .1rem .05rem var(--beige-01),
+        0 0 .1rem .05rem var(--beige-01),
+        0 0 .1rem .1rem var(--beige-02),
+        0 0 .1rem .3rem var(--beige-01),
+        0 0 .1rem .4rem var(--beige-02),
+        0 0 .1rem .6rem var(--beige-01),
+        0 0 .1rem .8rem var(--beige-02)
     ;
-
-    transform: translate(-50%, -50%) rotateX(var(--system-angle));
-    left: 50%;
 }
