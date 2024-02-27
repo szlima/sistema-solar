@@ -184,3 +184,34 @@ body{
     box-shadow: inset 0 0 .7rem 1px var(--brown),
         0 0 .7rem 1px var(--brown);
 }
+
+/* ------- saturn settings ------- */
+
+#saturn{
+    background: url("../images/saturn.jpg");
+    background-size: cover;
+
+    width: 6rem;
+    height: 6rem;
+
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
+    border: 0;
+}
+
+#saturn::before{
+    width: 6.8rem;
+    height: 6.8rem;
+
+    border: .1rem solid var(--beige-01);
+    box-shadow: inset 0 0 .1rem .1rem var(--beige-01),
+        0 0 .1rem .1rem var(--beige-01),
+        0 0 .1rem .6rem var(--beige-02),
+        0 0 .1rem .8rem var(--beige-01),
+        0 0 .1rem 1rem var(--beige-02),
+        0 0 .1rem 1.3rem var(--beige-01),
+        0 0 .1rem 1.5rem var(--beige-02)
+    ;
+
+    transform: translate(-50%, -50%) rotateX(var(--system-angle));
+    left: 50%;
+}
