@@ -72,8 +72,7 @@ body{
 
 #sun{
     border: 1px solid var(--yellow-02);
-    background: url("../images/sun.jpg");
-    background-size: cover;
+    background: var(--sun-color) url("../images/sun.jpg");
 
     width: 20rem;
     height: 20rem;
@@ -106,8 +105,7 @@ body{
 }
 
 #mercury::after{
-    background: url("../images/mercury.jpg");
-    background-size: cover;
+    background: var(--mercury-color) url("../images/mercury.jpg");
 
     width: .8rem;
     height: .8rem;
@@ -121,8 +119,7 @@ body{
 }
 
 #venus::after{
-    background: url("../images/venus.jpg");
-    background-size: cover;
+    background: var(--venus-color) url("../images/venus.jpg");
 
     width: 1.74rem;
     height: 1.74rem;
@@ -136,8 +133,7 @@ body{
 }
 
 #earth::after{
-    background: url("../images/earth.jpg");
-    background-size: cover;
+    background: var(--earth-color) url("../images/earth.jpg");
 
     width: 1.9rem;
     height: 1.9rem;
@@ -154,8 +150,7 @@ body{
 }
 
 #mars::after{
-    background: url("../images/mars.jpg");
-    background-size: cover;
+    background: var(--mars-color) url("../images/mars.jpg");
 
     width: 1.12rem;
     height: 1.12rem;
@@ -169,8 +164,7 @@ body{
 }
 
 #jupiter::after{
-    background: url("../images/jupiter.jpg");
-    background-size: cover;
+    background: var(--jupiter-color) url("../images/jupiter.jpg");
 
     width: 5rem;
     height: 5rem;
@@ -194,8 +188,7 @@ body{
 }
 
 #saturn::after{
-    background: url("../images/saturn.jpg");
-    background-size: cover;
+    background: var(--saturn-color) url("../images/saturn.jpg");
 
     width: 3.9rem;
     height: 3.9rem;
@@ -223,8 +216,7 @@ body{
 }
 
 #uranus::after{
-    background: url("../images/uranus.jpg");
-    background-size: cover;
+    background: var(--uranus-color) url("../images/uranus.jpg");
 
     width: 3rem;
     height: 3rem;
@@ -248,8 +240,7 @@ body{
 }
 
 #neptune::after{
-    background: url("../images/neptune.jpg");
-    background-size: cover;
+    background: var(--neptune-color) url("../images/neptune.jpg");
 
     width: 2.9rem;
     height: 2.9rem;
@@ -262,4 +253,18 @@ body{
     border: .1rem solid transparent;
     box-shadow: inset 0 0 .05rem .01rem var(--white-01),
         0 0 .01rem .02rem var(--white-01);
+}
+
+/* ------- sun and planets settings ------- */
+
+#sun,
+#mercury::after,
+#venus::after,
+#earth::after,
+#mars::after,
+#jupiter::after,
+#saturn::after,
+#uranus::after,
+#neptune::after{
+    background-size: cover;
 }

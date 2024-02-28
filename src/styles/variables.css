@@ -13,4 +13,14 @@
     --brown: #b86e29;
     --beige-01: #ebcda866;
     --beige-02:  #d1760666;
+
+    --sun-color: var(--yellow-02);
+    --mercury-color: #d0d0d0;
+    --venus-color: #eadace;
+    --earth-color: #1c66bb;
+    --mars-color: #ec5d35;
+    --jupiter-color: #cd8847;
+    --saturn-color: #ffbc77;
+    --uranus-color: #44acab;
+    --neptune-color: #3346bb;
 }
