@@ -239,3 +239,28 @@ body{
         0 0 .01rem .02rem var(--white-01),
         0 0 .1rem .05rem var(--white-02);
 }
+
+/* ------- neptune settings ------- */
+
+#neptune{
+    background: url("../images/neptune.jpg");
+    background-size: cover;
+
+    width: 2.9rem;
+    height: 2.9rem;
+
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
+    border: 0;
+}
+
+#neptune::before{
+    width: 3.5rem;
+    height: 3.5rem;
+
+    border: .1rem solid transparent;
+    box-shadow: inset 0 0 .05rem .01rem var(--white-01),
+        0 0 .01rem .02rem var(--white-01);
+
+    transform: translate(-50%, -50%) rotateX(var(--system-angle));
+    left: 50%;
+}
