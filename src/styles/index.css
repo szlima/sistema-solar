@@ -29,6 +29,10 @@ body{
     transform: translate(-50%, -50%);
 }
 
+.satellite::after{
+    background-color: var(--default-satellite-color);
+}
+
 .planet,
 .satellite{
     border: 2px dashed var(--white-01);
@@ -157,7 +161,7 @@ body{
         rotateZ(23deg);
 }
 
-/* ------- moon settings ------- */
+/* ------- earth moon settings ------- */
 
 #moon{
     width: 2.58rem;
@@ -183,6 +187,28 @@ body{
 
     width: 1.12rem;
     height: 1.12rem;
+}
+
+/* ------- mars moons settings ------- */
+
+#mars .satellite:nth-child(1){
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+#mars .satellite:nth-child(1)::after{
+    width: .15rem;
+    height: .15rem;
+}
+
+#mars .satellite:nth-child(2){
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#mars .satellite:nth-child(2)::after{
+    width: .2rem;
+    height: .2rem;
 }
 
 /* ------- jupiter settings ------- */
