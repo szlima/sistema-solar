@@ -38,14 +38,16 @@ body{
 
 .planet::before,
 .planet::after,
-.satellite{
+.satellite,
+.satellite::after{
     position: absolute;
     top: 50%;
     left: 100%;
 }
 
 .planet::before,
-.planet::after{
+.planet::after,
+.satellite::after{
     content: "";
 }
 
@@ -54,7 +56,8 @@ body{
 .planet,
 .planet::before,
 .planet::after,
-.satellite{
+.satellite,
+.satellite::after{
     transform-style: preserve-3d;
 }
 
@@ -62,7 +65,8 @@ body{
 .planet,
 .planet::before,
 .planet::after,
-.satellite{
+.satellite,
+.satellite::after{
     border-radius: 50%;
 }
 
@@ -74,7 +78,8 @@ body{
 }
 
 #sun,
-.planet::after{
+.planet::after,
+.satellite::after{
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
 }
 
@@ -157,6 +162,13 @@ body{
 #moon{
     width: 2.58rem;
     height: 2.58rem;
+}
+
+#moon::after{
+    background: var(--moon-color) url("../images/moon.jpg");
+
+    width: .6rem;
+    height: .6rem;
 }
 
 /* ------- mars settings ------- */
@@ -272,12 +284,13 @@ body{
         0 0 .01rem .02rem var(--white-01);
 }
 
-/* ------- sun and planets settings ------- */
+/* ------- sun, planets and satellites settings ------- */
 
 #sun,
 #mercury::after,
 #venus::after,
 #earth::after,
+#moon::after,
 #mars::after,
 #jupiter::after,
 #saturn::after,
