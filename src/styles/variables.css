@@ -1,7 +1,8 @@
 :root{
     --system-angle: 75deg;
     --inverted-system-angle: -75deg;
-    --system-distance: -150px;
+    --system-distance-y: -150px;
+    --system-distance-z: 2.2rem;
 
     --yellow-01: #ffda5fcc;
     --yellow-02: #ffda5f;
