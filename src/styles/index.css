@@ -46,7 +46,7 @@ body{
 
 .planet,
 .satellite{
-    border: 2px dashed var(--white-01);
+    border: .2px dashed var(--white-02);
 
     transform: translate(-50%, -50%);
 }
@@ -257,12 +257,12 @@ body{
     height: 6.5rem;
 }
 
-#jupiter .satellite:after{
+#jupiter .satellite::after{
     width: .85rem;
     height: .85rem;
 }
 
-#jupiter .satellite:before{
+#jupiter .satellite::before{
     width: .75rem;
     height: .75rem;
 }
@@ -305,8 +305,8 @@ body{
 /* ------- saturn settings ------- */
 
 #saturn{
-    width: 58rem;
-    height: 58rem;
+    width: 60.5rem;
+    height: 60.5rem;
 }
 
 #saturn::after{
@@ -328,6 +328,61 @@ body{
         0 0 .1rem .4rem var(--beige-02),
         0 0 .1rem .6rem var(--beige-01),
         0 0 .1rem .8rem var(--beige-02);
+}
+
+/* ------- saturn moons settings ------- */
+
+#saturn .satellite:nth-child(1){
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+#saturn .satellite:nth-child(2){
+    width: 7.2rem;
+    height: 7.2rem;
+}
+
+#saturn .satellite:nth-child(1)::after{
+    width: .2rem;
+    height: .2rem;
+}
+
+#saturn .satellite:nth-child(1)::before{
+    width: .82rem;
+    height: .82rem;
+}
+
+#saturn .satellite:nth-child(2)::after{
+    width: .28rem;
+    height: .28rem;
+}
+
+#saturn .satellite img:nth-child(1){
+    top: 30%;
+    left: 15%;
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+        scale3d(.16, .16, .16);
+}
+
+#saturn .satellite img:nth-child(2){
+    top: 70%;
+    left: 5%;
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+        scale3d(.1, .1, .1);
+}
+
+#saturn .satellite img:nth-child(3){
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+        scale3d(.05, .05, .05);
+}
+
+#saturn .satellite img:nth-child(4){
+    top: 60%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+        scale3d(.05, .05, .05);
 }
 
 /* ------- uranus settings ------- */
