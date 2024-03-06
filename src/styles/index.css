@@ -388,8 +388,8 @@ body{
 /* ------- uranus settings ------- */
 
 #uranus{
-    width: 71rem;
-    height: 71rem;
+    width: 73rem;
+    height: 73rem;
 }
 
 #uranus::after{
@@ -407,6 +407,37 @@ body{
     box-shadow: inset 0 0 .01rem .03rem var(--white-02),
         0 0 .01rem .02rem var(--white-01),
         0 0 .1rem .05rem var(--white-02);
+}
+
+/* ------- uranus moons settings ------- */
+
+#uranus .satellite{
+    width: 4.2rem;
+    height: 4.2rem;
+}
+
+#uranus .satellite::after{
+    width: .38rem;
+    height: .38rem;
+}
+
+#uranus .satellite::before{
+    width: .3rem;
+    height: .3rem;
+}
+
+#uranus .satellite img:nth-child(1){
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+        scale3d(.06, .06, .06);
+}
+
+#uranus .satellite img:nth-child(2){
+    top: 85%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+        scale3d(.1, .1, .1);
 }
 
 /* ------- neptune settings ------- */
