@@ -112,7 +112,7 @@ body{
     height: 20rem;
 
     animation: shine-sun 1s linear infinite alternate,
-        rotation-default 27s linear infinite;
+        rotation 27s linear infinite;
 }
 
 /* ------------------ mercury settings ------------------ */
@@ -128,6 +128,8 @@ body{
     width: .8rem;
     height: .8rem;
 
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+        rotateZ(0.03deg);
     animation-duration: 39s;
 }
 
@@ -144,6 +146,8 @@ body{
     width: 1.74rem;
     height: 1.74rem;
 
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+        rotateZ(177.4deg);
     animation-duration: 43s;
 }
 
@@ -518,22 +522,13 @@ body{
     background-size: cover;
 }
 
-.planet::after{
+.planet::after,
+#moon::after{
+    animation-name: rotation;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-#mercury::after,
-#earth::after,
-#moon::after,
-#mars::after,
-#jupiter::after,
-#saturn::after,
-#neptune::after{
-    animation-name: rotation-default;
-}
-
-#venus::after,
 #uranus::after{
     animation-name: rotation-retrograde;
 }
@@ -556,7 +551,7 @@ body{
     }
 }
 
-@keyframes rotation-default {
+@keyframes rotation {
     from {
         background-position: right top;
     } to {
