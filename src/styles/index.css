@@ -143,6 +143,8 @@ body{
 
     width: 1.74rem;
     height: 1.74rem;
+
+    animation-duration: 43s;
 }
 
 /* ------- earth settings ------- */
@@ -392,6 +394,8 @@ body{
 
     width: 3rem;
     height: 3rem;
+
+    animation-duration: 7.14s;
 }
 
 #uranus::before{
@@ -529,6 +533,11 @@ body{
     animation-name: rotation-default;
 }
 
+#venus::after,
+#uranus::after{
+    animation-name: rotation-retrograde;
+}
+
 /* ------- animations ------- */
 
 @keyframes shine-sun{
@@ -552,5 +561,13 @@ body{
         background-position: right top;
     } to {
         background-position: left top;
+    }
+}
+
+@keyframes rotation-retrograde{
+    from {
+        background-position: left top;
+    } to {
+        background-position: right top;
     }
 }
