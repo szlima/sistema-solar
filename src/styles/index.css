@@ -127,6 +127,8 @@ body{
 
     width: .8rem;
     height: .8rem;
+
+    animation-duration: 59s;
 }
 
 /* ------- venus settings ------- */
@@ -158,7 +160,7 @@ body{
 
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
         rotateZ(23deg);
-    animation: rotation-default 10s linear infinite;
+    animation-duration: 10s;
 }
 
 /* ------- earth moon settings ------- */
@@ -173,6 +175,8 @@ body{
 
     width: .6rem;
     height: .6rem;
+
+    animation-duration: 29.5s;
 }
 
 /* ------- mars settings ------- */
@@ -187,6 +191,8 @@ body{
 
     width: 1.12rem;
     height: 1.12rem;
+
+    animation-duration: 10.3s;
 }
 
 /* ------- mars moons settings ------- */
@@ -223,6 +229,8 @@ body{
 
     width: 5rem;
     height: 5rem;
+
+    animation-duration: 4.17s;
 }
 
 #jupiter::before{
@@ -299,6 +307,8 @@ body{
 
     width: 3.9rem;
     height: 3.9rem;
+
+    animation-duration: 4.46s;
 }
 
 #saturn::before{
@@ -437,6 +447,8 @@ body{
 
     width: 2.9rem;
     height: 2.9rem;
+
+    animation-duration: 6.67s;
 }
 
 #neptune::before{
@@ -500,6 +512,21 @@ body{
 #uranus::after,
 #neptune::after{
     background-size: cover;
+}
+
+.planet::after{
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#mercury::after,
+#earth::after,
+#moon::after,
+#mars::after,
+#jupiter::after,
+#saturn::after,
+#neptune::after{
+    animation-name: rotation-default;
 }
 
 /* ------- animations ------- */
