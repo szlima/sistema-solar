@@ -8,6 +8,10 @@
     --venus-tilt: 177.4deg;
     --earth-tilt: 23.4deg;
     --mars-tilt: 25.2deg;
+    --jupiter-tilt: 3.1deg;
+    --saturn-tilt: 26.7deg;
+    --uranus-tilt: 97.8deg;
+    --neptune-tilt: 28.3deg;
     --moon-tilt: 6.7deg;
 
     --mercury-rotation-time: 39s;
