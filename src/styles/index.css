@@ -202,24 +202,31 @@ body{
     width: 1.12rem;
     height: 1.12rem;
 
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+        rotateZ(25.2deg);
     animation-duration: 10.3s;
 }
 
 /* ------- mars moons settings ------- */
+
+#mars .satellite:nth-child(1),
+#mars .satellite:nth-child(2){
+    transform: translate(-50%, -50%) rotateY(25.2deg);
+}
 
 #mars .satellite:nth-child(1){
     width: 1.3rem;
     height: 1.3rem;
 }
 
-#mars .satellite:nth-child(1)::after{
-    width: .15rem;
-    height: .15rem;
-}
-
 #mars .satellite:nth-child(2){
     width: 1.5rem;
     height: 1.5rem;
+}
+
+#mars .satellite:nth-child(1)::after{
+    width: .15rem;
+    height: .15rem;
 }
 
 #mars .satellite:nth-child(2)::after{
