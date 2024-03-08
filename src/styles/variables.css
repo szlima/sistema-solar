@@ -4,6 +4,22 @@
     --system-distance-y: -150px;
     --system-distance-z: 2.2rem;
 
+    --mercury-tilt: 0.03deg;
+    --venus-tilt: 177.4deg;
+    --earth-tilt: 23.4deg;
+    --mars-tilt: 25.2deg;
+    --moon-tilt: 6.7deg;
+
+    --mercury-rotation-time: 39s;
+    --venus-rotation-time: 43s;
+    --earth-rotation-time: 10s;
+    --mars-rotation-time: 10.3s;
+    --jupiter-rotation-time: 4.17s;
+    --saturn-rotation-time: 4.46s;
+    --uranus-rotation-time: 7.14s;
+    --neptune-rotation-time: 6.67s;
+    --moon-rotation-time: 29.5s;
+
     --yellow-01: #ffda5fcc;
     --yellow-02: #ffda5f;
     --yellow-03: #ffc400;

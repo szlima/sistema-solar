@@ -129,8 +129,8 @@ body{
     height: .8rem;
 
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(0.03deg);
-    animation-duration: 39s;
+        rotateZ(var(--mercury-tilt));
+    animation-duration: var(--mercury-rotation-time);
 }
 
 /* ------- venus settings ------- */
@@ -147,8 +147,8 @@ body{
     height: 1.74rem;
 
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(177.4deg);
-    animation-duration: 43s;
+        rotateZ(var(--venus-tilt));
+    animation-duration: var(--venus-rotation-time);
 }
 
 /* ------- earth settings ------- */
@@ -165,8 +165,8 @@ body{
     height: 1.9rem;
 
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(23.4deg);
-    animation-duration: 10s;
+        rotateZ(var(--earth-tilt));
+    animation-duration: var(--earth-rotation-time);
 }
 
 /* ------- earth moon settings ------- */
@@ -175,7 +175,8 @@ body{
     width: 2.58rem;
     height: 2.58rem;
 
-    transform: translate(-50%, -50%) rotateY(23.4deg);
+    transform: translate(-50%, -50%)
+        rotateY(var(--earth-tilt));
 }
 
 #moon::after{
@@ -185,8 +186,8 @@ body{
     height: .6rem;
 
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(6.7deg);
-    animation-duration: 29.5s;
+        rotateZ(var(--moon-tilt));
+    animation-duration: var(--moon-rotation-time);
 }
 
 /* ------- mars settings ------- */
@@ -203,15 +204,15 @@ body{
     height: 1.12rem;
 
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(25.2deg);
-    animation-duration: 10.3s;
+        rotateZ(var(--mars-tilt));
+    animation-duration: var(--mars-rotation-time);
 }
 
 /* ------- mars moons settings ------- */
 
-#mars .satellite:nth-child(1),
-#mars .satellite:nth-child(2){
-    transform: translate(-50%, -50%) rotateY(25.2deg);
+#mars .satellite{
+    transform: translate(-50%, -50%)
+        rotateY(var(--mars-tilt));
 }
 
 #mars .satellite:nth-child(1){
@@ -247,7 +248,7 @@ body{
     width: 5rem;
     height: 5rem;
 
-    animation-duration: 4.17s;
+    animation-duration: var(--jupiter-rotation-time);
 }
 
 #jupiter::before{
@@ -325,7 +326,7 @@ body{
     width: 3.9rem;
     height: 3.9rem;
 
-    animation-duration: 4.46s;
+    animation-duration: var(--saturn-rotation-time);
 }
 
 #saturn::before{
@@ -410,7 +411,7 @@ body{
     width: 3rem;
     height: 3rem;
 
-    animation-duration: 7.14s;
+    animation-duration: var(--uranus-rotation-time);
 }
 
 #uranus::before{
@@ -467,7 +468,7 @@ body{
     width: 2.9rem;
     height: 2.9rem;
 
-    animation-duration: 6.67s;
+    animation-duration: var(--neptune-rotation-time);
 }
 
 #neptune::before{
