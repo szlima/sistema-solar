@@ -25,10 +25,6 @@ body{
     position: relative;
 }
 
-.planet::before{
-    transform: translate(-50%, -50%);
-}
-
 .satellite::before{
     position: absolute;
     top: 100%;
@@ -96,7 +92,6 @@ body{
 }
 
 #sun,
-.planet::after,
 .satellite::before,
 .satellite::after{
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
