@@ -115,6 +115,8 @@ body{
 #mercury{
     width: 22rem;
     height: 22rem;
+
+    animation-duration: var(--mercury-orbit-time);
 }
 
 #mercury::after{
@@ -123,9 +125,8 @@ body{
     width: .8rem;
     height: .8rem;
 
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(var(--mercury-tilt));
-    animation-duration: var(--mercury-rotation-time);
+    animation-name: rotation, mercury-orbit-movement;
+    animation-duration: var(--mercury-rotation-time), var(--mercury-orbit-time);
 }
 
 /* ------- venus settings ------- */
@@ -572,6 +573,16 @@ body{
     animation-iteration-count: infinite;
 }
 
+.planet,
+.planet::after{
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.planet{
+    animation-name: orbit-movement;
+}
+
 /* ------- animations ------- */
 
 @keyframes shine-sun{
@@ -595,5 +606,29 @@ body{
         background-position: right top;
     } to {
         background-position: left top;
+    }
+}
+
+@keyframes orbit-movement{
+    from {
+        transform: translate(-50%, -50%)
+            rotateZ(0);
+    }
+    to {
+        transform: translate(-50%, -50%)
+            rotateZ(-360deg);
+    }
+}
+
+@keyframes mercury-orbit-movement{
+    from {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateZ(var(--mercury-tilt))
+            rotateY(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateZ(var(--mercury-tilt))
+            rotateY(-360deg);
     }
 }
