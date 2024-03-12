@@ -134,6 +134,8 @@ body{
 #venus{
     width: 25.44rem;
     height: 25.44rem;
+
+    animation-duration: var(--venus-orbit-time);
 }
 
 #venus::after{
@@ -142,9 +144,8 @@ body{
     width: 1.74rem;
     height: 1.74rem;
 
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(var(--venus-tilt));
-    animation-duration: var(--venus-rotation-time);
+    animation-name: rotation, venus-orbit-movement;
+    animation-duration: var(--venus-rotation-time), var(--venus-orbit-time);
 }
 
 /* ------- earth settings ------- */
@@ -623,12 +624,25 @@ body{
 @keyframes mercury-orbit-movement{
     from {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateZ(var(--mercury-tilt))
-            rotateY(0deg);
+            rotateY(0deg)
+            rotateZ(var(--mercury-tilt));
     }
     to {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateZ(var(--mercury-tilt))
-            rotateY(-360deg);
+            rotateY(-360deg)
+            rotateZ(var(--mercury-tilt));
+    }
+}
+
+@keyframes venus-orbit-movement{
+    from {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            rotateZ(var(--venus-tilt));
+    }
+    to {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            rotateZ(var(--venus-tilt));
     }
 }
