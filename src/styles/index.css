@@ -172,8 +172,7 @@ body{
     width: 2.58rem;
     height: 2.58rem;
 
-    transform: translate(-50%, -50%)
-        rotateY(var(--earth-tilt));
+    animation-duration: var(--moon-rotation-time);
 }
 
 #moon::after{
@@ -182,8 +181,7 @@ body{
     width: .6rem;
     height: .6rem;
 
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(var(--moon-tilt));
+    animation-name: rotation, moon-orbit-movement;
     animation-duration: var(--moon-rotation-time);
 }
 
@@ -567,21 +565,26 @@ body{
     background-size: cover;
 }
 
-.planet::after,
-#moon::after{
+.planet::after{
     animation-name: rotation;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 .planet,
-.planet::after{
+.planet::after,
+#moon,
+#moon::after{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 .planet{
     animation-name: orbit-movement;
+}
+
+#moon{
+    animation-name: revolution-movement;
 }
 
 /* ------- animations ------- */
@@ -614,9 +617,20 @@ body{
     from {
         transform: translate(-50%, -50%)
             rotateZ(0);
-    }
-    to {
+    } to {
         transform: translate(-50%, -50%)
+            rotateZ(-360deg);
+    }
+}
+
+@keyframes revolution-movement{
+    from {
+        transform: translate(-50%, -50%)
+            rotateY(var(--earth-tilt))
+            rotateZ(0);
+    } to {
+        transform: translate(-50%, -50%)
+            rotateY(var(--earth-tilt))
             rotateZ(-360deg);
     }
 }
@@ -626,8 +640,7 @@ body{
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(0deg)
             rotateZ(var(--mercury-tilt));
-    }
-    to {
+    } to {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             rotateZ(var(--mercury-tilt));
@@ -639,10 +652,21 @@ body{
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(0deg)
             rotateZ(var(--venus-tilt));
-    }
-    to {
+    } to {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             rotateZ(var(--venus-tilt));
+    }
+}
+
+@keyframes moon-orbit-movement{
+    from {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            rotateZ(var(--moon-tilt));
+    } to {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            rotateZ(var(--moon-tilt));
     }
 }
