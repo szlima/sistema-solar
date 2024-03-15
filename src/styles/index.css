@@ -43,12 +43,17 @@ body{
 .orbit,
 .satellite{
     border: .02rem dashed var(--white-02);
+}
 
+.orbit{
     transform: translate(-50%, -50%);
 }
 
+.satellite{
+    transform: translate(-50%, -50%) rotateX(var(--system-angle));
+}
+
 .planet,
-.satellite,
 .satellite::after{
     position: absolute;
     top: 50%;
@@ -85,7 +90,8 @@ body{
 
 #sun,
 .orbit,
-.planet::before{
+.planet::before,
+.satellite{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -205,11 +211,6 @@ body{
 
 /* ------- mars moons settings ------- */
 
-#mars .satellite{
-    transform: translate(-50%, -50%)
-        rotateY(var(--mars-tilt));
-}
-
 #mars .satellite:nth-child(1){
     width: 1.3rem;
     height: 1.3rem;
@@ -265,9 +266,6 @@ body{
 #jupiter .satellite{
     width: 6.5rem;
     height: 6.5rem;
-
-    transform: translate(-50%, -50%)
-        rotateY(var(--jupiter-tilt));
 }
 
 #jupiter .satellite::after{
@@ -350,11 +348,6 @@ body{
 }
 
 /* ------- saturn moons settings ------- */
-
-#saturn .satellite{
-    transform: translate(-50%, -50%)
-        rotateY(var(--saturn-tilt));
-}
 
 #saturn .satellite:nth-child(1){
     width: 6.5rem;
@@ -444,9 +437,6 @@ body{
 #uranus .satellite{
     width: 4.2rem;
     height: 4.2rem;
-
-    transform: translate(-50%, -50%)
-        rotateY(var(--uranus-tilt));
 }
 
 #uranus .satellite::after{
@@ -503,11 +493,6 @@ body{
 }
 
 /* ------- neptune moons settings ------- */
-
-#neptune .satellite{
-    transform: translate(-50%, -50%)
-        rotateY(var(--neptune-tilt));
-}
 
 #neptune .satellite:nth-child(1){
     width: 3.9rem;
@@ -621,12 +606,10 @@ body{
 
 @keyframes revolution-movement{
     from {
-        transform: translate(-50%, -50%)
-            rotateY(var(--earth-tilt))
+        transform: translate(-50%, -50%) rotateX(var(--system-angle))
             rotateZ(0);
     } to {
-        transform: translate(-50%, -50%)
-            rotateY(var(--earth-tilt))
+        transform: translate(-50%, -50%) rotateX(var(--system-angle))
             rotateZ(-360deg);
     }
 }
