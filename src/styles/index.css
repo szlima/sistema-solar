@@ -197,6 +197,8 @@ body{
 #mars{
     width: 35.25rem;
     height: 35.25rem;
+
+    animation-duration: var(--mars-orbit-time);
 }
 
 #mars .planet{
@@ -205,9 +207,8 @@ body{
     width: 1.12rem;
     height: 1.12rem;
 
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(var(--mars-tilt));
-    animation-duration: var(--mars-rotation-time);
+    animation-name: rotation, mars-orbit-movement;
+    animation-duration: var(--mars-rotation-time), var(--mars-orbit-time);
 }
 
 /* ------- mars moons settings ------- */
@@ -660,5 +661,17 @@ body{
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             rotateZ(var(--moon-tilt));
+    }
+}
+
+@keyframes mars-orbit-movement{
+    from {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            rotateZ(var(--mars-tilt));
+    } to {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            rotateZ(var(--mars-tilt));
     }
 }
