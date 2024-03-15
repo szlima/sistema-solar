@@ -24,6 +24,8 @@
     --neptune-rotation-time: 6.67s;
     --moon-rotation-time: 29.5s;
 
+    --default-revolution-time: 20s;
+
     --mercury-orbit-time: 14.4s;
     --venus-orbit-time: 36s;
     --earth-orbit-time: 60s;

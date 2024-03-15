@@ -188,7 +188,7 @@ body{
     width: .6rem;
     height: .6rem;
 
-    animation-name: rotation, moon-orbit-movement;
+    animation-name: rotation, moon-revolution-movement;
     animation-duration: var(--moon-rotation-time);
 }
 
@@ -556,18 +556,27 @@ body{
 
 .orbit,
 .planet,
-#moon,
-#moon::after{
+.satellite,
+.satellite::after{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+.satellite,
+.satellite::after{
+    animation-duration: var(--default-revolution-time);
 }
 
 .orbit{
     animation-name: orbit-movement;
 }
 
-#moon{
+.satellite{
     animation-name: revolution-movement;
+}
+
+.satellite::after{
+    animation-name: default-revolution-movement;
 }
 
 /* ------- animations ------- */
@@ -652,7 +661,19 @@ body{
     }
 }
 
-@keyframes moon-orbit-movement{
+@keyframes mars-orbit-movement{
+    from {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            rotateZ(var(--mars-tilt));
+    } to {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            rotateZ(var(--mars-tilt));
+    }
+}
+
+@keyframes moon-revolution-movement{
     from {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(0deg)
@@ -664,14 +685,12 @@ body{
     }
 }
 
-@keyframes mars-orbit-movement{
+@keyframes default-revolution-movement{
     from {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(0deg)
-            rotateZ(var(--mars-tilt));
+            rotateY(0deg);
     } to {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(-360deg)
-            rotateZ(var(--mars-tilt));
+            rotateY(-360deg);
     }
 }
