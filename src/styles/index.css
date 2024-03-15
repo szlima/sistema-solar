@@ -159,6 +159,8 @@ body{
 #earth{
     width: 30.33rem;
     height: 30.33rem;
+
+    animation-duration: var(--earth-orbit-time);
 }
 
 #earth .planet{
@@ -167,9 +169,8 @@ body{
     width: 1.9rem;
     height: 1.9rem;
 
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(var(--earth-tilt));
-    animation-duration: var(--earth-rotation-time);
+    animation-name: rotation, earth-orbit-movement;
+    animation-duration: var(--earth-rotation-time), var(--earth-orbit-time);
 }
 
 /* ------- earth moon settings ------- */
@@ -635,6 +636,18 @@ body{
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             rotateZ(var(--venus-tilt));
+    }
+}
+
+@keyframes earth-orbit-movement{
+    from {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            rotateZ(var(--earth-tilt));
+    } to {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            rotateZ(var(--earth-tilt));
     }
 }
 
