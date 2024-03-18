@@ -238,6 +238,8 @@ body{
 #jupiter{
     width: 45rem;
     height: 45rem;
+
+    animation-duration: var(--jupiter-orbit-time);
 }
 
 #jupiter .planet{
@@ -246,9 +248,8 @@ body{
     width: 5rem;
     height: 5rem;
 
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(var(--jupiter-tilt));
-    animation-duration: var(--jupiter-rotation-time);
+    animation-name: rotation, jupiter-orbit-movement;
+    animation-duration: var(--jupiter-rotation-time), var(--jupiter-orbit-time);
 }
 
 #jupiter .planet::before{
@@ -268,11 +269,13 @@ body{
 #jupiter .satellite{
     width: 6.5rem;
     height: 6.5rem;
+    animation:none;
 }
 
 #jupiter .satellite::after{
     width: .85rem;
     height: .85rem;
+    animation:none;
 }
 
 #jupiter .satellite::before{
@@ -670,6 +673,18 @@ body{
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             rotateZ(var(--mars-tilt));
+    }
+}
+
+@keyframes jupiter-orbit-movement{
+    from {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            rotateZ(var(--jupiter-tilt));
+    } to {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            rotateZ(var(--jupiter-tilt));
     }
 }
 
