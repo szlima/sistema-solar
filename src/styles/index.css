@@ -261,7 +261,8 @@ body{
         0 0 .1rem .05rem var(--brown),
         0 0 .1rem .05rem var(--gray);
 
-    transform: translate(-50%, -50%) rotateX(var(--system-angle));
+    transform: translate(-50%, -50%) rotateX(var(--system-angle))
+        rotateZ(var(--jupiter-tilt));
 }
 
 /* ------- jupiter moons settings ------- */
