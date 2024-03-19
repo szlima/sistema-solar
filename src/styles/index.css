@@ -282,6 +282,10 @@ body{
     height: .75rem;
 }
 
+#jupiter .satellite img{
+    animation-duration: var(--default-revolution-time), var(--jupiter-orbit-time);
+}
+
 #jupiter .satellite img:nth-child(1){
     top: 30%;
     left: 7%;
@@ -558,8 +562,7 @@ body{
 
 .satellite,
 .satellite::before,
-.satellite::after,
-.satellite img{
+.satellite::after{
     animation-duration: var(--default-revolution-time);
 }
 
@@ -578,16 +581,16 @@ body{
 
 .satellite img:nth-child(1),
 .satellite img:nth-child(4){
-    animation-name: image-type1-revolution-movement;
+    animation-name: image-type1-revolution-movement, image-satellite-orbit-movement;
 }
 
 .satellite img:nth-child(2),
 .satellite img:nth-child(5){
-    animation-name: image-type2-revolution-movement;
+    animation-name: image-type2-revolution-movement, image-satellite-orbit-movement;
 }
 
 .satellite img:nth-child(3){
-    animation-name: image-type3-revolution-movement;
+    animation-name: image-type3-revolution-movement, image-satellite-orbit-movement;
 }
 
 /* ------- animations ------- */
@@ -696,6 +699,20 @@ body{
     }
 }
 
+@keyframes image-satellite-orbit-movement{
+    0% {
+        width: 100%;
+    } 25% {
+        width: 50%;
+    } 50% {
+        width: 100%;
+    } 75% {
+        width: 150%;
+    } 100% {
+        width: 100%;
+    }
+}
+
 @keyframes moon-revolution-movement{
     from {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
@@ -719,23 +736,11 @@ body{
 }
 
 @keyframes image-type1-revolution-movement{
-    0% {
+    from {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(0deg)
             scale3d(.16, .16, .16);
-    } 25% {
-        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(-90deg)
-            scale3d(.08, .08, .08);
-    } 50% {
-        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(-180deg)
-            scale3d(.16, .16, .16);
-    } 75% {
-        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(-270deg)
-            scale3d(.24, .24, .24);
-    } 100% {
+    } to {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             scale3d(.16, .16, .16);
@@ -743,23 +748,11 @@ body{
 }
 
 @keyframes image-type2-revolution-movement{
-    0% {
+    from {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(0deg)
             scale3d(.1, .1, .1);
-    } 25% {
-        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(-90deg)
-            scale3d(.05, .05, .05);
-    } 50% {
-        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(-180deg)
-            scale3d(.1, .1, .1);
-    } 75% {
-        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(-270deg)
-            scale3d(.15, .15, .15);
-    } 100% {
+    } to {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             scale3d(.1, .1, .1);
@@ -767,23 +760,11 @@ body{
 }
 
 @keyframes image-type3-revolution-movement{
-    0% {
+    from {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(0deg)
             scale3d(.08, .08, .08);
-    } 25% {
-        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(-90deg)
-            scale3d(.04, .04, .04);
-    } 50% {
-        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(-180deg)
-            scale3d(.08, .08, .08);
-    } 75% {
-        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-            rotateY(-270deg)
-            scale3d(.12, .12, .12);
-    } 100% {
+    } to {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             scale3d(.08, .08, .08);
