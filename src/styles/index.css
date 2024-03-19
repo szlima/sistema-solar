@@ -270,13 +270,11 @@ body{
 #jupiter .satellite{
     width: 6.5rem;
     height: 6.5rem;
-    animation:none;
 }
 
 #jupiter .satellite::after{
     width: .85rem;
     height: .85rem;
-    animation:none;
 }
 
 #jupiter .satellite::before{
@@ -287,36 +285,26 @@ body{
 #jupiter .satellite img:nth-child(1){
     top: 30%;
     left: 7%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.16, .16, .16);
 }
 
 #jupiter .satellite img:nth-child(2){
     top: 50%;
     left: 5%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.1, .1, .1);
 }
 
 #jupiter .satellite img:nth-child(3){
     top: 94%;
     left: 30%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.05, .05, .05);
 }
 
 #jupiter .satellite img:nth-child(4){
     top: 95%;
     left: 70%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.12, .12, .12);
 }
 
 #jupiter .satellite img:nth-child(5){
     top: 70%;
     left: 95%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.1, .1, .1);
 }
 
 /* ------- saturn settings ------- */
@@ -561,13 +549,17 @@ body{
 .orbit,
 .planet,
 .satellite,
-.satellite::after{
+.satellite::before,
+.satellite::after,
+.satellite img{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 .satellite,
-.satellite::after{
+.satellite::before,
+.satellite::after,
+.satellite img{
     animation-duration: var(--default-revolution-time);
 }
 
@@ -579,8 +571,23 @@ body{
     animation-name: revolution-movement;
 }
 
+.satellite::before,
 .satellite::after{
-    animation-name: default-revolution-movement;
+    animation-name: default-satellite-revolution-movement;
+}
+
+.satellite img:nth-child(1),
+.satellite img:nth-child(4){
+    animation-name: image-type1-revolution-movement;
+}
+
+.satellite img:nth-child(2),
+.satellite img:nth-child(5){
+    animation-name: image-type2-revolution-movement;
+}
+
+.satellite img:nth-child(3){
+    animation-name: image-type3-revolution-movement;
 }
 
 /* ------- animations ------- */
@@ -701,12 +708,84 @@ body{
     }
 }
 
-@keyframes default-revolution-movement{
+@keyframes default-satellite-revolution-movement{
     from {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(0deg);
     } to {
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg);
+    }
+}
+
+@keyframes image-type1-revolution-movement{
+    0% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            scale3d(.16, .16, .16);
+    } 25% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-90deg)
+            scale3d(.08, .08, .08);
+    } 50% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-180deg)
+            scale3d(.16, .16, .16);
+    } 75% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-270deg)
+            scale3d(.24, .24, .24);
+    } 100% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            scale3d(.16, .16, .16);
+    }
+}
+
+@keyframes image-type2-revolution-movement{
+    0% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            scale3d(.1, .1, .1);
+    } 25% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-90deg)
+            scale3d(.05, .05, .05);
+    } 50% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-180deg)
+            scale3d(.1, .1, .1);
+    } 75% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-270deg)
+            scale3d(.15, .15, .15);
+    } 100% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            scale3d(.1, .1, .1);
+    }
+}
+
+@keyframes image-type3-revolution-movement{
+    0% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            scale3d(.08, .08, .08);
+    } 25% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-90deg)
+            scale3d(.04, .04, .04);
+    } 50% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-180deg)
+            scale3d(.08, .08, .08);
+    } 75% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-270deg)
+            scale3d(.12, .12, .12);
+    } 100% {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            scale3d(.08, .08, .08);
     }
 }
