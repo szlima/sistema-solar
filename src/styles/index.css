@@ -316,6 +316,8 @@ body{
 #saturn{
     width: 60.5rem;
     height: 60.5rem;
+
+    animation-duration: var(--saturn-orbit-time);
 }
 
 #saturn .planet{
@@ -324,9 +326,8 @@ body{
     width: 3.9rem;
     height: 3.9rem;
 
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(var(--saturn-tilt));
-    animation-duration: var(--saturn-rotation-time);
+    animation-name: rotation, saturn-orbit-movement;
+    animation-duration: var(--saturn-rotation-time), var(--saturn-orbit-time);
 }
 
 #saturn .planet::before{
@@ -697,6 +698,18 @@ body{
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             rotateZ(var(--jupiter-tilt));
+    }
+}
+
+@keyframes saturn-orbit-movement{
+    from {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            rotateZ(var(--saturn-tilt));
+    } to {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            rotateZ(var(--saturn-tilt));
     }
 }
 
