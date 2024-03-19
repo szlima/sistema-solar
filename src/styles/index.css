@@ -373,32 +373,28 @@ body{
     height: .28rem;
 }
 
+#saturn .satellite img{
+    animation-duration: var(--default-revolution-time), var(--saturn-orbit-time);
+}
+
 #saturn .satellite img:nth-child(1){
     top: 30%;
     left: 15%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.16, .16, .16);
 }
 
 #saturn .satellite img:nth-child(2){
     top: 70%;
     left: 5%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.1, .1, .1);
 }
 
 #saturn .satellite img:nth-child(3){
     top: 50%;
     left: 0;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.05, .05, .05);
 }
 
 #saturn .satellite img:nth-child(4){
     top: 60%;
     left: 100%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.05, .05, .05);
 }
 
 /* ------- uranus settings ------- */
