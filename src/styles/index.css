@@ -253,16 +253,16 @@ body{
 }
 
 #jupiter .planet::before{
-    width: 5.3rem;
     height: 5.3rem;
 
-    border: .05rem solid var(--gray);
-    box-shadow: inset 0 0 .1rem .05rem var(--brown),
-        0 0 .1rem .05rem var(--brown),
-        0 0 .1rem .05rem var(--gray);
+    border-width: .05rem;
+    border-style: solid;
 
     transform: translate(-50%, -50%) rotateX(var(--system-angle))
         rotateZ(var(--jupiter-tilt));
+
+    animation-name: jupiter-rings-movement;
+    animation-duration: var(--jupiter-rotation-time);
 }
 
 /* ------- jupiter moons settings ------- */
@@ -552,6 +552,7 @@ body{
 
 .orbit,
 .planet,
+.planet::before,
 .satellite,
 .satellite::before,
 .satellite::after,
@@ -768,5 +769,30 @@ body{
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             scale3d(.08, .08, .08);
+    }
+}
+
+@keyframes jupiter-rings-movement{
+    0% {
+        width: 5.3rem;
+
+        border-color: var(--gray);
+        box-shadow: inset 0 0 .1rem .05rem var(--brown),
+            0 0 .1rem .05rem var(--brown),
+            0 0 .1rem .05rem var(--gray);
+    } 50% {
+        width: 5.5rem;
+
+        border-color: var(--brown);
+            box-shadow: inset 0 0 .1rem .05rem var(--gray),
+            0 0 .1rem .05rem var(--gray),
+            0 0 .1rem .05rem var(--brown);
+    } 100% {
+        width: 5.3rem;
+
+        border-color: var(--gray);
+        box-shadow: inset 0 0 .1rem .05rem var(--brown),
+            0 0 .1rem .05rem var(--brown),
+            0 0 .1rem .05rem var(--gray);
     }
 }
