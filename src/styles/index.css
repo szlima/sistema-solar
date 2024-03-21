@@ -445,18 +445,18 @@ body{
     height: .3rem;
 }
 
+#uranus .satellite img{
+    animation-duration: var(--default-revolution-time), var(--uranus-orbit-time);
+}
+
 #uranus .satellite img:nth-child(1){
     top: 90%;
     left: 40%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.06, .06, .06);
 }
 
 #uranus .satellite img:nth-child(2){
     top: 85%;
     left: 60%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.1, .1, .1);
 }
 
 /* ------- neptune settings ------- */
