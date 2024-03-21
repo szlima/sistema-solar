@@ -399,6 +399,8 @@ body{
 #uranus{
     width: 73rem;
     height: 73rem;
+
+    animation-duration: var(--uranus-orbit-time);
 }
 
 #uranus .planet{
@@ -407,9 +409,8 @@ body{
     width: 3rem;
     height: 3rem;
 
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(var(--uranus-tilt));
-    animation-duration: var(--uranus-rotation-time);
+    animation-name: rotation, uranus-orbit-movement;
+    animation-duration: var(--uranus-rotation-time), var(--uranus-orbit-time);
 }
 
 #uranus .planet::before{
@@ -703,6 +704,18 @@ body{
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             rotateZ(var(--saturn-tilt));
+    }
+}
+
+@keyframes uranus-orbit-movement{
+    from {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            rotateZ(var(--uranus-tilt));
+    } to {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            rotateZ(var(--uranus-tilt));
     }
 }
 
