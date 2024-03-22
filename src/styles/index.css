@@ -45,10 +45,6 @@ body{
     border: .02rem dashed var(--white-02);
 }
 
-.satellite{
-    transform: translate(-50%, -50%) rotateX(var(--system-angle));
-}
-
 .planet,
 .satellite::after{
     position: absolute;
@@ -92,12 +88,6 @@ body{
     left: 50%;
 }
 
-#sun,
-.satellite::before,
-.satellite::after{
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
-}
-
 /* ------- sun settings ------- */
 
 #sun{
@@ -107,6 +97,7 @@ body{
     width: 20rem;
     height: 20rem;
 
+    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
     animation: shine-sun 1s linear infinite alternate,
         rotation 27s linear infinite;
 }
@@ -522,8 +513,8 @@ body{
 #neptune .satellite img{
     top: 90%;
     left: 60%;
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        scale3d(.06, .06, .06);
+
+    animation-duration: var(--default-revolution-time), var(--neptune-orbit-time);
 }
 
 /* ------- sun, planets and satellites settings ------- */
