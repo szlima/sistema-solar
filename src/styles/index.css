@@ -45,10 +45,6 @@ body{
     border: .02rem dashed var(--white-02);
 }
 
-.orbit{
-    transform: translate(-50%, -50%);
-}
-
 .satellite{
     transform: translate(-50%, -50%) rotateX(var(--system-angle));
 }
@@ -61,7 +57,6 @@ body{
 }
 
 .planet::before,
-.planet,
 .satellite::before,
 .satellite::after{
     content: "";
@@ -464,6 +459,8 @@ body{
 #neptune{
     width: 83rem;
     height: 83rem;
+
+    animation-duration: var(--neptune-orbit-time);
 }
 
 #neptune .planet{
@@ -472,9 +469,8 @@ body{
     width: 2.9rem;
     height: 2.9rem;
 
-    transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
-        rotateZ(var(--neptune-tilt));
-    animation-duration: var(--neptune-rotation-time);
+    animation-name: rotation, neptune-orbit-movement;
+    animation-duration: var(--neptune-rotation-time), var(--neptune-orbit-time);
 }
 
 #neptune .planet::before{
@@ -540,12 +536,6 @@ body{
 #uranus .planet,
 #neptune .planet{
     background-size: cover;
-}
-
-.planet{
-    animation-name: rotation;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
 .orbit,
@@ -719,6 +709,18 @@ body{
         transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
             rotateY(-360deg)
             rotateZ(var(--uranus-tilt));
+    }
+}
+
+@keyframes neptune-orbit-movement{
+    from {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(0deg)
+            rotateZ(var(--neptune-tilt));
+    } to {
+        transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle))
+            rotateY(-360deg)
+            rotateZ(var(--neptune-tilt));
     }
 }
 
