@@ -2,7 +2,7 @@
 @import url("./variables.css");
 
 body{
-    background-color: var(--black);
+    background-color: var(--black-01);
     color: var(--white-01);
     width: 100vw;
     height: 100vh;
@@ -117,8 +117,8 @@ body{
     width: .8rem;
     height: .8rem;
 
-    animation-name: rotation, mercury-orbit-movement;
-    animation-duration: var(--mercury-rotation-time), var(--mercury-orbit-time);
+    animation-name: rotation, mercury-orbit-movement, small-shadow;
+    animation-duration: var(--mercury-rotation-time), var(--mercury-orbit-time), var(--mercury-orbit-time);
 }
 
 /* ------- venus settings ------- */
@@ -138,6 +138,7 @@ body{
 
     animation-name: rotation, venus-orbit-movement;
     animation-duration: var(--venus-rotation-time), var(--venus-orbit-time);
+
 }
 
 /* ------- earth settings ------- */
@@ -155,8 +156,8 @@ body{
     width: 1.9rem;
     height: 1.9rem;
 
-    animation-name: rotation, earth-orbit-movement;
-    animation-duration: var(--earth-rotation-time), var(--earth-orbit-time);
+    animation-name: rotation, earth-orbit-movement, small-shadow;
+    animation-duration: var(--earth-rotation-time), var(--earth-orbit-time), var(--earth-orbit-time);
 }
 
 /* ------- earth moon settings ------- */
@@ -174,8 +175,8 @@ body{
     width: .6rem;
     height: .6rem;
 
-    animation-name: rotation, moon-revolution-movement;
-    animation-duration: var(--moon-rotation-time);
+    animation-name: rotation, moon-revolution-movement, small-shadow;
+    animation-duration: var(--moon-rotation-time), var(--moon-rotation-time), var(--earth-orbit-time);
 }
 
 /* ------- mars settings ------- */
@@ -193,8 +194,8 @@ body{
     width: 1.12rem;
     height: 1.12rem;
 
-    animation-name: rotation, mars-orbit-movement;
-    animation-duration: var(--mars-rotation-time), var(--mars-orbit-time);
+    animation-name: rotation, mars-orbit-movement, small-shadow;
+    animation-duration: var(--mars-rotation-time), var(--mars-orbit-time), var(--mars-orbit-time);
 }
 
 /* ------- mars moons settings ------- */
@@ -859,5 +860,24 @@ body{
         height: 3.2rem;
     } 100% {
         height: 3.5rem;
+    }
+}
+
+@keyframes small-shadow{
+    0% {
+        box-shadow: inset -0.2rem 0 .25rem .01rem var(--black-02),
+            inset .2rem 0 .25rem .01rem var(--white-02);
+    } 25% {
+        box-shadow: inset 0 0 0 .01rem var(--black-02),
+            inset 0 0 2rem .01rem var(--white-02);
+    } 50% {
+        box-shadow: inset .2rem 0 .25rem .01rem var(--black-02),
+            inset -0.2rem 0 .25rem .01rem var(--white-02);
+    } 75% {
+        box-shadow: inset 0 0 2rem .01rem var(--black-02),
+            inset 0 0 0 .01rem var(--white-02);
+    } 100% {
+        box-shadow: inset -0.2rem 0 .25rem .01rem var(--black-02),
+            inset .2rem 0 .25rem .01rem var(--white-02);
     }
 }
