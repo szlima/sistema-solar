@@ -215,7 +215,7 @@ body{
     height: .15rem;
 }
 
-#mars .satellite:nth-child(2)::after{
+#mars .satellite:nth-child(2)::before{
     width: .2rem;
     height: .2rem;
 }
