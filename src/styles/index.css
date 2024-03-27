@@ -42,7 +42,7 @@ body{
 
 .orbit,
 .satellite{
-    border: .02rem dashed var(--white-02);
+    border: .01rem dashed var(--white-02);
 }
 
 .planet,
