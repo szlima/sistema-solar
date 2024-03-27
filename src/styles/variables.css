@@ -1,8 +1,8 @@
 :root{
-    --system-angle: 75deg;
-    --inverted-system-angle: -75deg;
-    --system-distance-y: -150px;
-    --system-distance-z: 2.2rem;
+    --system-angle: 80deg;
+    --inverted-system-angle: calc(-1 * var(--system-angle));
+    --system-distance-y: -12.5rem;
+    --system-distance-z: .2rem;
 
     --mercury-tilt: 0.03deg;
     --venus-tilt: 177.4deg;
