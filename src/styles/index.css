@@ -941,3 +941,170 @@ body{
             inset 0 -0.2rem .5rem .02rem var(--white-02);
     }
 }
+
+/* ------- information box------- */
+
+.invisible{
+    display: none;
+}
+
+#open-button-modal{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    font-size: 2rem;
+    color: var(--white-02);
+}
+
+#open-button-modal:hover{
+    cursor: pointer;
+    color: var(--white-01);
+}
+
+#close-button-modal{
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+
+    font-size: 3rem;
+    z-index: 2;
+}
+
+#close-button-modal:hover{
+    cursor: pointer;
+    color: var(--yellow-02);
+}
+
+.modal{
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-02);
+}
+
+.modal .modal-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+}
+
+.modal-box::before,
+.modal-box::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--yellow-02), var(--yellow-04));
+}
+
+.modal .modal-content{
+    position: absolute;
+    inset: 1rem;
+
+    padding: 3rem;
+    background-color: var(--black-02);
+    overflow: scroll;
+    z-index: 1;
+}
+
+.modal h1,
+.modal h2,
+#dev-info{
+    color: var(--yellow-04);
+    margin-bottom: 1rem;
+    font-variant: small-caps;
+    letter-spacing: .2rem;
+    word-spacing: 1rem;
+}
+
+.modal h1{
+    font-size: 4rem;
+}
+
+.modal h2{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.modal h3{
+    font-size: 2.3rem;
+}
+
+.modal p,
+.modal a{
+    margin: .7rem .5rem;
+    font-size: 2rem;
+    color: var(--white-01);
+}
+
+.modal a{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.modal a:hover{
+    color: var(--yellow-02);
+}
+
+#dev-info{
+    margin-top: 2.3rem;
+    word-spacing: initial;
+}
+
+#dev-info i{
+    color: var(--white-01);
+}
+
+#dev-info a{
+    display: initial;
+    margin: 0;
+}
+
+@media only screen and (min-width: 720px){
+
+    #close-button-modal{
+        font-size: 2rem;
+    }
+
+    .modal .modal-box{
+        width: 55rem;
+        height: 50rem;
+    }
+
+    .modal-box::before,
+    .modal-box::after,
+    .modal .modal-content{
+        border-radius: 5rem;
+    }
+
+    .modal-box::after{
+        filter: blur(2rem);
+    }
+
+    .modal h1{
+        font-size: 2.2rem;
+    }
+
+    .modal h2{
+        font-size: 1.7rem;
+    }
+
+    .modal h3{
+        font-size: 1.5rem;
+    }
+
+    .modal p,
+    .modal a{
+        font-size: 1.2rem;
+    }
+}

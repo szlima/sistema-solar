@@ -9,6 +9,8 @@
 
 html{
     font-size: 6.5px;
+    font-family: sans-serif;
+    user-select: none;
 }
 
 @media only screen and (min-width: 720px){
