@@ -1,0 +1,68 @@
+{
+    "simulation": {
+        "main-title": "Sistema Solar",
+        "description": [
+            "A simulação apresentada não apresenta dados em escala real.",
+            "As informações foram definidas de forma a facilitar o entendimento, didaticamente."
+        ],
+        "dev-info": {
+            "info": [
+                "Feito com",
+                "por"
+            ],
+            "text": "Suzane Lima",
+            "url": "https://github.com/szlima"
+        },
+        "reference-title": "Referências",
+        "references": [
+            {
+                "text": "Informações planetárias",
+                "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html"
+            },
+            {
+                "text": "Imagem de fundo do Sol",
+                "url": "https://pt.vecteezy.com/arte-vetorial/23030978-vetor-aguarela-textura-com-branco-nuvens-e-ceu-para-cartoes-mao-desenhado-vetor-textura-paraiso-verao-aguarela-bandeira-modelo-para-projeto"
+            },
+            {
+                "text": "Imagem de fundo de Mercúrio",
+                "url": "https://pt.vecteezy.com/arte-vetorial/28292203-cinzento-pintado-fundo-vetor"
+            },
+            {
+                "text": "Imagem de fundo de Vênus",
+                "url": "https://pt.vecteezy.com/foto/11832531-fundo-abstrato-de-movimento-desfocado"
+            },
+            {
+                "text": "Imagem de fundo da Terra",
+                "url": "https://pt.vecteezy.com/arte-vetorial/10961617-ilustracao-em-vetor-mapa-mundo-isolado-no-fundo-azul-terra-plana-globo-ou-mapa-do-mundo"
+            },
+            {
+                "text": "Imagem de fundo de Marte",
+                "url": "https://pt.vecteezy.com/foto/27851018-elegante-ouro-cor-gradacao-fundo-vetor-projeto-para-bandeira-cumprimento-cartao-folheto-folheto-papel-de-parede-rede"
+            },
+            {
+                "text": "Imagem de fundo de Júpiter",
+                "url": "https://pt.vecteezy.com/foto/36491011-uma-embacado-imagem-do-uma-castanho-e-amarelo-fundo"
+            },
+            {
+                "text": "Imagem de fundo de Saturno",
+                "url": "https://pt.vecteezy.com/arte-vetorial/15561557-belo-fundo-abstrato-gradiente-moderno-para-temas-criativos-ou-arte-conceitual-vetor-eps10"
+            },
+            {
+                "text": "Imagem de fundo de Urano",
+                "url": "https://pt.vecteezy.com/arte-vetorial/24887842-suave-azul-luz-3d-fundo-abstrato-com-gradiente-dentro-esvaziar-quarto-estudio-adequado-para-produtos-tiroteio"
+            },
+            {
+                "text": "Imagem de fundo de Netuno",
+                "url": "https://pt.vecteezy.com/arte-vetorial/2776728-padroes-de-tendencia-de-fundo-de-ultravioleta"
+            },
+            {
+                "text": "Imagem de fundo da Lua",
+                "url": "https://pt.vecteezy.com/arte-vetorial/13316983-luz-de-fundo-isolado-efeito-bokeh-luzes-de-bokeh-brilhantes-abstratas-de-luz-fundo-de-natal-de-poeira-brilhante-brilho-do-alargamento-do-conceito-de-natal-luz-de-poeira-branca-png"
+            },
+            {
+                "text": "Imagem de fundo do Espaço",
+                "url": "https://pt.vecteezy.com/arte-vetorial/15840121-fundo-vermelho-e-rosa-fundo-de-textura-moderno-bonito-e-elegante-com-fumaca-vetor-ilustracao"
+            }
+        ]
+    }
+}

@@ -25,7 +25,7 @@ BUTTON_CLOSE_MODAL.onclick= () => {
         UNIVERSE.classList.remove('invisible');
 };
 
-window.onload= () => setData('english');
+window.onload= () => setData('portuguese');
 
 function openModal(content){
     MODAL.classList.remove('invisible');
