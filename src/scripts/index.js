@@ -1,5 +1,4 @@
-const UNIVERSE= document.querySelector('#universe');
-const MODAL= document.querySelector('#modal');
+const BODY= document.querySelector('body');
 const MODAL_CONTENT= document.querySelector("#modal-content");
 const BUTTON_OPEN_MODAL= document.querySelector('#open-button-modal');
 const BUTTON_CLOSE_MODAL= document.querySelector('#close-button-modal');
@@ -18,21 +17,12 @@ BUTTON_OPEN_MODAL.onclick= () => {
     openModal(content);
 };
 
-BUTTON_CLOSE_MODAL.onclick= () => {
-    MODAL.classList.add('invisible');
-
-    if(UNIVERSE.classList.contains('invisible'))
-        UNIVERSE.classList.remove('invisible');
-};
+BUTTON_CLOSE_MODAL.onclick= () => BODY.classList.remove('modal-on');
 
 window.onload= () => setData('portuguese');
 
 function openModal(content){
-    MODAL.classList.remove('invisible');
-
-    if(window.matchMedia('(max-width: 576px)').matches)
-        UNIVERSE.classList.add('invisible');
-
+    BODY.classList.add('modal-on');
     MODAL_CONTENT.innerHTML= `${content}`;
 }
 
