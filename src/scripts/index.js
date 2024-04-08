@@ -1,4 +1,5 @@
 const BODY= document.querySelector('body');
+const TITLE= document.querySelector('header h1');
 const MODAL_CONTENT= document.querySelector("#modal-content");
 const BUTTON_OPEN_MODAL= document.querySelector('#open-button-modal');
 const BUTTON_CLOSE_MODAL= document.querySelector('#close-button-modal');
@@ -26,7 +27,13 @@ function openModal(content){
     MODAL_CONTENT.innerHTML= `${content}`;
 }
 
+function setTitle() {
+    TITLE.innerHTML= data.simulation['main-title'];
+};
+
 async function setData(chosenLanguage){
     const response= await fetch(`src/json/${chosenLanguage}.json`);
     data= await response.json();
+
+    setTitle();
 }

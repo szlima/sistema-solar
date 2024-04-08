@@ -7,6 +7,25 @@ body{
     height: 100vh;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 1;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 2.5rem;
+
+    font-variant: small-caps;
+    letter-spacing: .2rem;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
 /* ------- space general settings ------- */
 
 #universe{
@@ -988,6 +1007,10 @@ body{
 
 .modal-on .modal{
     display: initial;
+}
+
+.modal-on header{
+    display: none;
 }
 
 .modal .modal-box{
