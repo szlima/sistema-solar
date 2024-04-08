@@ -3,6 +3,9 @@ const TITLE= document.querySelector('header h1');
 const MODAL_CONTENT= document.querySelector("#modal-content");
 const BUTTON_OPEN_MODAL= document.querySelector('#open-button-modal');
 const BUTTON_CLOSE_MODAL= document.querySelector('#close-button-modal');
+const BUTTON_LANGUAGES= document.querySelector('#button-languages');
+const LANGUAGES_BOX= document.querySelector('#languages-box');
+const LANGUAGES= document.querySelector('#languages');
 
 let data;
 
@@ -20,7 +23,14 @@ BUTTON_OPEN_MODAL.onclick= () => {
 
 BUTTON_CLOSE_MODAL.onclick= () => BODY.classList.remove('modal-on');
 
-window.onload= () => setData('portuguese');
+BUTTON_LANGUAGES.onclick= () => LANGUAGES_BOX.classList.toggle('languages-on');
+
+LANGUAGES.onchange= () => {
+    setData(LANGUAGES.value);
+    LANGUAGES_BOX.classList.remove('languages-on');
+};
+
+window.onload= () => setData('english');
 
 function openModal(content){
     BODY.classList.add('modal-on');

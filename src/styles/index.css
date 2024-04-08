@@ -26,6 +26,16 @@ header h1{
     font-weight: 600;
 }
 
+i{
+    font-size: 2rem;
+    color: var(--white-02);
+}
+
+i:hover{
+    color: var(--white-01);
+    cursor: pointer;
+}
+
 /* ------- space general settings ------- */
 
 #universe{
@@ -971,14 +981,6 @@ header h1{
     position: fixed;
     bottom: 1rem;
     left: 1rem;
-
-    font-size: 2rem;
-    color: var(--white-02);
-}
-
-#open-button-modal:hover{
-    cursor: pointer;
-    color: var(--white-01);
 }
 
 #close-button-modal{
@@ -991,7 +993,6 @@ header h1{
 }
 
 #close-button-modal:hover{
-    cursor: pointer;
     color: var(--yellow-02);
 }
 
@@ -1151,4 +1152,47 @@ header h1{
     .modal-on #universe{
         display: none;
     }
+}
+
+/* ------- languages box------- */
+
+.languages-box{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+    width: 3rem;
+}
+
+.languages-box #languages{
+    display: none;
+    background-color: transparent;
+    color: var(--white-01);
+    border: 0;
+}
+
+.languages-on #languages{
+    display: initial;
+}
+
+.languages-box option{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--white-02);
+    text-align: center;
+}
+
+.languages-box option:hover{
+    background-color: var(--white-02);
+    cursor: pointer;
+}
+
+.languages-box option:checked{
+    background-color: var(--white-01);
+    color: var(--black-01);
+    border: 0;
 }
