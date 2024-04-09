@@ -1046,8 +1046,7 @@ i:hover{
 }
 
 .modal h1,
-.modal h2,
-#dev-info{
+.modal h2{
     color: var(--yellow-04);
     margin-bottom: 1rem;
     font-variant: small-caps;
@@ -1062,11 +1061,6 @@ i:hover{
 .modal h2{
     margin-top: 2rem;
     font-size: 3rem;
-}
-
-.modal h3,
-#dev-info a{
-    font-size: 2.3rem;
 }
 
 .modal p,
@@ -1086,20 +1080,6 @@ i:hover{
     color: var(--yellow-02);
 }
 
-#dev-info{
-    margin-top: 2.3rem;
-    word-spacing: initial;
-}
-
-#dev-info i{
-    color: var(--white-01);
-}
-
-#dev-info a{
-    display: initial;
-    margin: 0;
-}
-
 @media only screen and (min-width: 720px){
 
     #close-button-modal{
@@ -1112,11 +1092,6 @@ i:hover{
 
     .modal h2{
         font-size: 1.7rem;
-    }
-
-    .modal h3,
-    #dev-info a{
-        font-size: 1.5rem;
     }
 
     .modal p,
@@ -1151,6 +1126,43 @@ i:hover{
 
     .modal-on #universe{
         display: none;
+    }
+}
+
+/* ------- app information box------- */
+
+#dev-info{
+    color: var(--yellow-04);
+    margin: 2.3rem 0 1rem 0;
+    font-variant: small-caps;
+    letter-spacing: .2rem;
+}
+
+h3#dev-info,
+#dev-info a,
+#dev-info i{
+    font-size: 2.3rem;
+}
+
+#dev-info i{
+    color: var(--white-01);
+}
+
+#dev-info i:hover{
+    cursor: initial;
+}
+
+#dev-info a{
+    display: initial;
+    margin: 0;
+}
+
+@media only screen and (min-width: 720px){
+
+    h3#dev-info,
+    #dev-info a,
+    #dev-info i{
+        font-size: 1.5rem;
     }
 }
 
