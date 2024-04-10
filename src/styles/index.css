@@ -81,6 +81,16 @@ i:hover{
     border: .01rem dashed var(--white-02);
 }
 
+.orbit:hover{
+    border-color: var(--white-01);
+    border-style: solid;
+    cursor: pointer;
+}
+
+.orbit:hover .planet{
+    border: 1px solid var(--white-01);
+}
+
 .planet,
 .satellite::after{
     position: absolute;
@@ -590,6 +600,15 @@ i:hover{
 
 #neptune{
     z-index: 2;
+}
+
+.animation-paused .orbit,
+.animation-paused .planet,
+.animation-paused .satellite,
+.animation-paused .satellite::before,
+.animation-paused .satellite::after,
+.animation-paused .satellite img{
+    animation-play-state: paused;
 }
 
 #sun,

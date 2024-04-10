@@ -10,11 +10,16 @@ const LANGUAGES_BOX= document.querySelector('#languages-box');
 const LANGUAGES= document.querySelector('#languages');
 
 const ELEMENTS= Array.from(document.querySelectorAll('.orbit'));
+const SOLAR_SYSTEM= document.querySelector('#solar-system');
 
 let data;
 
-ELEMENTS.map(e => {
 
+SOLAR_SYSTEM.onmousemove= () => pauseAnimation();
+
+SOLAR_SYSTEM.onmouseout= () => playAnimation();
+
+ELEMENTS.map(e => {
     e.onclick= () => {
         const element= e.id;
         BODY.classList.add(`modal-${element}`);
@@ -60,6 +65,14 @@ LANGUAGES.onchange= () => {
 };
 
 window.onload= () => setData('english');
+
+function pauseAnimation(){
+    BODY.classList.add('animation-paused');
+}
+
+function playAnimation(){
+    BODY.classList.remove('animation-paused');
+}
 
 function openModal(content){
     BODY.classList.add('modal-on');
