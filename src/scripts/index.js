@@ -1,13 +1,42 @@
 const BODY= document.querySelector('body');
 const TITLE= document.querySelector('header h1');
+
 const MODAL_CONTENT= document.querySelector("#modal-content");
 const BUTTON_OPEN_MODAL= document.querySelector('#open-button-modal');
 const BUTTON_CLOSE_MODAL= document.querySelector('#close-button-modal');
+
 const BUTTON_LANGUAGES= document.querySelector('#button-languages');
 const LANGUAGES_BOX= document.querySelector('#languages-box');
 const LANGUAGES= document.querySelector('#languages');
 
+const ELEMENTS= Array.from(document.querySelectorAll('.orbit'));
+
 let data;
+
+ELEMENTS.map(e => {
+
+    e.onclick= () => {
+        const element= e.id;
+        BODY.classList.add(`modal-${element}`);
+        let content= '';
+
+        content+= `<h1>${data[element].title}</h1>`;
+        content+= data[element].description.map(p => `<p>${p}</p>`).join('');
+        content+= '<ul>';
+        content+= `<li>${data[element]['rotation-period'].title}: ${data[element]['rotation-period'].value} ${data[element]['rotation-period'].measure}</li>`;
+        content+= `<li>${data[element]['orbital-period'].title}: ${data[element]['orbital-period'].value} ${data[element]['orbital-period'].measure}</li>`;
+        content+= `<li>${data[element]['gravity'].title}: ${data[element]['gravity'].value}</li>`;
+        content+= `<li>${data[element]['diameter'].title}: ${data[element]['diameter'].value}</li>`;
+        content+= `<li>${data[element]['distance-from-sun'].title}: ${data[element]['distance-from-sun'].value}</li>`;
+        content+= `<li>${data[element]['obliquity-to-orbit'].title}: ${data[element]['obliquity-to-orbit'].value} ${data[element]['obliquity-to-orbit'].measure}</li>`;
+        content+= `<li>${data[element]['mean-temperature'].title}: ${data[element]['mean-temperature'].value}</li>`;
+        content+= `<li>${data[element]['ring-system'].title}: ${data[element]['ring-system'].value}</li>`;
+        content+= `<li>${data[element]['number-of-moons'].title}: ${data[element]['number-of-moons'].value}</li>`;
+        content+= '</ul>';
+
+        openModal(content);
+    };
+});
 
 BUTTON_OPEN_MODAL.onclick= () => {
     let content= '';
@@ -21,7 +50,7 @@ BUTTON_OPEN_MODAL.onclick= () => {
     openModal(content);
 };
 
-BUTTON_CLOSE_MODAL.onclick= () => BODY.classList.remove('modal-on');
+BUTTON_CLOSE_MODAL.onclick= () => BODY.classList.remove('modal-on', 'modal-mercury');
 
 BUTTON_LANGUAGES.onclick= () => LANGUAGES_BOX.classList.toggle('languages-on');
 

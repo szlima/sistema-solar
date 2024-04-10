@@ -62,7 +62,59 @@
             {
                 "text": "Space background",
                 "url": "https://pt.vecteezy.com/arte-vetorial/15840121-fundo-vermelho-e-rosa-fundo-de-textura-moderno-bonito-e-elegante-com-fumaca-vetor-ilustracao"
+            },
+            {
+                "text": "Information about Mercury",
+                "url": "https://brasilescola.uol.com.br/geografia/mercurio-1.htm"
             }
         ]
+    },
+    "mercury": {
+        "title": "Mercury",
+        "description": [
+            "Mercury is the smallest planet in the Solar System. The scientist named Galileo Galilei made its first observations using a telescope in 1610.",
+            "Its surface has many craters because of meteorite collisions. Compared to Earth, its atmosphere is unstable and weak because it is so close to the Sun. This proximity exposes the planet to solar winds, which are an obstacle to the existence of an atmosphere, natural satellites and rings.",
+            "Its orbit is one of the least circular in our System. A Mercury year has no seasons because its inclination is very low and its orbital period is short.",
+            "A trip from Earth to Mercury would take about 7 years."
+        ],
+        "rotation-period": {
+            "title": "Rotation Period",
+            "value": 1407.6,
+            "measure": "hours"
+        },
+        "orbital-period": {
+            "title": "Orbital Period",
+            "value": 88,
+            "measure": "days"
+        },
+        "gravity": {
+            "title": "Gravity",
+            "value": "3.7 m/s²"
+        },
+        "diameter": {
+            "title": "Diameter",
+            "value": "4879 km"
+        },
+        "distance-from-sun": {
+            "title": "Distance from Sun",
+            "value": "57.9 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Obliquity to Orbit",
+            "value": "0.034",
+            "measure": "degrees"
+        },
+        "mean-temperature": {
+            "title": "Mean Temperature",
+            "value": "167°C"
+        },
+        "ring-system": {
+            "title": "Ring System",
+            "value": "No"
+        },
+        "number-of-moons": {
+            "title": "Number of Moons",
+            "value": 0
+        }
     }
 }

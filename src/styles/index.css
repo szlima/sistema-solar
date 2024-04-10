@@ -556,6 +556,42 @@ i:hover{
 
 /* ------- sun, planets and satellites settings ------- */
 
+#sun{
+    z-index: 10;
+}
+
+#mercury{
+    z-index: 9;
+}
+
+#venus{
+    z-index: 8;
+}
+
+#earth{
+    z-index: 7;
+}
+
+#mars{
+    z-index: 6;
+}
+
+#jupiter{
+    z-index: 5;
+}
+
+#saturn{
+    z-index: 4;
+}
+
+#uranus{
+    z-index: 3;
+}
+
+#neptune{
+    z-index: 2;
+}
+
 #sun,
 #mercury .planet,
 #venus .planet,
@@ -1064,9 +1100,11 @@ i:hover{
 }
 
 .modal p,
-.modal a{
+.modal a,
+.modal li{
     margin: .7rem .5rem;
     font-size: 2rem;
+    letter-spacing: 1px;
     color: var(--white-01);
 }
 
@@ -1078,6 +1116,32 @@ i:hover{
 
 .modal a:hover{
     color: var(--yellow-02);
+}
+
+.modal ul{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid;
+}
+
+.modal li{
+    list-style: none;
+}
+
+.modal li:first-of-type{
+    margin-top: 0;
+}
+
+.modal li:last-of-type{
+    margin-bottom: 0;
+}
+
+.modal li::before{
+    content: "\2022";
+    margin-right: .5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    vertical-align: middle;
 }
 
 @media only screen and (min-width: 720px){
@@ -1095,7 +1159,8 @@ i:hover{
     }
 
     .modal p,
-    .modal a{
+    .modal a,
+    .modal li{
         font-size: 1.2rem;
     }
 }
@@ -1164,6 +1229,23 @@ h3#dev-info,
     #dev-info i{
         font-size: 1.5rem;
     }
+}
+
+/* ------- mercury information box------- */
+
+.modal-mercury ul{
+    border-color: var(--mercury-color);
+}
+
+.modal-mercury #close-button-modal:hover,
+.modal-mercury h1,
+.modal-mercury li::before{
+    color: var(--mercury-color);
+}
+
+.modal-mercury .modal-box::before,
+.modal-mercury .modal-box::after{
+    background: linear-gradient(45deg, var(--white-01), var(--mercury-color));
 }
 
 /* ------- languages box------- */
