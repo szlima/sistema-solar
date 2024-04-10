@@ -1267,6 +1267,23 @@ h3#dev-info,
     background: linear-gradient(45deg, var(--white-01), var(--mercury-color));
 }
 
+/* ------- venus information box------- */
+
+.modal-venus ul{
+    border-color: var(--venus-color);
+}
+
+.modal-venus #close-button-modal:hover,
+.modal-venus h1,
+.modal-venus li::before{
+    color: var(--venus-color);
+}
+
+.modal-venus .modal-box::before,
+.modal-venus .modal-box::after{
+    background: linear-gradient(45deg, var(--white-01), var(--venus-color));
+}
+
 /* ------- languages box------- */
 
 .languages-box{

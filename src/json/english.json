@@ -66,6 +66,10 @@
             {
                 "text": "Information about Mercury",
                 "url": "https://brasilescola.uol.com.br/geografia/mercurio-1.htm"
+            },
+            {
+                "text": "Information about Venus",
+                "url": "https://www.infoescola.com/sistema-solar/planeta-venus/"
             }
         ]
     },
@@ -107,6 +111,55 @@
         "mean-temperature": {
             "title": "Mean Temperature",
             "value": "167°C"
+        },
+        "ring-system": {
+            "title": "Ring System",
+            "value": "No"
+        },
+        "number-of-moons": {
+            "title": "Number of Moons",
+            "value": 0
+        }
+    },
+    "venus": {
+        "title": "Venus",
+        "description": [
+            "Venus is similar to Earth in terms of mass, diameter and gravity.",
+            "Looking from Earth, Venus is the brightest celestial body in the sky after the Sun and the Moon.",
+            "In Venus, a day is longer than a year.",
+            "Although Mercury is closest to the Sun, Venus is the hottest planet. This is due to its high concentration of carbon dioxide.",
+            "Its tilt axis is so high that it is as if the planet were upside down. So, its rotation is considered retrograde, rotating clockwise."
+        ],
+        "rotation-period": {
+            "title": "Rotation Period",
+            "value": 5832.5,
+            "measure": "hours"
+        },
+        "orbital-period": {
+            "title": "Orbital Period",
+            "value": 224.7,
+            "measure": "days"
+        },
+        "gravity": {
+            "title": "Gravity",
+            "value": "8.9 m/s²"
+        },
+        "diameter": {
+            "title": "Diameter",
+            "value": "12.104 km"
+        },
+        "distance-from-sun": {
+            "title": "Distance from Sun",
+            "value": "108.2 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Obliquity to Orbit",
+            "value": "177.4",
+            "measure": "degrees"
+        },
+        "mean-temperature": {
+            "title": "Mean Temperature",
+            "value": "464°C"
         },
         "ring-system": {
             "title": "Ring System",

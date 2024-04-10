@@ -66,10 +66,13 @@
             {
                 "text": "Informações sobre Mercúrio",
                 "url": "https://brasilescola.uol.com.br/geografia/mercurio-1.htm"
+            },
+            {
+                "text": "Informações sobre Vênus",
+                "url": "https://www.infoescola.com/sistema-solar/planeta-venus/"
             }
         ]
     },
-
     "mercury": {
         "title": "Mercúrio",
         "description": [
@@ -112,6 +115,55 @@
         "ring-system": {
             "title": "Sistema de anéis",
             "value": "Não"
+        },
+        "number-of-moons": {
+            "title": "Número de satélites",
+            "value": 0
+        }
+    },
+    "venus": {
+        "title": "Vênus",
+        "description": [
+            "Vênus é parecido com a Terra com relação a massa, diâmetro e gravidade.",
+            "Visto da Terra, Vênus é o astro mais brilhante do céu depois do Sol e da Lua. Ele é popularmente conhecido como Estrela D'alva.",
+            "Em Vênus, o período de um dia é mais longo do que o de um ano.",
+            "Apesar de Mercúrio estar mais próximo ao Sol, Vênus é o planeta mais quente. Isto acontece por causa da sua alta concentração de gás carbônico.",
+            "Seu eixo de inclinação é tão alto que é como se o planeta estivesse de cabeça para baixo. Por isso, a sua rotação é considerada retrógrada, girando em sentido horário."
+        ],
+        "rotation-period": {
+            "title": "Período de rotação",
+            "value": 5832.5,
+            "measure": "horas"
+        },
+        "orbital-period": {
+            "title": "Período de translação",
+            "value": 224.7,
+            "measure": "dias"
+        },
+        "gravity": {
+            "title": "Gravidade",
+            "value": "8.9 m/s²"
+        },
+        "diameter": {
+            "title": "Diâmetro",
+            "value": "12.104 km"
+        },
+        "distance-from-sun": {
+            "title": "Distância do Sol",
+            "value": "108.2 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Ângulo de inclinação",
+            "value": "177.4",
+            "measure": "graus"
+        },
+        "mean-temperature": {
+            "title": "Temperatura média",
+            "value": "464°C"
+        },
+        "ring-system": {
+            "title": "Sistema de anéis",
+            "value": "No"
         },
         "number-of-moons": {
             "title": "Número de satélites",
