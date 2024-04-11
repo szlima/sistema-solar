@@ -67,6 +67,7 @@ i:hover{
     left: 50%;
 }
 
+.star,
 .satellite img{
     position: absolute;
 }
@@ -115,6 +116,7 @@ i:hover{
     transform-style: preserve-3d;
 }
 
+.star,
 #sun,
 .orbit,
 .planet::before,
@@ -134,7 +136,7 @@ i:hover{
     left: 50%;
 }
 
-/* ------- sun settings ------- */
+/* ------- stars settings ------- */
 
 #sun{
     border: 1px solid var(--yellow-02);
@@ -146,6 +148,38 @@ i:hover{
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
     animation: shine-sun 1s linear infinite alternate,
         rotation 27s linear infinite;
+}
+
+.star{
+    width: .1rem;
+    height: .1rem;
+    background-color: var(--white-01);
+    animation: shine-star .1s linear infinite alternate;
+}
+
+#universe>div:nth-child(2){
+    bottom: 10%;
+    left: 25%;
+}
+
+#universe>div:nth-child(3){
+    top: 40%;
+    left: 25%;
+}
+
+#universe>div:nth-child(4){
+    top: 30%;
+    right: 25%;
+}
+
+#universe>div:nth-child(5){
+    bottom: 30%;
+    right: 10%;
+}
+
+#universe>div:nth-child(6){
+    top: 10%;
+    left: 5%;
 }
 
 /* ------------------ mercury settings ------------------ */
@@ -683,6 +717,16 @@ i:hover{
             0 0 1.7rem 1.7rem var(--yellow-02),
             0 0 5.8rem 4.2rem var(--yellow-03),
             0 0 7.5rem 5.8rem var(--yellow-04);
+    }
+}
+
+@keyframes shine-star{
+    from {
+        box-shadow: 0 0 .1rem .1rem var(--white-01),
+            0 0 .1rem .1rem var(--white-02);
+    } to {
+        box-shadow: 0 0 .15rem .15rem var(--white-01),
+            0 0 .3rem .2rem var(--white-02);
     }
 }
 
