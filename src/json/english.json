@@ -70,6 +70,10 @@
             {
                 "text": "Information about Venus",
                 "url": "https://www.infoescola.com/sistema-solar/planeta-venus/"
+            },
+            {
+                "text": "Information about Earth",
+                "url": "https://brasilescola.uol.com.br/geografia/o-planeta-terra.htm"
             }
         ]
     },
@@ -168,6 +172,56 @@
         "number-of-moons": {
             "title": "Number of Moons",
             "value": 0
+        }
+    },
+    "earth": {
+        "title": "Earth",
+        "description": [
+            "The Earth was formed about 4.5 billion years ago.",
+            "It has only one natural satellite, the Moon. Its existence causes different phenomena on our planet, such as tides.",
+            "The Earth performs several movements, the main ones are rotation and translation.  In the first one, the planet rotates around its own axis, which results in days and nights. In the second one, the Earth orbits the Sun. This movement results in the calendar year and the seasons. Both movements occur in a counterclockwise direction.",
+            "It is known as the blue planet because 70% of its surface is covered by the water.",
+            "Different elements contribute to the presence of life on the planet, such as the existence of liquid water, moderate temperature and the presence of oxygen.",
+            "This planet has natural resources, renewable and non-renewable, which favor the maintenance of life."
+        ],
+        "rotation-period": {
+            "title": "Rotation Period",
+            "value": 23.9,
+            "measure": "hours"
+        },
+        "orbital-period": {
+            "title": "Orbital Period",
+            "value": 365.2,
+            "measure": "days"
+        },
+        "gravity": {
+            "title": "Gravity",
+            "value": "9.8 m/s²"
+        },
+        "diameter": {
+            "title": "Diameter",
+            "value": "12.756 km"
+        },
+        "distance-from-sun": {
+            "title": "Distance from Sun",
+            "value": "149.6 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Obliquity to Orbit",
+            "value": 23.4,
+            "measure": "degrees"
+        },
+        "mean-temperature": {
+            "title": "Mean Temperature",
+            "value": "15°C"
+        },
+        "ring-system": {
+            "title": "Ring System",
+            "value": "No"
+        },
+        "number-of-moons": {
+            "title": "Number of Moons",
+            "value": 1
         }
     }
 }

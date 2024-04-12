@@ -70,6 +70,10 @@
             {
                 "text": "Informações sobre Vênus",
                 "url": "https://www.infoescola.com/sistema-solar/planeta-venus/"
+            },
+            {
+                "text": "Informações sobre a Terra",
+                "url": "https://brasilescola.uol.com.br/geografia/o-planeta-terra.htm"
             }
         ]
     },
@@ -105,7 +109,7 @@
         },
         "obliquity-to-orbit": {
             "title": "Ângulo de inclinação",
-            "value": "0.034",
+            "value": 0.034,
             "measure": "graus"
         },
         "mean-temperature": {
@@ -154,7 +158,7 @@
         },
         "obliquity-to-orbit": {
             "title": "Ângulo de inclinação",
-            "value": "177.4",
+            "value": 177.4,
             "measure": "graus"
         },
         "mean-temperature": {
@@ -163,11 +167,61 @@
         },
         "ring-system": {
             "title": "Sistema de anéis",
-            "value": "No"
+            "value": "Não"
         },
         "number-of-moons": {
             "title": "Número de satélites",
             "value": 0
+        }
+    },
+    "earth": {
+        "title": "Terra",
+        "description": [
+            "Sua formação aconteceu há, aproximadamente, 4,5 bilhões de anos.",
+            "Possui um único satélite natural, a Lua. Sua existência causa diferentes fenômenos em nosso planeta, como as marés.",
+            "A Terra realiza vários tipos de movimentos, os principais são o de rotação e o de translação. No primeiro, o planeta gira em torno do próprio eixo, o que resulta nos dias e nas noites. No segundo, temos o caminho que a Terra percorre em volta do Sol. Este movimento dá origem ao ano civil e às estações do ano. Ambos os movimentos ocorrem em sentido anti-horário.",
+            "Ela é conhecida como planeta azul por ter 70% da sua superfície coberta por água.",
+            "Diferentes elementos contribuem para a presença de vida no planeta, como a existência de água em estado líquido, temperatura moderada e a presença de oxigênio.",
+            "Este planeta possui recursos naturais, renováveis e não renováveis, que favorecem a manutenção da existência de vida."
+        ],
+        "rotation-period": {
+            "title": "Período de rotação",
+            "value": 23.9,
+            "measure": "horas"
+        },
+        "orbital-period": {
+            "title": "Período de translação",
+            "value": 365.2,
+            "measure": "dias"
+        },
+        "gravity": {
+            "title": "Gravidade",
+            "value": "9.8 m/s²"
+        },
+        "diameter": {
+            "title": "Diâmetro",
+            "value": "12.756 km"
+        },
+        "distance-from-sun": {
+            "title": "Distância do Sol",
+            "value": "149.6 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Ângulo de inclinação",
+            "value": 23.4,
+            "measure": "graus"
+        },
+        "mean-temperature": {
+            "title": "Temperatura média",
+            "value": "15°C"
+        },
+        "ring-system": {
+            "title": "Sistema de anéis",
+            "value": "Não"
+        },
+        "number-of-moons": {
+            "title": "Número de satélites",
+            "value": 1
         }
     }
 }

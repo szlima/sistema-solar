@@ -108,6 +108,7 @@ i:hover{
 #solar-system,
 #sun,
 .orbit,
+.star,
 .planet::before,
 .planet,
 .satellite,
@@ -1326,6 +1327,23 @@ h3#dev-info,
 .modal-venus .modal-box::before,
 .modal-venus .modal-box::after{
     background: linear-gradient(45deg, var(--white-01), var(--venus-color));
+}
+
+/* ------- earth information box------- */
+
+.modal-earth ul{
+    border-color: var(--earth-color);
+}
+
+.modal-earth #close-button-modal:hover,
+.modal-earth h1,
+.modal-earth li::before{
+    color: var(--earth-color);
+}
+
+.modal-earth .modal-box::before,
+.modal-earth .modal-box::after{
+    background: linear-gradient(45deg, var(--white-01), var(--earth-color));
 }
 
 /* ------- languages box------- */
