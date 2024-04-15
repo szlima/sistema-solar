@@ -74,6 +74,14 @@
             {
                 "text": "Informações sobre a Terra",
                 "url": "https://brasilescola.uol.com.br/geografia/o-planeta-terra.htm"
+            },
+            {
+                "text": "Informações sobre Marte 1",
+                "url": "https://nineplanets.org/mars/"
+            },
+            {
+                "text": "Informações sobre Marte 2",
+                "url": "https://science.nasa.gov/mars/facts/"
             }
         ]
     },
@@ -222,6 +230,54 @@
         "number-of-moons": {
             "title": "Número de satélites",
             "value": 1
+        }
+    },
+    "mars": {
+        "title": "Marte",
+        "description": [
+            "O planeta vermelho possui o solo rico em ferro, o que lhe dá a coloração avermelhada.",
+            "Marte possui dois satélites naturais: Fobos e Deimos.",
+            "Sua atmosfera é fina comparada a da Terra. A maior parte de sua composição consiste em gás carbônico.",
+            "Há expectativas no mundo científico sobre a existência de vida em Marte no passado."
+        ],
+        "rotation-period": {
+            "title": "Período de rotação",
+            "value": 24.6,
+            "measure": "horas"
+        },
+        "orbital-period": {
+            "title": "Período de translação",
+            "value": 687,
+            "measure": "dias"
+        },
+        "gravity": {
+            "title": "Gravidade",
+            "value": "3.7 m/s²"
+        },
+        "diameter": {
+            "title": "Diâmetro",
+            "value": "6792 km"
+        },
+        "distance-from-sun": {
+            "title": "Distância do Sol",
+            "value": "228 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Ângulo de inclinação",
+            "value": 25.2,
+            "measure": "graus"
+        },
+        "mean-temperature": {
+            "title": "Temperatura média",
+            "value": "-65°C"
+        },
+        "ring-system": {
+            "title": "Sistema de anéis",
+            "value": "Não"
+        },
+        "number-of-moons": {
+            "title": "Número de satélites",
+            "value": 2
         }
     }
 }

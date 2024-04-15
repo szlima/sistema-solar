@@ -74,6 +74,14 @@
             {
                 "text": "Information about Earth",
                 "url": "https://brasilescola.uol.com.br/geografia/o-planeta-terra.htm"
+            },
+            {
+                "text": "Information about Mars 1",
+                "url": "https://nineplanets.org/mars/"
+            },
+            {
+                "text": "Information about Mars 2",
+                "url": "https://science.nasa.gov/mars/facts/"
             }
         ]
     },
@@ -222,6 +230,54 @@
         "number-of-moons": {
             "title": "Number of Moons",
             "value": 1
+        }
+    },
+    "mars": {
+        "title": "Mars",
+        "description": [
+            "Mars is known as the Red Planet because its soil contains a lot of iron. This mineral oxidizes and results in the planet's color.",
+            "Mars has two moons: Phobos and Deimos.",
+            "Compared to Earth, its atmosphere is thin. Most of its composition is carbon dioxide.",
+            "There are expectations in the scientific world about the existence of life on Mars in the past."
+        ],
+        "rotation-period": {
+            "title": "Rotation Period",
+            "value": 24.6,
+            "measure": "hours"
+        },
+        "orbital-period": {
+            "title": "Orbital Period",
+            "value": 687,
+            "measure": "days"
+        },
+        "gravity": {
+            "title": "Gravity",
+            "value": "3.7 m/s²"
+        },
+        "diameter": {
+            "title": "Diameter",
+            "value": "6792 km"
+        },
+        "distance-from-sun": {
+            "title": "Distance from Sun",
+            "value": "228 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Obliquity to Orbit",
+            "value": 25.2,
+            "measure": "degrees"
+        },
+        "mean-temperature": {
+            "title": "Mean Temperature",
+            "value": "-65°C"
+        },
+        "ring-system": {
+            "title": "Ring System",
+            "value": "No"
+        },
+        "number-of-moons": {
+            "title": "Number of Moons",
+            "value": 2
         }
     }
 }

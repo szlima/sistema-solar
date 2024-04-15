@@ -1346,6 +1346,23 @@ h3#dev-info,
     background: linear-gradient(45deg, var(--white-01), var(--earth-color));
 }
 
+/* ------- mars information box------- */
+
+.modal-mars ul{
+    border-color: var(--mars-color);
+}
+
+.modal-mars #close-button-modal:hover,
+.modal-mars h1,
+.modal-mars li::before{
+    color: var(--mars-color);
+}
+
+.modal-mars .modal-box::before,
+.modal-mars .modal-box::after{
+    background: linear-gradient(45deg, var(--white-01), var(--mars-color));
+}
+
 /* ------- languages box------- */
 
 .languages-box{
