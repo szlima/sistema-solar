@@ -64,16 +64,28 @@
                 "url": "https://pt.vecteezy.com/arte-vetorial/15840121-fundo-vermelho-e-rosa-fundo-de-textura-moderno-bonito-e-elegante-com-fumaca-vetor-ilustracao"
             },
             {
-                "text": "Informações sobre Mercúrio",
-                "url": "https://brasilescola.uol.com.br/geografia/mercurio-1.htm"
+                "text": "Informações sobre Mercúrio 1",
+                "url": "https://nineplanets.org/mercury/"
             },
             {
-                "text": "Informações sobre Vênus",
-                "url": "https://www.infoescola.com/sistema-solar/planeta-venus/"
+                "text": "Informações sobre Mercúrio 2",
+                "url": "https://science.nasa.gov/mercury/facts/"
             },
             {
-                "text": "Informações sobre a Terra",
-                "url": "https://brasilescola.uol.com.br/geografia/o-planeta-terra.htm"
+                "text": "Informações sobre Vênus 1",
+                "url": "https://nineplanets.org/venus/"
+            },
+            {
+                "text": "Informações sobre Vênus 2",
+                "url": "https://science.nasa.gov/venus/facts/"
+            },
+            {
+                "text": "Informações sobre a Terra 1",
+                "url": "https://nineplanets.org/earth/"
+            },
+            {
+                "text": "Informações sobre a Terra 2",
+                "url": "https://science.nasa.gov/earth/facts/"
             },
             {
                 "text": "Informações sobre Marte 1",
@@ -88,11 +100,12 @@
     "mercury": {
         "title": "Mercúrio",
         "description": [
-            "Mercúrio é o menor planeta do Sistema Solar. O cientista Galileu Galilei fez suas primeiras observações através de um telescópio em 1610.",
-            "Sua superfície possui muitas crateras por causa de colisões de meteoritos. Comparado a Terra, sua atmosfera é instável e fraca por estar bem mais próximo do Sol. Esta proximidade expõe o planeta aos ventos solares, que são um obstáculo para a existência de atmosfera, satélites naturais e anéis.",
-            "Sua órbita é uma das menos circulares de nosso Sistema. Um ano em Mercúrio não possui estações por sua inclinação ser baixíssima e seu período de translação ser curto.",
-            "Uma viagem da Terra a Mercúrio teria cerca de 7 anos de duração."
-        ],
+            "Este é o planeta com mais crateras no Sistema Solar.",
+            "Mercúrio é o menor planeta de nosso Sistema. O cientista Galileu Galilei fez suas primeiras observações através de um telescópio no século XVII.",
+            "Além de ser o planeta mais próximo do Sol ele também é o que faz a translação mais rápida, em apenas 88 dias terrestres!",
+            "Um ano em Mercúrio não é dividido em estações.",
+            "Ao invés de atmosfera, Mercúrio possui apenas uma fina camada de exosfera. Sua proximidade com o Sol e ausência de uma atmosfera para reter o calor faz com que o planeta tenha as mudanças de temperatura mais drásticas de todo o Sistema Solar."
+            ],
         "rotation-period": {
             "title": "Período de rotação",
             "value": 1407.6,
@@ -186,11 +199,10 @@
         "title": "Terra",
         "description": [
             "Sua formação aconteceu há, aproximadamente, 4,5 bilhões de anos.",
+            "Até o momento é o único local conhecido onde existe vida.",
             "Possui um único satélite natural, a Lua. Sua existência causa diferentes fenômenos em nosso planeta, como as marés.",
             "A Terra realiza vários tipos de movimentos, os principais são o de rotação e o de translação. No primeiro, o planeta gira em torno do próprio eixo, o que resulta nos dias e nas noites. No segundo, temos o caminho que a Terra percorre em volta do Sol. Este movimento dá origem ao ano civil e às estações do ano. Ambos os movimentos ocorrem em sentido anti-horário.",
-            "Ela é conhecida como planeta azul por ter 70% da sua superfície coberta por água.",
-            "Diferentes elementos contribuem para a presença de vida no planeta, como a existência de água em estado líquido, temperatura moderada e a presença de oxigênio.",
-            "Este planeta possui recursos naturais, renováveis e não renováveis, que favorecem a manutenção da existência de vida."
+            "Ela é conhecida como planeta azul por ter 70% da sua superfície coberta por água."
         ],
         "rotation-period": {
             "title": "Período de rotação",

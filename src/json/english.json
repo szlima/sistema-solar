@@ -64,16 +64,28 @@
                 "url": "https://pt.vecteezy.com/arte-vetorial/15840121-fundo-vermelho-e-rosa-fundo-de-textura-moderno-bonito-e-elegante-com-fumaca-vetor-ilustracao"
             },
             {
-                "text": "Information about Mercury",
-                "url": "https://brasilescola.uol.com.br/geografia/mercurio-1.htm"
+                "text": "Information about Mercury 1",
+                "url": "https://nineplanets.org/mercury/"
             },
             {
-                "text": "Information about Venus",
-                "url": "https://www.infoescola.com/sistema-solar/planeta-venus/"
+                "text": "Information about Mercury 2",
+                "url": "https://science.nasa.gov/mercury/facts/"
             },
             {
-                "text": "Information about Earth",
-                "url": "https://brasilescola.uol.com.br/geografia/o-planeta-terra.htm"
+                "text": "Information about Vênus 1",
+                "url": "https://nineplanets.org/venus/"
+            },
+            {
+                "text": "Information about Vênus 2",
+                "url": "https://science.nasa.gov/venus/facts/"
+            },
+            {
+                "text": "Information about Earth 1",
+                "url": "https://nineplanets.org/earth/"
+            },
+            {
+                "text": "Information about Earth 2",
+                "url": "https://science.nasa.gov/earth/facts/"
             },
             {
                 "text": "Information about Mars 1",
@@ -88,10 +100,11 @@
     "mercury": {
         "title": "Mercury",
         "description": [
-            "Mercury is the smallest planet in the Solar System. The scientist named Galileo Galilei made its first observations using a telescope in 1610.",
-            "Its surface has many craters because of meteorite collisions. Compared to Earth, its atmosphere is unstable and weak because it is so close to the Sun. This proximity exposes the planet to solar winds, which are an obstacle to the existence of an atmosphere, natural satellites and rings.",
-            "Its orbit is one of the least circular in our System. A Mercury year has no seasons because its inclination is very low and its orbital period is short.",
-            "A trip from Earth to Mercury would take about 7 years."
+            "It is the most cratered planet in the Solar System.",
+            "The smallest planet in our System is Mercury. The scientist named Galileo Galilei made its first observations using a telescope in 17th century.",
+            "Besides being the closest to the Sun, it is the fastest planet. Its orbit is the equivalent of 88 Earth days.",
+            "There are no seasons in a year on Mercury.",
+            "Instead of an atmosphere, Mercury has only a thin exosphere. So, this results in the most drastic changes in temperature in the entire Solar System because of its closeness to the Sun and absence of an atmosphere to retain the heat."
         ],
         "rotation-period": {
             "title": "Rotation Period",
@@ -186,11 +199,10 @@
         "title": "Earth",
         "description": [
             "The Earth was formed about 4.5 billion years ago.",
+            "Currently, this is the only known planet where there is life.",
             "It has only one natural satellite, the Moon. Its existence causes different phenomena on our planet, such as tides.",
-            "The Earth performs several movements, the main ones are rotation and translation.  In the first one, the planet rotates around its own axis, which results in days and nights. In the second one, the Earth orbits the Sun. This movement results in the calendar year and the seasons. Both movements occur in a counterclockwise direction.",
-            "It is known as the blue planet because 70% of its surface is covered by the water.",
-            "Different elements contribute to the presence of life on the planet, such as the existence of liquid water, moderate temperature and the presence of oxygen.",
-            "This planet has natural resources, renewable and non-renewable, which favor the maintenance of life."
+            "The Earth performs several movements, the main ones are rotation and translation. In the first one, the planet rotates around its own axis, which results in days and nights. In the second one, the Earth orbits the Sun. This movement results in the calendar year and the seasons. Both movements occur in a counterclockwise direction.",
+            "It is known as the blue planet because 70% of its surface is covered by the water."
         ],
         "rotation-period": {
             "title": "Rotation Period",
