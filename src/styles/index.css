@@ -1363,6 +1363,23 @@ h3#dev-info,
     background: linear-gradient(45deg, var(--white-01), var(--mars-color));
 }
 
+/* ------- jupiter information box------- */
+
+.modal-jupiter ul{
+    border-color: var(--jupiter-color);
+}
+
+.modal-jupiter #close-button-modal:hover,
+.modal-jupiter h1,
+.modal-jupiter li::before{
+    color: var(--jupiter-color);
+}
+
+.modal-jupiter .modal-box::before,
+.modal-jupiter .modal-box::after{
+    background: linear-gradient(45deg, var(--white-01), var(--jupiter-color));
+}
+
 /* ------- languages box------- */
 
 .languages-box{

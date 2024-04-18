@@ -94,6 +94,14 @@
             {
                 "text": "Information about Mars 2",
                 "url": "https://science.nasa.gov/mars/facts/"
+            },
+            {
+                "text": "Information about Jupiter 1",
+                "url": "https://nineplanets.org/jupiter/"
+            },
+            {
+                "text": "Information about Jupiter 2",
+                "url": "https://science.nasa.gov/jupiter/facts/"
             }
         ]
     },
@@ -290,6 +298,55 @@
         "number-of-moons": {
             "title": "Number of Moons",
             "value": 2
+        }
+    },
+    "jupiter": {
+        "title": "Jupiter",
+        "description": [
+            "This is the largest planet in the Solar System.",
+            "Jupiter doesn't have a solid surface, basically swirling gases and liquids are its composition.",
+            "Its atmosphere is the largest in our System. The planet is almost entirely made up of it.",
+            "Jupiter has the shortest day of all the planets.",
+            "Its moon Ganymede is the largest in the Solar System."
+        ],
+        "rotation-period": {
+            "title": "Rotation Period",
+            "value": "9.9",
+            "measure": "hours"
+        },
+        "orbital-period": {
+            "title": "Orbital Period",
+            "value": "4331",
+            "measure": "days"
+        },
+        "gravity": {
+            "title": "Gravity",
+            "value": "23.1 m/s²"
+        },
+        "diameter": {
+            "title": "Diameter",
+            "value": "142,984 km"
+        },
+        "distance-from-sun": {
+            "title": "Distance from Sun",
+            "value": "778.5 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Obliquity to Orbit",
+            "value": "3.1",
+            "measure": "degrees"
+        },
+        "mean-temperature": {
+            "title": "Mean Temperature",
+            "value": "-110°C"
+        },
+        "ring-system": {
+            "title": "Ring System",
+            "value": "true"
+        },
+        "number-of-moons": {
+            "title": "Number of Moons",
+            "value": 95
         }
     }
 }

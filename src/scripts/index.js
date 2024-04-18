@@ -57,7 +57,7 @@ BUTTON_OPEN_MODAL.onclick= () => {
 
 BUTTON_CLOSE_MODAL.onclick= () => BODY.classList.remove(
     'modal-on', 'modal-mercury', 'modal-venus', 'modal-earth',
-    'modal-mars'
+    'modal-mars', 'modal-jupiter'
 );
 
 BUTTON_LANGUAGES.onclick= () => LANGUAGES_BOX.classList.toggle('languages-on');

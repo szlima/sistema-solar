@@ -94,6 +94,14 @@
             {
                 "text": "Informações sobre Marte 2",
                 "url": "https://science.nasa.gov/mars/facts/"
+            },
+            {
+                "text": "Informações sobre Júpiter 1",
+                "url": "https://nineplanets.org/jupiter/"
+            },
+            {
+                "text": "Informações sobre Júpiter 2",
+                "url": "https://science.nasa.gov/jupiter/facts/"
             }
         ]
     },
@@ -290,6 +298,55 @@
         "number-of-moons": {
             "title": "Número de satélites",
             "value": 2
+        }
+    },
+    "jupiter": {
+        "title": "Júpiter",
+        "description": [
+            "Este é o maior planeta do Sistema Solar.",
+            "Júpiter não tem uma superfície sólida, é formado basicamente por uma agitação de gases e líquidos.",
+            "Sua atmosfera é a maior de nosso Sistema. O planeta é quase inteiramente composto por ela.",
+            "Dentre os oito planetas, Júpiter possui o dia mais curto.",
+            "O seu satélite Ganimedes é o maior do Sistema Solar."
+        ],
+        "rotation-period": {
+            "title": "Período de rotação",
+            "value": "9,9",
+            "measure": "horas"
+        },
+        "orbital-period": {
+            "title": "Período de translação",
+            "value": "4331",
+            "measure": "dias"
+        },
+        "gravity": {
+            "title": "Gravidade",
+            "value": "23,1 m/s²"
+        },
+        "diameter": {
+            "title": "Diâmetro",
+            "value": "142.984 km"
+        },
+        "distance-from-sun": {
+            "title": "Distância do Sol",
+            "value": "778,5 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Ângulo de inclinação",
+            "value": "3,1",
+            "measure": "graus"
+        },
+        "mean-temperature": {
+            "title": "Temperatura média",
+            "value": "-110°C"
+        },
+        "ring-system": {
+            "title": "Sistema de anéis",
+            "value": "Sim"
+        },
+        "number-of-moons": {
+            "title": "Número de satélites",
+            "value": 95
         }
     }
 }
