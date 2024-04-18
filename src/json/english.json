@@ -116,12 +116,12 @@
         ],
         "rotation-period": {
             "title": "Rotation Period",
-            "value": 1407.6,
+            "value": "1407.6",
             "measure": "hours"
         },
         "orbital-period": {
             "title": "Orbital Period",
-            "value": 88,
+            "value": "88",
             "measure": "days"
         },
         "gravity": {
@@ -165,12 +165,12 @@
         ],
         "rotation-period": {
             "title": "Rotation Period",
-            "value": 5832.5,
+            "value": "5832.5",
             "measure": "hours"
         },
         "orbital-period": {
             "title": "Orbital Period",
-            "value": 224.7,
+            "value": "224.7",
             "measure": "days"
         },
         "gravity": {
@@ -179,7 +179,7 @@
         },
         "diameter": {
             "title": "Diameter",
-            "value": "12.104 km"
+            "value": "12,104 km"
         },
         "distance-from-sun": {
             "title": "Distance from Sun",
@@ -214,12 +214,12 @@
         ],
         "rotation-period": {
             "title": "Rotation Period",
-            "value": 23.9,
+            "value": "23.9",
             "measure": "hours"
         },
         "orbital-period": {
             "title": "Orbital Period",
-            "value": 365.2,
+            "value": "365.2",
             "measure": "days"
         },
         "gravity": {
@@ -228,7 +228,7 @@
         },
         "diameter": {
             "title": "Diameter",
-            "value": "12.756 km"
+            "value": "12,756 km"
         },
         "distance-from-sun": {
             "title": "Distance from Sun",
@@ -236,7 +236,7 @@
         },
         "obliquity-to-orbit": {
             "title": "Obliquity to Orbit",
-            "value": 23.4,
+            "value": "23.4",
             "measure": "degrees"
         },
         "mean-temperature": {
@@ -262,12 +262,12 @@
         ],
         "rotation-period": {
             "title": "Rotation Period",
-            "value": 24.6,
+            "value": "24.6",
             "measure": "hours"
         },
         "orbital-period": {
             "title": "Orbital Period",
-            "value": 687,
+            "value": "687",
             "measure": "days"
         },
         "gravity": {
@@ -284,7 +284,7 @@
         },
         "obliquity-to-orbit": {
             "title": "Obliquity to Orbit",
-            "value": 25.2,
+            "value": "25.2",
             "measure": "degrees"
         },
         "mean-temperature": {
@@ -342,7 +342,7 @@
         },
         "ring-system": {
             "title": "Ring System",
-            "value": "true"
+            "value": "Yes"
         },
         "number-of-moons": {
             "title": "Number of Moons",

@@ -116,17 +116,17 @@
             ],
         "rotation-period": {
             "title": "Período de rotação",
-            "value": 1407.6,
+            "value": "1407,6",
             "measure": "horas"
         },
         "orbital-period": {
             "title": "Período de translação",
-            "value": 88,
+            "value": "88",
             "measure": "dias"
         },
         "gravity": {
             "title": "Gravidade",
-            "value": "3.7 m/s²"
+            "value": "3,7 m/s²"
         },
         "diameter": {
             "title": "Diâmetro",
@@ -134,11 +134,11 @@
         },
         "distance-from-sun": {
             "title": "Distância do Sol",
-            "value": "57.9 (10⁶ km)"
+            "value": "57,9 (10⁶ km)"
         },
         "obliquity-to-orbit": {
             "title": "Ângulo de inclinação",
-            "value": 0.034,
+            "value": "0,034",
             "measure": "graus"
         },
         "mean-temperature": {
@@ -165,17 +165,17 @@
         ],
         "rotation-period": {
             "title": "Período de rotação",
-            "value": 5832.5,
+            "value": "5832,5",
             "measure": "horas"
         },
         "orbital-period": {
             "title": "Período de translação",
-            "value": 224.7,
+            "value": "224,7",
             "measure": "dias"
         },
         "gravity": {
             "title": "Gravidade",
-            "value": "8.9 m/s²"
+            "value": "8,9 m/s²"
         },
         "diameter": {
             "title": "Diâmetro",
@@ -183,11 +183,11 @@
         },
         "distance-from-sun": {
             "title": "Distância do Sol",
-            "value": "108.2 (10⁶ km)"
+            "value": "108,2 (10⁶ km)"
         },
         "obliquity-to-orbit": {
             "title": "Ângulo de inclinação",
-            "value": 177.4,
+            "value": "177,4",
             "measure": "graus"
         },
         "mean-temperature": {
@@ -214,17 +214,17 @@
         ],
         "rotation-period": {
             "title": "Período de rotação",
-            "value": 23.9,
+            "value": "23,9",
             "measure": "horas"
         },
         "orbital-period": {
             "title": "Período de translação",
-            "value": 365.2,
+            "value": "365,2",
             "measure": "dias"
         },
         "gravity": {
             "title": "Gravidade",
-            "value": "9.8 m/s²"
+            "value": "9,8 m/s²"
         },
         "diameter": {
             "title": "Diâmetro",
@@ -232,11 +232,11 @@
         },
         "distance-from-sun": {
             "title": "Distância do Sol",
-            "value": "149.6 (10⁶ km)"
+            "value": "149,6 (10⁶ km)"
         },
         "obliquity-to-orbit": {
             "title": "Ângulo de inclinação",
-            "value": 23.4,
+            "value": "23,4",
             "measure": "graus"
         },
         "mean-temperature": {
@@ -262,17 +262,17 @@
         ],
         "rotation-period": {
             "title": "Período de rotação",
-            "value": 24.6,
+            "value": "24,6",
             "measure": "horas"
         },
         "orbital-period": {
             "title": "Período de translação",
-            "value": 687,
+            "value": "687",
             "measure": "dias"
         },
         "gravity": {
             "title": "Gravidade",
-            "value": "3.7 m/s²"
+            "value": "3,7 m/s²"
         },
         "diameter": {
             "title": "Diâmetro",
@@ -284,7 +284,7 @@
         },
         "obliquity-to-orbit": {
             "title": "Ângulo de inclinação",
-            "value": 25.2,
+            "value": "25,2",
             "measure": "graus"
         },
         "mean-temperature": {
