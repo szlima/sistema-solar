@@ -102,6 +102,14 @@
             {
                 "text": "Information about Jupiter 2",
                 "url": "https://science.nasa.gov/jupiter/facts/"
+            },
+            {
+                "text": "Information about Saturn 1",
+                "url": "https://nineplanets.org/saturn/"
+            },
+            {
+                "text": "Information about Saturn 2",
+                "url": "https://science.nasa.gov/saturn/facts/"
             }
         ]
     },
@@ -347,6 +355,55 @@
         "number-of-moons": {
             "title": "Number of Moons",
             "value": 95
+        }
+    },
+    "saturn": {
+        "title": "Saturn",
+        "description": [
+            "Currently, it is the planet with the most moons.",
+            "Like Jupiter, Saturn is a gas giant. It doesn't have a solid surface, most of its composition consists of swirling gases and liquids.",
+            "Despite it isn't the only planet with rings, it is well known because of this feature. Its ring system is the largest in the Solar System.",
+            "Saturn can be seen with the unaided eye, but its rings cannot.",
+            "It's the planet that has the lowest density. Both Saturn and Jupiter are mostly made of hydrogen and helium, which are also the main components that make up the Sun."
+        ],
+        "rotation-period": {
+            "title": "Rotation Period",
+            "value": "10.7",
+            "measure": "hours"
+        },
+        "orbital-period": {
+            "title": "Orbital Period",
+            "value": "10,747",
+            "measure": "days"
+        },
+        "gravity": {
+            "title": "Gravity",
+            "value": "9 m/s²"
+        },
+        "diameter": {
+            "title": "Diameter",
+            "value": "120,536 km"
+        },
+        "distance-from-sun": {
+            "title": "Distance from Sun",
+            "value": "1432 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Obliquity to Orbit",
+            "value": "26.7",
+            "measure": "degrees"
+        },
+        "mean-temperature": {
+            "title": "Mean Temperature",
+            "value": "-140°C"
+        },
+        "ring-system": {
+            "title": "Ring System",
+            "value": "Yes"
+        },
+        "number-of-moons": {
+            "title": "Number of Moons",
+            "value": 146
         }
     }
 }

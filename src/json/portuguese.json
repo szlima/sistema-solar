@@ -102,6 +102,14 @@
             {
                 "text": "Informações sobre Júpiter 2",
                 "url": "https://science.nasa.gov/jupiter/facts/"
+            },
+            {
+                "text": "Informações sobre Saturno 1",
+                "url": "https://nineplanets.org/saturn/"
+            },
+            {
+                "text": "Informações sobre Saturno 2",
+                "url": "https://science.nasa.gov/saturn/facts/"
             }
         ]
     },
@@ -347,6 +355,55 @@
         "number-of-moons": {
             "title": "Número de satélites",
             "value": 95
+        }
+    },
+    "saturn": {
+        "title": "Saturno",
+        "description": [
+            "Atualmente, é o planeta que possui mais satélites.",
+            "Assim como Júpiter, Saturno é um gigante gasoso. Ele não possui uma superfície sólida, a maior parte de sua composição é uma agitação de gases e líquidos.",
+            "Apesar de não ser o único planeta com anéis, é o que mais se destaca por esta característica. Seu sistema de anéis é o mais extenso do Sistema Solar.",
+            "Saturno é visível a olho nu, mas seus anéis não.",
+            "É o planeta que possui menor densidade. Ele e Júpiter possuem grande parte de sua composição formada por hidrogênio e hélio, que também são os principais componentes do Sol."
+        ],
+        "rotation-period": {
+            "title": "Período de rotação",
+            "value": "10,7",
+            "measure": "horas"
+        },
+        "orbital-period": {
+            "title": "Período de translação",
+            "value": "10.747",
+            "measure": "dias"
+        },
+        "gravity": {
+            "title": "Gravidade",
+            "value": "9 m/s²"
+        },
+        "diameter": {
+            "title": "Diâmetro",
+            "value": "120.536 km"
+        },
+        "distance-from-sun": {
+            "title": "Distância do Sol",
+            "value": "1432 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Ângulo de inclinação",
+            "value": "26,7",
+            "measure": "graus"
+        },
+        "mean-temperature": {
+            "title": "Temperatura média",
+            "value": "-140°C"
+        },
+        "ring-system": {
+            "title": "Sistema de anéis",
+            "value": "Sim"
+        },
+        "number-of-moons": {
+            "title": "Número de satélites",
+            "value": 146
         }
     }
 }

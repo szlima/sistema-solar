@@ -1380,6 +1380,23 @@ h3#dev-info,
     background: linear-gradient(45deg, var(--white-01), var(--jupiter-color));
 }
 
+/* ------- saturn information box------- */
+
+.modal-saturn ul{
+    border-color: var(--saturn-color);
+}
+
+.modal-saturn #close-button-modal:hover,
+.modal-saturn h1,
+.modal-saturn li::before{
+    color: var(--saturn-color);
+}
+
+.modal-saturn .modal-box::before,
+.modal-saturn .modal-box::after{
+    background: linear-gradient(45deg, var(--white-01), var(--saturn-color));
+}
+
 /* ------- languages box------- */
 
 .languages-box{
