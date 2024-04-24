@@ -1397,6 +1397,23 @@ h3#dev-info,
     background: linear-gradient(45deg, var(--white-01), var(--saturn-color));
 }
 
+/* ------- uranus information box------- */
+
+.modal-uranus ul{
+    border-color: var(--uranus-color);
+}
+
+.modal-uranus #close-button-modal:hover,
+.modal-uranus h1,
+.modal-uranus li::before{
+    color: var(--uranus-color);
+}
+
+.modal-uranus .modal-box::before,
+.modal-uranus .modal-box::after{
+    background: linear-gradient(45deg, var(--white-01), var(--uranus-color));
+}
+
 /* ------- languages box------- */
 
 .languages-box{

@@ -110,6 +110,14 @@
             {
                 "text": "Information about Saturn 2",
                 "url": "https://science.nasa.gov/saturn/facts/"
+            },
+            {
+                "text": "Information about Uranus 1",
+                "url": "https://nineplanets.org/uranus/"
+            },
+            {
+                "text": "Information about Uranus 2",
+                "url": "https://science.nasa.gov/uranus/facts/"
             }
         ]
     },
@@ -405,5 +413,54 @@
             "title": "Number of Moons",
             "value": 146
         }
+    },
+    "uranus": {
+        "title": "Uranus",
+        "description": [
+            "This planet spins on its side. Like Venus, its tilt is high. Its angle is more than 90 degrees. Unlike other planets, it rotates clockwise.",
+            "Uranus is similar to Neptune in size and composition. Both are called ice giants.",
+            "Its color is blue-green because of the presence of methane gas in the atmosphere.",
+            "Despite being visible to the unaided eye, its classification was unknown because of its dimness and slow orbit. It was identified as a planet using a telescope in the late 18th century."
+        ],
+        "rotation-period": {
+            "title": "Rotation Period",
+            "value": "17.2",
+            "measure": "hours"
+        },
+        "orbital-period": {
+            "title": "Orbital Period",
+            "value": "30,589",
+            "measure": "days"
+        },
+        "gravity": {
+            "title": "Gravity",
+            "value": "8.7 m/s²"
+        },
+        "diameter": {
+            "title": "Diameter",
+            "value": "51,118 km"
+        },
+        "distance-from-sun": {
+            "title": "Distance from Sun",
+            "value": "2867 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Obliquity to Orbit",
+            "value": "97.8",
+            "measure": "degrees"
+        },
+        "mean-temperature": {
+            "title": "Mean Temperature",
+            "value": "-195°C"
+        },
+        "ring-system": {
+            "title": "Ring System",
+            "value": "Yes"
+        },
+        "number-of-moons": {
+            "title": "Number of Moons",
+            "value": 28
+        }
     }
+
 }

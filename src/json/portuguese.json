@@ -110,6 +110,14 @@
             {
                 "text": "Informações sobre Saturno 2",
                 "url": "https://science.nasa.gov/saturn/facts/"
+            },
+            {
+                "text": "Informações sobre Urano 1",
+                "url": "https://nineplanets.org/uranus/"
+            },
+            {
+                "text": "Informações sobre Urano 2",
+                "url": "https://science.nasa.gov/uranus/facts/"
             }
         ]
     },
@@ -404,6 +412,54 @@
         "number-of-moons": {
             "title": "Número de satélites",
             "value": 146
+        }
+    },
+    "uranus": {
+        "title": "Urano",
+        "description": [
+            "Seu movimento de rotação é realizado de lado. Assim como Vênus, sua inclinação é alta. Com um ângulo de mais de 90 graus é como se o planeta girasse deitado e na direção oposta da maioria, em sentido horário.",
+            "Urano é parecido com Netuno com relação a tamanho e composição. Ambos são denominados gigantes de gelo.",
+            "Sua cor é azul esverdeada devido a presença do gás metano na atmosfera.",
+            "Apesar de ainda ser visível a olho nu não conhecia-se sua classificação por causa do seu brilho fraco e translação lenta. Ele foi identificado como planeta através de um telescópio no final do século XVIII."
+        ],
+        "rotation-period": {
+            "title": "Período de rotação",
+            "value": "17,2",
+            "measure": "horas"
+        },
+        "orbital-period": {
+            "title": "Período de translação",
+            "value": "30.589",
+            "measure": "dias"
+        },
+        "gravity": {
+            "title": "Gravidade",
+            "value": "8,7 m/s²"
+        },
+        "diameter": {
+            "title": "Diâmetro",
+            "value": "51.118 km"
+        },
+        "distance-from-sun": {
+            "title": "Distância do Sol",
+            "value": "2867 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Ângulo de inclinação",
+            "value": "97,8",
+            "measure": "graus"
+        },
+        "mean-temperature": {
+            "title": "Temperatura média",
+            "value": "-195°C"
+        },
+        "ring-system": {
+            "title": "Sistema de anéis",
+            "value": "Sim"
+        },
+        "number-of-moons": {
+            "title": "Número de satélites",
+            "value": 28
         }
     }
 }
