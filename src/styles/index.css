@@ -1414,6 +1414,23 @@ h3#dev-info,
     background: linear-gradient(45deg, var(--white-01), var(--uranus-color));
 }
 
+/* ------- neptune information box------- */
+
+.modal-neptune ul{
+    border-color: var(--neptune-color);
+}
+
+.modal-neptune #close-button-modal:hover,
+.modal-neptune h1,
+.modal-neptune li::before{
+    color: var(--neptune-color);
+}
+
+.modal-neptune .modal-box::before,
+.modal-neptune .modal-box::after{
+    background: linear-gradient(45deg, var(--white-01), var(--neptune-color));
+}
+
 /* ------- languages box------- */
 
 .languages-box{

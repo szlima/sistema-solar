@@ -118,6 +118,14 @@
             {
                 "text": "Information about Uranus 2",
                 "url": "https://science.nasa.gov/uranus/facts/"
+            },
+            {
+                "text": "Information about Neptune 1",
+                "url": "https://nineplanets.org/neptune/"
+            },
+            {
+                "text": "Information about Neptune 2",
+                "url": "https://science.nasa.gov/neptune/facts/"
             }
         ]
     },
@@ -461,6 +469,54 @@
             "title": "Number of Moons",
             "value": 28
         }
+    },
+    "neptune": {
+        "title": "Neptune",
+        "description": [
+            "Neptune is the most distant planet from the Sun. Its orbital period is the longest of all planets.",
+            "Its color is blue-green, but a little more intense than Uranus due to an unknown component in its atmosphere.",
+            "It's the only planet that is invisible to the unaided eye.",
+            "Neptune is the windiest planet. Wind speeds can reach over 2,000 kilometers per hour, breaking the sound barrier.",
+            "It is the first planet located using math."
+        ],
+        "rotation-period": {
+            "title": "Rotation Period",
+            "value": "16.1",
+            "measure": "hours"
+        },
+        "orbital-period": {
+            "title": "Orbital Period",
+            "value": "59,800",
+            "measure": "days"
+        },
+        "gravity": {
+            "title": "Gravity",
+            "value": "11 m/s²"
+        },
+        "diameter": {
+            "title": "Diameter",
+            "value": "49.528 km"
+        },
+        "distance-from-sun": {
+            "title": "Distance from Sun",
+            "value": "4515 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Obliquity to Orbit",
+            "value": "28.3",
+            "measure": "degrees"
+        },
+        "mean-temperature": {
+            "title": "Mean Temperature",
+            "value": "-200°C"
+        },
+        "ring-system": {
+            "title": "Ring System",
+            "value": "Yes"
+        },
+        "number-of-moons": {
+            "title": "Number of Moons",
+            "value": 16
+        }
     }
-
 }

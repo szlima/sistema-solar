@@ -118,6 +118,14 @@
             {
                 "text": "Informações sobre Urano 2",
                 "url": "https://science.nasa.gov/uranus/facts/"
+            },
+            {
+                "text": "Informações sobre Netuno 1",
+                "url": "https://nineplanets.org/neptune/"
+            },
+            {
+                "text": "Informações sobre Netuno 2",
+                "url": "https://science.nasa.gov/neptune/facts/"
             }
         ]
     },
@@ -460,6 +468,55 @@
         "number-of-moons": {
             "title": "Número de satélites",
             "value": 28
+        }
+    },
+    "neptune": {
+        "title": "Netuno",
+        "description": [
+            "Netuno é o planeta mais distante do Sol. A sua translação é a mais longa de todos planetas.",
+            "Sua cor é azul esverdeada, porém é um pouco mais intenso do que Urano devido a presença de um componente desconhecido em sua atmosfera.",
+            "É o único planeta que é invisível a olho nu.",
+            "Em Netuno, os ventos são mais fortes do que em outros planetas. A velocidade pode atingir mais de 2.000 quilômetros por hora, quebrando a barreira do som.",
+            "É o primeiro planeta a ser descoberto usando Matemática."
+        ],
+        "rotation-period": {
+            "title": "Período de rotação",
+            "value": "16,1",
+            "measure": "horas"
+        },
+        "orbital-period": {
+            "title": "Período de translação",
+            "value": "59.800",
+            "measure": "dias"
+        },
+        "gravity": {
+            "title": "Gravidade",
+            "value": "11 m/s²"
+        },
+        "diameter": {
+            "title": "Diâmetro",
+            "value": "49.528 km"
+        },
+        "distance-from-sun": {
+            "title": "Distância do Sol",
+            "value": "4515 (10⁶ km)"
+        },
+        "obliquity-to-orbit": {
+            "title": "Ângulo de inclinação",
+            "value": "28,3",
+            "measure": "graus"
+        },
+        "mean-temperature": {
+            "title": "Temperatura média",
+            "value": "-200°C"
+        },
+        "ring-system": {
+            "title": "Sistema de anéis",
+            "value": "Sim"
+        },
+        "number-of-moons": {
+            "title": "Número de satélites",
+            "value": 16
         }
     }
 }
