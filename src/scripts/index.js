@@ -85,7 +85,10 @@ LANGUAGES.onchange= () => {
     LANGUAGES_BOX.classList.remove('languages-on');
 };
 
-window.onload= () => setData('english');
+window.onload= () => {
+    setData('portuguese');
+    LANGUAGES.options.selectedIndex= 1;
+};
 
 function pauseAnimation(){
     BODY.classList.add('animation-paused');
@@ -107,6 +110,5 @@ function setTitle() {
 async function setData(chosenLanguage){
     const response= await fetch(`src/json/${chosenLanguage}.json`);
     data= await response.json();
-
     setTitle();
 }
