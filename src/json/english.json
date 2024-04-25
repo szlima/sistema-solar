@@ -126,6 +126,14 @@
             {
                 "text": "Information about Neptune 2",
                 "url": "https://science.nasa.gov/neptune/facts/"
+            },
+            {
+                "text": "Information about the Sun 1",
+                "url": "https://nineplanets.org/kids/sun/"
+            },
+            {
+                "text": "Information about the Sun 2",
+                "url": "https://science.nasa.gov/sun/facts/"
             }
         ]
     },
@@ -517,6 +525,36 @@
         "number-of-moons": {
             "title": "Number of Moons",
             "value": 16
+        }
+    },
+    "sun": {
+        "title": "Sun",
+        "description": [
+            "It orbits around the center of the Milky Way.",
+            "The Sun is the center of the Solar System. Its gravity holds our system together, keeping everything in orbit around it.",
+            "Sunlight takes about eight minutes to reach Earth.",
+            "The star is almost a perfect sphere made out mainly of hydrogen and helium.",
+            "Its rotation doesn't have a specific period. Since it isn't solid, different parts rotate at different rates. At its equator, the rotation takes about 25 Earth days. At the poles, the movement takes about 36 days.",
+            "It's a yellow dwarf star, its classification is G2 V.",
+            "The Sun's color is white. It looks yellow because of the Earth's atmosphere."
+        ],
+        "orbital-period": {
+            "title": "Galactic orbital period",
+            "value": "230",
+            "measure": "million years"
+        },
+        "diameter": {
+            "title": "Diameter",
+            "value": "1,392,684 km"
+        },
+        "obliquity-to-orbit": {
+            "title": "Obliquity to Orbit",
+            "value": "7.25",
+            "measure": "degrees"
+        },
+        "mean-temperature": {
+            "title": "Mean Temperature",
+            "value": "5500°C (surface)"
         }
     }
 }

@@ -9,7 +9,8 @@ const BUTTON_LANGUAGES= document.querySelector('#button-languages');
 const LANGUAGES_BOX= document.querySelector('#languages-box');
 const LANGUAGES= document.querySelector('#languages');
 
-const ELEMENTS= Array.from(document.querySelectorAll('.orbit'));
+const PLANETS= Array.from(document.querySelectorAll('.orbit'));
+const SUN= document.querySelector('#sun');
 const SOLAR_SYSTEM= document.querySelector('#solar-system');
 
 let data;
@@ -19,7 +20,23 @@ SOLAR_SYSTEM.onmousemove= () => pauseAnimation();
 
 SOLAR_SYSTEM.onmouseout= () => playAnimation();
 
-ELEMENTS.map(e => {
+SUN.onclick= e => {
+    const element= e.target.id;
+    let content= '';
+
+    content+= `<h1>${data[element].title}</h1>`;
+    content+= data[element].description.map(p => `<p>${p}</p>`).join('');
+    content+= '<ul>';
+    content+= `<li>${data[element]['orbital-period'].title}: ${data[element]['orbital-period'].value} ${data[element]['orbital-period'].measure}</li>`;
+    content+= `<li>${data[element]['diameter'].title}: ${data[element]['diameter'].value}</li>`;
+    content+= `<li>${data[element]['obliquity-to-orbit'].title}: ${data[element]['obliquity-to-orbit'].value} ${data[element]['obliquity-to-orbit'].measure}</li>`;
+    content+= `<li>${data[element]['mean-temperature'].title}: ${data[element]['mean-temperature'].value}</li>`;
+    content+= '</ul>';
+
+    openModal(content);
+};
+
+PLANETS.map(e => {
     e.onclick= () => {
         const element= e.id;
         BODY.classList.add(`modal-${element}`);
@@ -56,9 +73,9 @@ BUTTON_OPEN_MODAL.onclick= () => {
 };
 
 BUTTON_CLOSE_MODAL.onclick= () => BODY.classList.remove(
-    'modal-on', 'modal-mercury', 'modal-venus', 'modal-earth',
-    'modal-mars', 'modal-jupiter', 'modal-saturn',
-    'modal-uranus', 'modal-neptune'
+    'modal-on', 'modal-mercury', 'modal-venus',
+    'modal-earth', 'modal-mars', 'modal-jupiter',
+    'modal-saturn', 'modal-uranus', 'modal-neptune'
 );
 
 BUTTON_LANGUAGES.onclick= () => LANGUAGES_BOX.classList.toggle('languages-on');

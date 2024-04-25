@@ -126,6 +126,14 @@
             {
                 "text": "Informações sobre Netuno 2",
                 "url": "https://science.nasa.gov/neptune/facts/"
+            },
+            {
+                "text": "Informações sobre o Sol 1",
+                "url": "https://nineplanets.org/kids/sun/"
+            },
+            {
+                "text": "Informações sobre o Sol 2",
+                "url": "https://science.nasa.gov/sun/facts/"
             }
         ]
     },
@@ -517,6 +525,36 @@
         "number-of-moons": {
             "title": "Número de satélites",
             "value": 16
+        }
+    },
+    "sun": {
+        "title": "Sol",
+        "description": [
+            "Realiza a sua órbita ao redor do centro da Via-Láctea.",
+            "O Sol é o centro do Sistema Solar. Sua gravidade mantém o nosso sistema unido, fazendo que tudo gire em torno dele.",
+            "A luz do Sol leva cerca de 8 minutos para chegar até a Terra.",
+            "A estrela é uma esfera quase perfeita formada principalmente por hidrogênio e hélio.",
+            "Seu movimento de rotação não tem uma duração específica. Por ele não ser sólido, diferentes partes giram em velocidades diferentes. Em seu Equador, a rotação dura 25 dias terrestres. Já nos pólos o movimento dura 36 dias.",
+            "É uma estrela anã amarela da classe G2 V.",
+            "A cor do Sol é branca. Ele nos parece amarelo devido à atmosfera da Terra."
+        ],
+        "orbital-period": {
+            "title": "Período orbital galáctico",
+            "value": "230",
+            "measure": "milhões de anos"
+        },
+        "diameter": {
+            "title": "Diâmetro",
+            "value": "1.392.684 km"
+        },
+        "obliquity-to-orbit": {
+            "title": "Ângulo de inclinação",
+            "value": "7,25",
+            "measure": "graus"
+        },
+        "mean-temperature": {
+            "title": "Temperatura média",
+            "value": "5500°C (superfície)"
         }
     }
 }
