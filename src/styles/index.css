@@ -18,12 +18,18 @@ header{
 
 header h1{
     text-align: center;
-    margin-top: 2.5rem;
+    margin: 2.5rem auto 0;
+    width: max-content;
 
     font-variant: small-caps;
     letter-spacing: .2rem;
     font-size: 5rem;
     font-weight: 600;
+}
+
+header h1:hover{
+    cursor: pointer;
+    color: var(--yellow-02);
 }
 
 i{

@@ -134,6 +134,18 @@
             {
                 "text": "Informações sobre o Sol 2",
                 "url": "https://science.nasa.gov/sun/facts/"
+            },
+            {
+                "text": "Informações sobre o Sistema Solar 1",
+                "url": "https://nineplanets.org/solar-system/"
+            },
+            {
+                "text": "Informações sobre o Sistema Solar 2",
+                "url": "https://science.nasa.gov/solar-system/"
+            },
+            {
+                "text": "Informações sobre os planetas",
+                "url": "https://science.nasa.gov/solar-system/planets/"
             }
         ]
     },
@@ -556,5 +568,15 @@
             "title": "Temperatura média",
             "value": "5500°C (superfície)"
         }
+    },
+    "solar-system": {
+        "title": "Sistema Solar",
+        "description": [
+            "O nosso sistema tem uma estrela, oito planetas, cinco planetas anões, centenas de satélites e milhares de asteróides e cometas.",
+            "O Sistema Solar fica na galáxia Via Láctea e faz a sua órbita em torno do centro dela.",
+            "Os planetas terrestres ou rochosos são Mercúrio, Vênus, Terra e Marte. Eles são os mais próximos do Sol e são formados principalmente de rocha e metal. Além da superfície sólida, suas rotações são lentas, não possuem anéis e têm poucos ou nenhum satélite.",
+            "Os planetas gigantes são quatro. Eles são os mais distantes do Sol e são formados principalmente de hidrogênio e hélio. São planetas com atmosferas profundas, rotações rápidas, anéis e muitos satélites. Júpiter e Saturno são os gigantes gasosos. Urano e Netuno são os gigantes de gelo.",
+            "Os planetas anões do Sistema Solar são Ceres, Plutão, Haumea, Makemake e Éris."
+        ]
     }
 }

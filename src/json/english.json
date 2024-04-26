@@ -134,6 +134,18 @@
             {
                 "text": "Information about the Sun 2",
                 "url": "https://science.nasa.gov/sun/facts/"
+            },
+            {
+                "text": "Information about the Solar System 1",
+                "url": "https://nineplanets.org/solar-system/"
+            },
+            {
+                "text": "Information about the Solar System 2",
+                "url": "https://science.nasa.gov/solar-system/"
+            },
+            {
+                "text": "Information about the planets",
+                "url": "https://science.nasa.gov/solar-system/planets/"
             }
         ]
     },
@@ -556,5 +568,15 @@
             "title": "Mean Temperature",
             "value": "5500°C (surface)"
         }
+    },
+    "solar-system": {
+        "title": "Solar System",
+        "description": [
+            "There are one star, eight planets, five dwarf planets, hundreds of moons, and thousands of asteroids and comets in our system.",
+            "The Solar System is located in the Milky Way galaxy and orbits its center.",
+            "The terrestrial or rocky planets are Mercury, Venus, Earth and Mars. They are the closest to the Sun and are composed primarily of rock and metal. They have solid surfaces, slow rotations, no rings and few moons.",
+            "There are four giant planets. They are the farthest from the Sun and are composed primarily of hydrogen and helium. They have fast rotations, deep atmospheres, rings and lots of moons. Jupiter and Saturn are the gas giants. Uranus and Neptune are the ice giants.",
+            "The dwarf planets in the Solar System are Ceres, Pluto, Haumea, Makemake and Eris."
+        ]
     }
 }

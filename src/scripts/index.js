@@ -20,6 +20,16 @@ SOLAR_SYSTEM.onmousemove= () => pauseAnimation();
 
 SOLAR_SYSTEM.onmouseout= () => playAnimation();
 
+TITLE.onclick= () => {
+    const element= 'solar-system';
+    let content= '';
+
+    content+= `<h1>${data[element].title}</h1>`;
+    content+= data[element].description.map(p => `<p>${p}</p>`).join('');
+
+    openModal(content);
+};
+
 SUN.onclick= e => {
     const element= e.target.id;
     let content= '';
