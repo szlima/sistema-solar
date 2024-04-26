@@ -55,6 +55,7 @@ PLANETS.map(e => {
         content+= `<h1>${data[element].title}</h1>`;
         content+= data[element].description.map(p => `<p>${p}</p>`).join('');
         content+= '<ul>';
+        content+= `<div class='selected-item selected-${element}'></div>`;
         content+= `<li>${data[element]['rotation-period'].title}: ${data[element]['rotation-period'].value} ${data[element]['rotation-period'].measure}</li>`;
         content+= `<li>${data[element]['orbital-period'].title}: ${data[element]['orbital-period'].value} ${data[element]['orbital-period'].measure}</li>`;
         content+= `<li>${data[element]['gravity'].title}: ${data[element]['gravity'].value}</li>`;
