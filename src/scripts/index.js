@@ -116,6 +116,7 @@ function openModal(content){
 
 function setTitle() {
     TITLE.innerHTML= data.simulation['main-title'];
+    document.title= data.simulation['main-title'];
 };
 
 async function setData(chosenLanguage){
