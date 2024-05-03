@@ -60,3 +60,17 @@
     --moon-color: #7c7c7c;
     --default-satellite-color: #b3aa8c;
 }
+
+@media only screen and (min-width: 980px){
+
+    :root{
+        --system-distance-z: -2rem;
+    }
+}
+
+@media only screen and (min-width: 1380px){
+
+    :root{
+        --system-distance-z: .2rem;
+    }
+}

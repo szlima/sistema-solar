@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: .4s;
 }
 
 html{
@@ -18,38 +17,18 @@ html{
     html{
         font-size: 8px;
     }
-
-    #universe{
-        min-height: 400px;
-    }
 }
 
 @media only screen and (min-width: 980px){
 
-    :root{
-        --system-distance-z: -2rem;
-    }
-
     html{
         font-size: 10px;
-    }
-
-    #universe{
-        min-height: 460px;
     }
 }
 
 @media only screen and (min-width: 1380px){
 
-    :root{
-        --system-distance-z: .2rem;
-    }
-
     html{
         font-size: 12px;
-    }
-
-    #universe{
-        min-height: 600px;
     }
 }

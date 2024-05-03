@@ -1,35 +1,40 @@
 @import url("./reset.css");
 
+*{
+    transition: .4s;
+}
+
 body{
-    background-color: var(--black-01);
-    color: var(--white-01);
     width: 100vw;
     height: 100vh;
+
+    background-color: var(--black-01);
+    color: var(--white-01);
 }
 
 header{
+    width: 100%;
+
     position: fixed;
     top: 0;
     left: 0;
-
-    width: 100%;
     z-index: 1;
 }
 
 header h1{
-    text-align: center;
-    margin: 2.5rem auto 0;
     width: max-content;
+    margin: 2.5rem auto 0;
 
-    font-variant: small-caps;
+    text-align: center;
     letter-spacing: .2rem;
     font-size: 5rem;
     font-weight: 600;
+    font-variant: small-caps;
 }
 
 header h1:hover{
-    cursor: pointer;
     color: var(--yellow-02);
+    cursor: pointer;
 }
 
 i{
@@ -45,26 +50,44 @@ i:hover{
 /* ------- space general settings ------- */
 
 #universe{
+    width: 100%;
+    height: 100%;
+    min-width: 576px;
+    min-height: 320px;
+
     background-image: url("../images/space.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-
-    width: 100%;
-    height: 100%;
-
-    min-width: 576px;
-    min-height: 320px;
 
     overflow: hidden;
     perspective: 500px;
 }
 
+@media only screen and (min-width: 720px){
+    #universe{
+        min-height: 400px;
+    }
+}
+
+@media only screen and (min-width: 980px){
+    #universe{
+        min-height: 460px;
+    }
+}
+
+@media only screen and (min-width: 1380px){
+    #universe{
+        min-height: 600px;
+    }
+}
+
 #solar-system{
     width: 100%;
     height: 100%;
+
+    position: relative;
     transform: rotateX(var(--system-angle))
         translate3d(0, var(--system-distance-y), var(--system-distance-z));
-    position: relative;
 }
 
 .satellite::before{
@@ -105,6 +128,8 @@ i:hover{
     left: 100%;
 }
 
+.modal-box::before,
+.modal-box::after,
 .selected-item::before,
 .planet::before,
 .satellite::before,
@@ -116,10 +141,10 @@ i:hover{
 .selected-item::before,
 #solar-system,
 #sun,
-.orbit,
 .star,
-.planet::before,
+.orbit,
 .planet,
+.planet::before,
 .satellite,
 .satellite::before,
 .satellite::after{
@@ -128,11 +153,11 @@ i:hover{
 
 .selected-item,
 .selected-item::before,
-.star,
 #sun,
+.star,
 .orbit,
-.planet::before,
 .planet,
+.planet::before,
 .satellite,
 .satellite::before,
 .satellite::after{
@@ -152,32 +177,34 @@ i:hover{
 /* ------- stars settings ------- */
 
 #sun{
-    border: 1px solid var(--yellow-02);
-    background: var(--sun-color) url("../images/sun.jpg");
-
     width: 20rem;
     height: 20rem;
 
     transform: translate(-50%, -50%) rotateX(var(--inverted-system-angle));
     animation: shine-sun 1s linear infinite alternate,
         rotation 27s linear infinite;
+
+    border: 1px solid var(--yellow-02);
+    background: var(--sun-color) url("../images/sun.jpg");
 }
 
 #sun:hover{
-    cursor: pointer;
     border-color: var(--yellow-04);
+    cursor: pointer;
 }
 
 .star{
     width: .1rem;
     height: .1rem;
-    background-color: var(--white-01);
+
     animation: shine-star .1s linear infinite alternate;
+
+    background-color: var(--white-01);
 }
 
 #universe>div:nth-child(2){
-    bottom: 10%;
     left: 25%;
+    bottom: 10%;
 }
 
 #universe>div:nth-child(3){
@@ -210,13 +237,13 @@ i:hover{
 }
 
 #mercury .planet{
-    background: var(--mercury-color) url("../images/mercury.jpg");
-
     width: .8rem;
     height: .8rem;
 
     animation-name: rotation, mercury-orbit-movement, small-shadow;
     animation-duration: var(--mercury-rotation-time), var(--mercury-orbit-time), var(--mercury-orbit-time);
+
+    background: var(--mercury-color) url("../images/mercury.jpg");
 }
 
 /* ------- venus settings ------- */
@@ -229,14 +256,13 @@ i:hover{
 }
 
 #venus .planet{
-    background: var(--venus-color) url("../images/venus.jpg");
-
     width: 1.74rem;
     height: 1.74rem;
 
     animation-name: rotation, venus-orbit-movement, inverted-type1-shadow;
     animation-duration: var(--venus-rotation-time), var(--venus-orbit-time), var(--venus-orbit-time);
 
+    background: var(--venus-color) url("../images/venus.jpg");
 }
 
 /* ------- earth settings ------- */
@@ -249,13 +275,13 @@ i:hover{
 }
 
 #earth .planet{
-    background: var(--earth-color) url("../images/earth.jpg");
-
     width: 1.9rem;
     height: 1.9rem;
 
     animation-name: rotation, earth-orbit-movement, small-shadow;
     animation-duration: var(--earth-rotation-time), var(--earth-orbit-time), var(--earth-orbit-time);
+
+    background: var(--earth-color) url("../images/earth.jpg");
 }
 
 /* ------- earth moon settings ------- */
@@ -268,13 +294,13 @@ i:hover{
 }
 
 #moon::after{
-    background: var(--moon-color) url("../images/moon.jpg");
-
     width: .6rem;
     height: .6rem;
 
     animation-name: rotation, moon-revolution-movement, small-shadow;
     animation-duration: var(--moon-rotation-time), var(--moon-rotation-time), var(--earth-orbit-time);
+
+    background: var(--moon-color) url("../images/moon.jpg");
 }
 
 /* ------- mars settings ------- */
@@ -287,13 +313,13 @@ i:hover{
 }
 
 #mars .planet{
-    background: var(--mars-color) url("../images/mars.jpg");
-
     width: 1.12rem;
     height: 1.12rem;
 
     animation-name: rotation, mars-orbit-movement, small-shadow;
     animation-duration: var(--mars-rotation-time), var(--mars-orbit-time), var(--mars-orbit-time);
+
+    background: var(--mars-color) url("../images/mars.jpg");
 }
 
 /* ------- mars moons settings ------- */
@@ -328,26 +354,25 @@ i:hover{
 }
 
 #jupiter .planet{
-    background: var(--jupiter-color) url("../images/jupiter.jpg");
-
     width: 5rem;
     height: 5rem;
 
     animation-name: rotation, jupiter-orbit-movement, big-shadow;
     animation-duration: var(--jupiter-rotation-time), var(--jupiter-orbit-time), var(--jupiter-orbit-time);
+
+    background: var(--jupiter-color) url("../images/jupiter.jpg");
 }
 
 #jupiter .planet::before{
     height: 5.3rem;
 
-    border-width: .05rem;
-    border-style: solid;
-
     transform: translate(-50%, -50%) rotateX(var(--system-angle))
         rotateZ(var(--jupiter-tilt));
-
     animation-name: jupiter-rings-movement;
     animation-duration: var(--jupiter-rotation-time);
+
+    border-width: .05rem;
+    border-style: solid;
 }
 
 /* ------- jupiter moons settings ------- */
@@ -406,26 +431,25 @@ i:hover{
 }
 
 #saturn .planet{
-    background: var(--saturn-color) url("../images/saturn.jpg");
-
     width: 3.9rem;
     height: 3.9rem;
 
     animation-name: rotation, saturn-orbit-movement, big-shadow;
     animation-duration: var(--saturn-rotation-time), var(--saturn-orbit-time), var(--saturn-orbit-time);
+
+    background: var(--saturn-color) url("../images/saturn.jpg");
 }
 
 #saturn .planet::before{
     height: 4.2rem;
 
-    border-width: .1rem;
-    border-style: solid;
-
     transform: translate(-50%, -50%) rotateX(var(--system-angle))
         rotateZ(var(--saturn-tilt));
-
     animation-name: saturn-rings-movement;
     animation-duration: var(--saturn-rotation-time);
+
+    border-width: .1rem;
+    border-style: solid;
 }
 
 /* ------- saturn moons settings ------- */
@@ -489,28 +513,27 @@ i:hover{
 }
 
 #uranus .planet{
-    background: var(--uranus-color) url("../images/uranus.jpg");
-
     width: 3rem;
     height: 3rem;
 
     animation-name: rotation, uranus-orbit-movement, inverted-type2-shadow;
     animation-duration: var(--uranus-rotation-time), var(--uranus-orbit-time), var(--uranus-orbit-time);
+
+    background: var(--uranus-color) url("../images/uranus.jpg");
 }
 
 #uranus .planet::before{
     width: 3.5rem;
 
+    transform: translate(-50%, -50%) rotateX(var(--system-angle))
+        rotateZ(var(--uranus-tilt));
+    animation-name: default-rings-movement;
+    animation-duration: var(--uranus-rotation-time);
+
     border: .2rem solid transparent;
     box-shadow: inset 0 0 .01rem .03rem var(--white-02),
         0 0 .01rem .02rem var(--white-01),
         0 0 .1rem .05rem var(--white-02);
-
-    transform: translate(-50%, -50%) rotateX(var(--system-angle))
-        rotateZ(var(--uranus-tilt));
-
-    animation-name: default-rings-movement;
-    animation-duration: var(--uranus-rotation-time);
 }
 
 /* ------- uranus moons settings ------- */
@@ -554,27 +577,26 @@ i:hover{
 }
 
 #neptune .planet{
-    background: var(--neptune-color) url("../images/neptune.jpg");
-
     width: 2.9rem;
     height: 2.9rem;
 
     animation-name: rotation, neptune-orbit-movement, big-shadow;
     animation-duration: var(--neptune-rotation-time), var(--neptune-orbit-time), var(--neptune-orbit-time);
+
+    background: var(--neptune-color) url("../images/neptune.jpg");
 }
 
 #neptune .planet::before{
     width: 3.5rem;
 
+    transform: translate(-50%, -50%) rotateX(var(--system-angle))
+        rotateZ(var(--neptune-tilt));
+    animation-name: default-rings-movement;
+    animation-duration: var(--neptune-rotation-time);
+
     border: .1rem solid transparent;
     box-shadow: inset 0 0 .05rem .01rem var(--white-01),
         0 0 .01rem .02rem var(--white-01);
-
-    transform: translate(-50%, -50%) rotateX(var(--system-angle))
-        rotateZ(var(--neptune-tilt));
-
-    animation-name: default-rings-movement;
-    animation-duration: var(--neptune-rotation-time);
 }
 
 /* ------- neptune moons settings ------- */
@@ -729,14 +751,12 @@ i:hover{
 
 @keyframes shine-sun{
     from {
-        box-shadow:
-            inset 0 0 0.8rem 0.4rem var(--yellow-01),
+        box-shadow: inset 0 0 0.8rem 0.4rem var(--yellow-01),
             0 0 0.8rem 0.8rem var(--yellow-02),
             0 0 5rem 3.3rem var(--yellow-03),
             0 0 6.7rem 5.8rem var(--yellow-04);
     } to {
-        box-shadow:
-            inset 0 0 4.2rem 0.4rem var(--yellow-01),
+        box-shadow: inset 0 0 4.2rem 0.4rem var(--yellow-01),
             0 0 1.7rem 1.7rem var(--yellow-02),
             0 0 5.8rem 4.2rem var(--yellow-03),
             0 0 7.5rem 5.8rem var(--yellow-04);
@@ -1097,34 +1117,83 @@ i:hover{
     }
 }
 
-/* ------- modal box------- */
+/* ------- languages box------- */
 
-#open-button-modal{
+.languages{
+    width: 3rem;
+
     position: fixed;
     bottom: 1rem;
-    left: 1rem;
+    right: 1rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
 }
 
-#close-button-modal{
+.languages #languages-box{
+    display: none;
+
+    border: 0;
+    background-color: transparent;
+    color: var(--white-01);
+}
+
+.languages-on #languages-box{
+    display: initial;
+}
+
+.languages option{
+    padding: 1rem;
+
+    text-align: center;
+    font-size: 1.5rem;
+
+    border: 1px solid var(--white-02);
+}
+
+.languages option:hover{
+    background-color: var(--white-02);
+    cursor: pointer;
+}
+
+.languages option:checked{
+    border: 0;
+    background-color: var(--white-01);
+    color: var(--black-01);
+}
+
+/* ------- modal box------- */
+
+#modal-box-open{
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+#modal-box-close{
     position: absolute;
-    right: 4rem;
     top: 4rem;
+    right: 4rem;
+    z-index: 2;
 
     font-size: 3rem;
-    z-index: 2;
 }
 
-#close-button-modal:hover{
+#modal-box-close:hover{
     color: var(--yellow-02);
 }
 
 .modal{
-    display: none;
+    width: 100%;
+    height: 100%;
+
     position: absolute;
     inset: 0;
 
-    width: 100%;
-    height: 100%;
+    display: none;
+
     background-color: var(--black-02);
 }
 
@@ -1137,43 +1206,47 @@ i:hover{
 }
 
 .modal .modal-box{
+    width: 100%;
+    height: 100%;
+
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
-    width: 100%;
-    height: 100%;
+    transform: translate(-50%, -50%);
 }
 
 .modal-box::before,
 .modal-box::after{
-    content: "";
+    width: 100%;
+    height: 100%;
+
     position: absolute;
     inset: 0;
 
-    width: 100%;
-    height: 100%;
     background: linear-gradient(45deg, var(--yellow-02), var(--yellow-04));
 }
 
-.modal .modal-content{
+.modal .modal-box-content{
+    padding: 3rem;
+
     position: absolute;
     inset: 1rem;
+    z-index: 1;
 
-    padding: 3rem;
     background-color: var(--black-02);
     overflow: scroll;
-    z-index: 1;
 }
 
 .modal h1,
 .modal h2{
-    color: var(--yellow-04);
     margin-bottom: 1rem;
-    font-variant: small-caps;
+
     letter-spacing: .2rem;
     word-spacing: 1rem;
+    font-variant: small-caps;
+
+    color: var(--yellow-04);
 }
 
 .modal h1{
@@ -1189,13 +1262,16 @@ i:hover{
 .modal a,
 .modal li{
     margin: .7rem .5rem;
-    font-size: 2rem;
+
     letter-spacing: 1px;
+    font-size: 2rem;
+
     color: var(--white-01);
 }
 
 .modal a{
     display: block;
+
     text-decoration: none;
     text-transform: capitalize;
 }
@@ -1207,6 +1283,7 @@ i:hover{
 .modal ul{
     margin-top: 2rem;
     padding-top: 2rem;
+
     border-top: 2px solid;
 }
 
@@ -1224,7 +1301,9 @@ i:hover{
 
 .modal li::before{
     content: "\2022";
+
     margin-right: .5rem;
+
     font-size: 1.8rem;
     font-weight: bold;
     vertical-align: middle;
@@ -1232,7 +1311,7 @@ i:hover{
 
 @media only screen and (min-width: 720px){
 
-    #close-button-modal{
+    #modal-box-close{
         font-size: 2rem;
     }
 
@@ -1263,7 +1342,7 @@ i:hover{
 
     .modal-box::before,
     .modal-box::after,
-    .modal .modal-content{
+    .modal .modal-box-content{
         border-radius: 5rem;
     }
 
@@ -1283,10 +1362,12 @@ i:hover{
 /* ------- app information box------- */
 
 #dev-info{
-    color: var(--yellow-04);
     margin: 2.3rem 0 1rem 0;
-    font-variant: small-caps;
+
     letter-spacing: .2rem;
+    font-variant: small-caps;
+
+    color: var(--yellow-04);
 }
 
 h3#dev-info,
@@ -1304,8 +1385,8 @@ h3#dev-info,
 }
 
 #dev-info a{
-    display: initial;
     margin: 0;
+    display: initial;
 }
 
 @media only screen and (min-width: 720px){
@@ -1320,58 +1401,61 @@ h3#dev-info,
 /* ------- planets information box------- */
 
 .selected-mercury{
-    background: var(--mercury-color) url("../images/mercury.jpg");
-
     transform: rotateZ(var(--mercury-tilt));
     animation-duration: var(--mercury-rotation-time);
+
+    background: var(--mercury-color) url("../images/mercury.jpg");
 }
 
 .selected-venus{
-    background: var(--venus-color) url("../images/venus.jpg");
-
     transform: rotateZ(var(--venus-tilt));
     animation-duration: var(--venus-rotation-time);
+
+    background: var(--venus-color) url("../images/venus.jpg");
 }
 
 .selected-earth{
-    background: var(--earth-color) url("../images/earth.jpg");
-
     transform: rotateZ(var(--earth-tilt));
     animation-duration: var(--earth-rotation-time);
+
+    background: var(--earth-color) url("../images/earth.jpg");
 }
 
 .selected-mars{
-    background: var(--mars-color) url("../images/mars.jpg");
-
     transform: rotateZ(var(--mars-tilt));
     animation-duration: var(--mars-rotation-time);
+
+    background: var(--mars-color) url("../images/mars.jpg");
 }
 
 .selected-jupiter{
-    background: var(--jupiter-color) url("../images/jupiter.jpg");
-
     transform: rotateZ(var(--jupiter-tilt));
     animation-duration: var(--jupiter-rotation-time);
+
+    background: var(--jupiter-color) url("../images/jupiter.jpg");
 }
 
 .selected-jupiter::before{
+    transform: translate(-50%, -50%) rotateX(var(--system-angle))
+        rotateZ(var(--saturn-tilt));
+
     border-color: var(--brown);
     box-shadow: inset 0 0 1rem 1.2rem var(--gray),
         0 0 1rem .7rem var(--gray),
         0 0 1rem .9rem var(--brown);
-
-    transform: translate(-50%, -50%) rotateX(var(--system-angle))
-        rotateZ(var(--saturn-tilt));
 }
 
 .selected-saturn{
-    background: var(--saturn-color) url("../images/saturn.jpg");
-
     transform: rotateZ(var(--saturn-tilt));
     animation-duration: var(--saturn-rotation-time);
+
+    background: var(--saturn-color) url("../images/saturn.jpg");
 }
 
 .selected-saturn::before{
+    transform: translate(-50%, -50%) rotateX(var(--system-angle))
+        rotateZ(var(--saturn-tilt));
+
     border-color: var(--beige-01);
     box-shadow: inset 0 0 1rem 1.05rem var(--beige-01),
         0 0 1rem 1.05rem var(--beige-01),
@@ -1380,50 +1464,47 @@ h3#dev-info,
         0 0 1rem 1.4rem var(--beige-02),
         0 0 1rem 1.6rem var(--beige-01),
         0 0 1rem 1.8rem var(--beige-02);
-
-    transform: translate(-50%, -50%) rotateX(var(--system-angle))
-        rotateZ(var(--saturn-tilt));
 }
 
 .selected-uranus{
-    background: var(--uranus-color) url("../images/uranus.jpg");
-
     transform: rotateZ(var(--uranus-tilt));
     animation-duration: var(--uranus-rotation-time);
+
+    background: var(--uranus-color) url("../images/uranus.jpg");
 }
 
 .selected-uranus::before{
+    transform: translate(-50%, -50%) rotateX(var(--system-angle))
+        rotateZ(var(--uranus-tilt));
+
     border-color: transparent;
     box-shadow: inset 0 0 .5rem .2rem var(--white-02),
         0 0 .5rem .5rem var(--white-01),
         0 0 .5rem .7rem var(--white-02);
-
-    transform: translate(-50%, -50%) rotateX(var(--system-angle))
-        rotateZ(var(--uranus-tilt));
 }
 
 .selected-neptune{
-    background: var(--neptune-color) url("../images/neptune.jpg");
-
     transform: rotateZ(var(--neptune-tilt));
     animation-duration: var(--neptune-rotation-time);
+
+    background: var(--neptune-color) url("../images/neptune.jpg");
 }
 
 .selected-neptune::before{
+    transform: translate(-50%, -50%) rotateX(var(--system-angle))
+        rotateZ(var(--neptune-tilt));
+
     border-color: transparent;
     box-shadow: inset 0 0 .7rem .1rem var(--white-01),
         0 0 .7rem .3rem var(--white-01);
-
-    transform: translate(-50%, -50%) rotateX(var(--system-angle))
-        rotateZ(var(--neptune-tilt));
 }
 
 .selected-item{
     width: 50vw;
     height: 50vw;
+    margin: 0 auto 2rem;
 
     position: relative;
-    margin: 0 auto 2rem;
 
     background-size: cover;
     box-shadow: inset -1rem 0 1.25rem .05rem var(--black-02),
@@ -1455,12 +1536,12 @@ h3#dev-info,
     .selected-item{
         width: 10rem;
         height: 10rem;
+        margin: 0;
 
         position: fixed;
         bottom: 3rem;
         right: 4rem;
 
-        margin: 0;
         box-shadow: inset -0.2rem 0 .25rem .01rem var(--black-02),
             inset .2rem 0 .25rem .01rem var(--white-02);
     }
@@ -1513,7 +1594,7 @@ h3#dev-info,
     border-color: var(--mercury-color);
 }
 
-.modal-mercury #close-button-modal:hover,
+.modal-mercury #modal-box-close:hover,
 .modal-mercury h1,
 .modal-mercury li::before{
     color: var(--mercury-color);
@@ -1530,7 +1611,7 @@ h3#dev-info,
     border-color: var(--venus-color);
 }
 
-.modal-venus #close-button-modal:hover,
+.modal-venus #modal-box-close:hover,
 .modal-venus h1,
 .modal-venus li::before{
     color: var(--venus-color);
@@ -1547,7 +1628,7 @@ h3#dev-info,
     border-color: var(--earth-color);
 }
 
-.modal-earth #close-button-modal:hover,
+.modal-earth #modal-box-close:hover,
 .modal-earth h1,
 .modal-earth li::before{
     color: var(--earth-color);
@@ -1564,7 +1645,7 @@ h3#dev-info,
     border-color: var(--mars-color);
 }
 
-.modal-mars #close-button-modal:hover,
+.modal-mars #modal-box-close:hover,
 .modal-mars h1,
 .modal-mars li::before{
     color: var(--mars-color);
@@ -1581,7 +1662,7 @@ h3#dev-info,
     border-color: var(--jupiter-color);
 }
 
-.modal-jupiter #close-button-modal:hover,
+.modal-jupiter #modal-box-close:hover,
 .modal-jupiter h1,
 .modal-jupiter li::before{
     color: var(--jupiter-color);
@@ -1598,7 +1679,7 @@ h3#dev-info,
     border-color: var(--saturn-color);
 }
 
-.modal-saturn #close-button-modal:hover,
+.modal-saturn #modal-box-close:hover,
 .modal-saturn h1,
 .modal-saturn li::before{
     color: var(--saturn-color);
@@ -1615,7 +1696,7 @@ h3#dev-info,
     border-color: var(--uranus-color);
 }
 
-.modal-uranus #close-button-modal:hover,
+.modal-uranus #modal-box-close:hover,
 .modal-uranus h1,
 .modal-uranus li::before{
     color: var(--uranus-color);
@@ -1632,7 +1713,7 @@ h3#dev-info,
     border-color: var(--neptune-color);
 }
 
-.modal-neptune #close-button-modal:hover,
+.modal-neptune #modal-box-close:hover,
 .modal-neptune h1,
 .modal-neptune li::before{
     color: var(--neptune-color);
@@ -1641,47 +1722,4 @@ h3#dev-info,
 .modal-neptune .modal-box::before,
 .modal-neptune .modal-box::after{
     background: linear-gradient(45deg, var(--white-01), var(--neptune-color));
-}
-
-/* ------- languages box------- */
-
-.languages-box{
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 1rem;
-    width: 3rem;
-}
-
-.languages-box #languages{
-    display: none;
-    background-color: transparent;
-    color: var(--white-01);
-    border: 0;
-}
-
-.languages-on #languages{
-    display: initial;
-}
-
-.languages-box option{
-    font-size: 1.5rem;
-    padding: 1rem;
-    border: 1px solid var(--white-02);
-    text-align: center;
-}
-
-.languages-box option:hover{
-    background-color: var(--white-02);
-    cursor: pointer;
-}
-
-.languages-box option:checked{
-    background-color: var(--white-01);
-    color: var(--black-01);
-    border: 0;
 }

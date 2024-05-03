@@ -1,24 +1,26 @@
 const BODY= document.querySelector('body');
 const TITLE= document.querySelector('header h1');
 
-const MODAL_CONTENT= document.querySelector("#modal-content");
-const BUTTON_OPEN_MODAL= document.querySelector('#open-button-modal');
-const BUTTON_CLOSE_MODAL= document.querySelector('#close-button-modal');
-
-const BUTTON_LANGUAGES= document.querySelector('#button-languages');
-const LANGUAGES_BOX= document.querySelector('#languages-box');
-const LANGUAGES= document.querySelector('#languages');
-
-const PLANETS= Array.from(document.querySelectorAll('.orbit'));
-const SUN= document.querySelector('#sun');
 const SOLAR_SYSTEM= document.querySelector('#solar-system');
+const SUN= document.querySelector('#sun');
+const PLANETS= Array.from(document.querySelectorAll('.orbit'));
+
+const LANGUAGES= document.querySelector('#languages');
+const LANGUAGES_BUTTON= document.querySelector('#languages-button');
+const LANGUAGES_BOX= document.querySelector('#languages-box');
+
+const MODAL_BOX_CONTENT= document.querySelector("#modal-box-content");
+const MODAL_BOX_OPEN= document.querySelector('#modal-box-open');
+const MODAL_BOX_CLOSE= document.querySelector('#modal-box-close');
 
 let data;
 
+/* ------- ------- */
 
-SOLAR_SYSTEM.onmousemove= () => pauseAnimation();
-
-SOLAR_SYSTEM.onmouseout= () => playAnimation();
+window.onload= () => {
+    setData('portuguese');
+    LANGUAGES_BOX.options.selectedIndex= 1;
+};
 
 TITLE.onclick= () => {
     const element= 'solar-system';
@@ -29,6 +31,10 @@ TITLE.onclick= () => {
 
     openModal(content);
 };
+
+SOLAR_SYSTEM.onmousemove= () => pauseAnimation();
+
+SOLAR_SYSTEM.onmouseout= () => playAnimation();
 
 SUN.onclick= e => {
     const element= e.target.id;
@@ -71,7 +77,14 @@ PLANETS.map(e => {
     };
 });
 
-BUTTON_OPEN_MODAL.onclick= () => {
+LANGUAGES_BUTTON.onclick= () => LANGUAGES.classList.toggle('languages-on');
+
+LANGUAGES_BOX.onchange= () => {
+    setData(LANGUAGES_BOX.value);
+    LANGUAGES.classList.remove('languages-on');
+};
+
+MODAL_BOX_OPEN.onclick= () => {
     let content= '';
 
     content+= `<h1>${data.simulation['main-title']}</h1>`;
@@ -83,35 +96,18 @@ BUTTON_OPEN_MODAL.onclick= () => {
     openModal(content);
 };
 
-BUTTON_CLOSE_MODAL.onclick= () => BODY.classList.remove(
+MODAL_BOX_CLOSE.onclick= () => BODY.classList.remove(
     'modal-on', 'modal-mercury', 'modal-venus',
     'modal-earth', 'modal-mars', 'modal-jupiter',
     'modal-saturn', 'modal-uranus', 'modal-neptune'
 );
 
-BUTTON_LANGUAGES.onclick= () => LANGUAGES_BOX.classList.toggle('languages-on');
+/* ------- ------- */
 
-LANGUAGES.onchange= () => {
-    setData(LANGUAGES.value);
-    LANGUAGES_BOX.classList.remove('languages-on');
-};
-
-window.onload= () => {
-    setData('portuguese');
-    LANGUAGES.options.selectedIndex= 1;
-};
-
-function pauseAnimation(){
-    BODY.classList.add('animation-paused');
-}
-
-function playAnimation(){
-    BODY.classList.remove('animation-paused');
-}
-
-function openModal(content){
-    BODY.classList.add('modal-on');
-    MODAL_CONTENT.innerHTML= `${content}`;
+async function setData(chosenLanguage){
+    const response= await fetch(`src/json/${chosenLanguage}.json`);
+    data= await response.json();
+    setTitle();
 }
 
 function setTitle() {
@@ -119,8 +115,15 @@ function setTitle() {
     document.title= data.simulation['main-title'];
 };
 
-async function setData(chosenLanguage){
-    const response= await fetch(`src/json/${chosenLanguage}.json`);
-    data= await response.json();
-    setTitle();
+function openModal(content){
+    BODY.classList.add('modal-on');
+    MODAL_BOX_CONTENT.innerHTML= `${content}`;
+}
+
+function pauseAnimation(){
+    BODY.classList.add('animation-paused');
+}
+
+function playAnimation(){
+    BODY.classList.remove('animation-paused');
 }
