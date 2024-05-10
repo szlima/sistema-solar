@@ -1,76 +1,140 @@
 :root{
-    --system-angle: 80deg;
-    --inverted-system-angle: calc(-1 * var(--system-angle));
-    --system-distance-y: -12.5rem;
-    --system-distance-z: -5rem;
+    --angle-system: 80deg;
+    --angle-system-inverted: calc(-1 * var(--angle-system));
+    --distance-system-y: -12.5rem;
+    --distance-system-z: -5rem;
 
-    --mercury-tilt: 0.03deg;
-    --venus-tilt: 177.4deg;
-    --earth-tilt: 23.4deg;
-    --mars-tilt: 25.2deg;
-    --jupiter-tilt: 3.1deg;
-    --saturn-tilt: 26.7deg;
-    --uranus-tilt: 97.8deg;
-    --neptune-tilt: 28.3deg;
-    --moon-tilt: 6.7deg;
+    --tilt-mercury: 0.03deg;
+    --tilt-venus: 177.4deg;
+    --tilt-earth: 23.4deg;
+    --tilt-mars: 25.2deg;
+    --tilt-jupiter: 3.1deg;
+    --tilt-saturn: 26.7deg;
+    --tilt-uranus: 97.8deg;
+    --tilt-neptune: 28.3deg;
+    --tilt-moon: 6.7deg;
 
-    --mercury-rotation-time: 39s;
-    --venus-rotation-time: 43s;
-    --earth-rotation-time: 10s;
-    --mars-rotation-time: 10.3s;
-    --jupiter-rotation-time: 4.17s;
-    --saturn-rotation-time: 4.46s;
-    --uranus-rotation-time: 7.14s;
-    --neptune-rotation-time: 6.67s;
-    --moon-rotation-time: 29.5s;
+    --time-rotation-mercury: 39s;
+    --time-rotation-venus: 43s;
+    --time-rotation-earth: 10s;
+    --time-rotation-mars: 10.3s;
+    --time-rotation-jupiter: 4.17s;
+    --time-rotation-saturn: 4.46s;
+    --time-rotation-uranus: 7.14s;
+    --time-rotation-neptune: 6.67s;
+    --time-rotation-moon: 29.5s;
 
-    --default-revolution-time: 20s;
+    --time-revolution-default: 20s;
 
-    --mercury-orbit-time: 14.4s;
-    --venus-orbit-time: 36s;
-    --earth-orbit-time: 60s;
-    --mars-orbit-time: 114s;
-    --jupiter-orbit-time: 720s;
-    --saturn-orbit-time: 1764s;
-    --uranus-orbit-time: 5040s;
-    --neptune-orbit-time: 9900s;
+    --time-orbit-mercury: 14.4s;
+    --time-orbit-venus: 36s;
+    --time-orbit-earth: 60s;
+    --time-orbit-mars: 114s;
+    --time-orbit-jupiter: 720s;
+    --time-orbit-saturn: 1764s;
+    --time-orbit-uranus: 5040s;
+    --time-orbit-neptune: 9900s;
 
-    --yellow-01: #ffda5fcc;
-    --yellow-02: #ffda5f;
-    --yellow-03: #ffc400;
-    --yellow-04: #ffae00;
-    --black-01: #000;
-    --black-02: #000000b3;
-    --white-01: #fff;
-    --white-02: #ffffff4d;
-    --gray: #bbb;
-    --brown: #b86e29;
-    --beige-01: #ebcda866;
-    --beige-02:  #d1760666;
+    --size-sun: 20rem;
+    --size-star: .1rem;
 
-    --sun-color: var(--yellow-02);
-    --mercury-color: #d0d0d0;
-    --venus-color: #eadace;
-    --earth-color: #1c66bb;
-    --mars-color: #ec5d35;
-    --jupiter-color: #cd8847;
-    --saturn-color: #ffbc77;
-    --uranus-color: #44acab;
-    --neptune-color: #3346bb;
-    --moon-color: #7c7c7c;
-    --default-satellite-color: #b3aa8c;
+    --size-orbit-mercury: 22rem;
+    --size-orbit-venus: 25.44rem;
+    --size-orbit-earth: 30.33rem;
+    --size-orbit-mars: 35.25rem;
+    --size-orbit-jupiter: 45rem;
+    --size-orbit-saturn: 60.5rem;
+    --size-orbit-uranus: 73rem;
+    --size-orbit-neptune: 83rem;
+
+    --size-planet-mercury: .8rem;
+    --size-planet-venus: 1.74rem;
+    --size-planet-earth: 1.9rem;
+    --size-planet-mars: 1.12rem;
+    --size-planet-jupiter: 5rem;
+    --size-planet-saturn: 3.9rem;
+    --size-planet-uranus: 3rem;
+    --size-planet-neptune: 2.9rem;
+
+    --size-revolution-satellite-earth: 2.58rem;
+    --size-revolution-satellite-mars: 1.5rem;
+    --size-revolution-satellite-jupiter: 6.5rem;
+    --size-revolution-satellite-saturn-1: 6.5rem;
+    --size-revolution-satellite-saturn-2: 7.2rem;
+    --size-revolution-satellite-uranus: 4.2rem;
+    --size-revolution-satellite-neptune-1: 3.9rem;
+    --size-revolution-satellite-neptune-2: 4.5rem;
+
+    --size-satellite-earth: .6rem;
+    --size-satellite-mars-1: .15rem;
+    --size-satellite-mars-2: .2rem;
+    --size-satellite-jupiter-1: .85rem;
+    --size-satellite-jupiter-2: .75rem;
+    --size-satellite-saturn-1: .2rem;
+    --size-satellite-saturn-2: .82rem;
+    --size-satellite-saturn-3: .28rem;
+    --size-satellite-uranus-1: .38rem;
+    --size-satellite-uranus-2: .3rem;
+    --size-satellite-neptune-1: .1rem;
+    --size-satellite-neptune-2: .2rem;
+    --size-satellite-neptune-3: .38rem;
+    --size-satellite-neptune-4: .05rem;
+
+    --url-image-space: url("../images/space.jpg");
+    --url-image-sun: url("../images/sun.jpg");
+    --url-image-mercury: url("../images/mercury.jpg");
+    --url-image-venus: url("../images/venus.jpg");
+    --url-image-earth: url("../images/earth.jpg");
+    --url-image-moon: url("../images/moon.jpg");
+    --url-image-mars: url("../images/mars.jpg");
+    --url-image-jupiter: url("../images/jupiter.jpg");
+    --url-image-saturn: url("../images/saturn.jpg");
+    --url-image-uranus: url("../images/uranus.jpg");
+    --url-image-neptune: url("../images/neptune.jpg");
+
+    --color-yellow-01: #ffda5fcc;
+    --color-yellow-02: #ffda5f;
+    --color-yellow-03: #ffc400;
+    --color-yellow-04: #ffae00;
+    --color-black-01: #000;
+    --color-black-02: #000000b3;
+    --color-white-01: #fff;
+    --color-white-02: #ffffff4d;
+    --color-gray: #bbb;
+    --color-brown: #b86e29;
+    --color-beige-01: #ebcda866;
+    --color-beige-02:  #d1760666;
+
+    --color-sun: var(--color-yellow-02);
+    --color-mercury: #d0d0d0;
+    --color-venus: #eadace;
+    --color-earth: #1c66bb;
+    --color-mars: #ec5d35;
+    --color-jupiter: #cd8847;
+    --color-saturn: #ffbc77;
+    --color-uranus: #44acab;
+    --color-neptune: #3346bb;
+    --color-moon: #7c7c7c;
+    --color-satellite-default: #b3aa8c;
+
+    --size-celestial: 1px;
+
+    --modal-color: var(--color-yellow-04);
+    --modal-tilt-planet: 0deg;
+    --modal-time-rotation-planet: 0s;
+    --modal-image-planet: var(--url-image-earth);
 }
 
 @media only screen and (min-width: 980px){
 
     :root{
-        --system-distance-z: -2rem;
+        --distance-system-z: -2rem;
     }
 }
 
 @media only screen and (min-width: 1380px){
 
     :root{
-        --system-distance-z: .2rem;
+        --distance-system-z: .2rem;
     }
 }

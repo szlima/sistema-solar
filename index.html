@@ -10,94 +10,93 @@
 </head>
 <body>
 
-    <header>
-        <h1></h1>
+    <header class="header">
+        <h1 class="header__title" id="header__title"></h1>
     </header>
     
-    <div id="universe">
-        <div id="solar-system">
+    <div class="universe">
+        <div class="universe__solar-system" id="solar-system">
 
-            <div id="sun"></div>
+            <div class="solar-system__sun" id="sun"></div>
 
-            <div class="orbit" id="mercury">
-                <div class="planet"></div>
+            <div class="solar-system__orbit solar-system__orbit--mercury" id="mercury">
+                <div class="solar-system__planet solar-system__planet--mercury"></div>
             </div>
-            <div class="orbit" id="venus">
-                <div class="planet"></div>
+            <div class="solar-system__orbit solar-system__orbit--venus" id="venus">
+                <div class="solar-system__planet solar-system__planet--venus"></div>
             </div>
-            <div class="orbit" id="earth">
-                <div class="planet">
-                    <div class="satellite" id="moon"></div>
+            <div class="solar-system__orbit solar-system__orbit--earth" id="earth">
+                <div class="solar-system__planet solar-system__planet--earth">
+                    <div class="planet__satellite planet__satellite--earth"></div>
                 </div>
             </div>
-            <div class="orbit" id="mars">
-                <div class="planet">
-                    <div class="satellite"></div>
-                    <div class="satellite"></div>
+            <div class="solar-system__orbit solar-system__orbit--mars" id="mars">
+                <div class="solar-system__planet solar-system__planet--mars">
+                    <div class="planet__satellite planet__satellite--mars planet__satellite--double"></div>
                 </div>
             </div>
-            <div class="orbit" id="jupiter">
-                <div class="planet">
-                    <div class="satellite">
-                        <img src="./src/images/moons-20.png"/>
-                        <img src="./src/images/moons-20.png"/>
-                        <img src="./src/images/moons-20.png"/>
-                        <img src="./src/images/moons-20.png"/>
-                        <img src="./src/images/moons-10.png"/>
+            <div class="solar-system__orbit solar-system__orbit--jupiter" id="jupiter">
+                <div class="solar-system__planet solar-system__planet--jupiter solar-system__planet--rings">
+                    <div class="planet__satellite planet__satellite--jupiter planet__satellite--double">
+                        <img class="satellite__img satellite__img--jupiter" src="./src/images/moons-20.png"/>
+                        <img class="satellite__img satellite__img--jupiter" src="./src/images/moons-20.png"/>
+                        <img class="satellite__img satellite__img--jupiter" src="./src/images/moons-20.png"/>
+                        <img class="satellite__img satellite__img--jupiter" src="./src/images/moons-20.png"/>
+                        <img class="satellite__img satellite__img--jupiter" src="./src/images/moons-10.png"/>
                     </div>
                 </div>
             </div>
-            <div class="orbit" id="saturn">
-                <div class="planet">
-                    <div class="satellite">
-                        <img src="./src/images/moons-20.png"/>
-                        <img src="./src/images/moons-20.png"/>
-                        <img src="./src/images/moons-20.png"/>
-                        <img src="./src/images/moons-20.png"/>
+            <div class="solar-system__orbit solar-system__orbit--saturn" id="saturn">
+                <div class="solar-system__planet solar-system__planet--saturn solar-system__planet--rings">
+                    <div class="planet__satellite planet__satellite--saturn planet__satellite--double">
+                        <img class="satellite__img satellite__img--saturn" src="./src/images/moons-20.png"/>
+                        <img class="satellite__img satellite__img--saturn" src="./src/images/moons-20.png"/>
+                        <img class="satellite__img satellite__img--saturn" src="./src/images/moons-20.png"/>
+                        <img class="satellite__img satellite__img--saturn" src="./src/images/moons-20.png"/>
                     </div>
-                    <div class="satellite"></div>
+                    <div class="planet__satellite planet__satellite--saturn"></div>
                 </div>
             </div>
-            <div class="orbit" id="uranus">
-                <div class="planet">
-                    <div class="satellite">
-                        <img src="./src/images/moons-20.png"/>
-                        <img src="./src/images/moons-5.png"/>
+            <div class="solar-system__orbit solar-system__orbit--uranus" id="uranus">
+                <div class="solar-system__planet solar-system__planet--uranus solar-system__planet--rings">
+                    <div class="planet__satellite planet__satellite--uranus planet__satellite--double">
+                        <img class="satellite__img satellite__img--uranus" src="./src/images/moons-20.png"/>
+                        <img class="satellite__img satellite__img--uranus" src="./src/images/moons-5.png"/>
                     </div>
                 </div>
             </div>
-            <div class="orbit" id="neptune">
-                <div class="planet">
-                    <div class="satellite">
-                        <img src="./src/images/moons-10.png"/>
+            <div class="solar-system__orbit solar-system__orbit--neptune" id="neptune">
+                <div class="solar-system__planet solar-system__planet--neptune solar-system__planet--rings">
+                    <div class="planet__satellite planet__satellite--neptune planet__satellite--double">
+                        <img class="satellite__img satellite__img--neptune" src="./src/images/moons-10.png"/>
                     </div>
-                    <div class="satellite"></div>
+                    <div class="planet__satellite planet__satellite--neptune planet__satellite--double"></div>
                 </div>
             </div>
 
         </div>
 
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
+        <div class="universe__star"></div>
+        <div class="universe__star"></div>
+        <div class="universe__star"></div>
+        <div class="universe__star"></div>
+        <div class="universe__star"></div>
 
     </div>
 
     <div class="languages" id="languages">
-        <i class="fa-solid fa-globe" id="languages-button"></i>
-        <select id="languages-box" size="2">
-            <option value="english">EN</option>
-            <option value="portuguese">PT</option>
+        <i class="fa-solid fa-globe icon" id="languages__button"></i>
+        <select class="languages__box" id="languages__box" size="2">
+            <option class="languages__option" value="english">EN</option>
+            <option class="languages__option" value="portuguese">PT</option>
         </select>
     </div>
 
-    <i class="fa-solid fa-circle-info" id="modal-box-open"></i>
+    <i class="fa-solid fa-circle-info icon modal__button--open" id="modal__button--open"></i>
     <div class="modal">
-        <div class="modal-box">
-            <i class="fa-solid fa-xmark" id="modal-box-close"></i>
-            <div class="modal-box-content" id="modal-box-content"></div>
+        <div class="modal__box">
+            <i class="fa-solid fa-xmark icon modal__button--close" id="modal__button--close"></i>
+            <div class="modal__content" id="modal__content"></div>
         </div>
     </div>
 
