@@ -1,0 +1,45 @@
+
+.languages{
+    width: 3rem;
+
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+}
+
+.languages__box{
+    display: none;
+
+    border: 0;
+    background-color: transparent;
+    color: var(--color-white-01);
+}
+
+.languages--on .languages__box{
+    display: initial;
+}
+
+.languages__option{
+    padding: 1rem;
+
+    text-align: center;
+    font-size: 1.5rem;
+
+    border: 1px solid var(--color-white-02);
+}
+
+.languages__option:hover{
+    background-color: var(--color-white-02);
+    cursor: pointer;
+}
+
+.languages__option:checked{
+    border: 0;
+    background-color: var(--color-white-01);
+    color: var(--color-black-01);
+}
