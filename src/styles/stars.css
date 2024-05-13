@@ -1,0 +1,52 @@
+
+.solar-system__sun{
+    --size-celestial: var(--size-sun);
+    z-index: 10;
+
+    transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted));
+
+    border: 1px solid var(--color-yellow-02);
+    background: var(--color-sun) var(--url-image-sun);
+    box-shadow: inset 0 0 0.8rem 0.4rem var(--color-yellow-01),
+        0 0 0.8rem 0.8rem var(--color-yellow-02),
+        0 0 5rem 3.3rem var(--color-yellow-03),
+        0 0 6.7rem 5.8rem var(--color-yellow-04);
+}
+
+.solar-system__sun:hover{
+    border-color: var(--color-yellow-04);
+    cursor: pointer;
+}
+
+.universe__star{
+    --size-celestial: var(--size-star);
+
+    background-color: var(--color-white-01);
+    box-shadow: 0 0 .1rem .1rem var(--color-white-01),
+        0 0 .1rem .1rem var(--color-white-02);
+}
+
+.universe__star:nth-child(2){
+    left: 25%;
+    bottom: 10%;
+}
+
+.universe__star:nth-child(3){
+    top: 40%;
+    left: 25%;
+}
+
+.universe__star:nth-child(4){
+    top: 30%;
+    right: 25%;
+}
+
+.universe__star:nth-child(5){
+    bottom: 30%;
+    right: 10%;
+}
+
+.universe__star:nth-child(6){
+    top: 10%;
+    left: 5%;
+}
