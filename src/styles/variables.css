@@ -56,6 +56,11 @@
     --size-planet-uranus: 3rem;
     --size-planet-neptune: 2.9rem;
 
+    --size-rings-jupiter: 5.3rem;
+    --size-rings-saturn: 4.2rem;
+    --size-rings-uranus: 3.5rem;
+    --size-rings-neptune: 3.5rem;
+
     --size-revolution-satellite-earth: 2.58rem;
     --size-revolution-satellite-mars: 1.5rem;
     --size-revolution-satellite-jupiter: 6.5rem;
