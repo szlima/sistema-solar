@@ -71,7 +71,7 @@ body{
     height: 100%;
 }
 
-.universe
+.universe,
 .solar-system__sun,
 .solar-system__planet,
 .planet__satellite::before{
