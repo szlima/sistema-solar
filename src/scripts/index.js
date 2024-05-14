@@ -1,6 +1,7 @@
 const BODY= document.querySelector('body');
 const HEADER__TITLE= document.querySelector('#header__title');
 
+const UNIVERSE= document.querySelector('#universe');
 const SOLAR_SYSTEM= document.querySelector('#solar-system');
 const SUN= document.querySelector('#sun');
 const PLANETS= Array.from(document.querySelectorAll('.solar-system__orbit'));
@@ -30,6 +31,13 @@ HEADER__TITLE.onclick= () => {
     content+= data[element].description.map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
 
     openModal(content);
+};
+
+UNIVERSE.onclick= e => {
+    if(e.target.classList[0] === 'universe'){
+        playAnimation();
+        hideLanguageBox();
+    }
 };
 
 SOLAR_SYSTEM.onmousemove= () => pauseAnimation();
@@ -85,7 +93,7 @@ LANGUAGES__BUTTON.onclick= () => LANGUAGES.classList.toggle('languages--on');
 
 LANGUAGES__BOX.onchange= () => {
     setData(LANGUAGES__BOX.value);
-    LANGUAGES.classList.remove('languages--on');
+    hideLanguageBox();
 };
 
 MODAL__BUTTON__OPEN.onclick= () => {
@@ -130,4 +138,8 @@ function pauseAnimation(){
 
 function playAnimation(){
     BODY.classList.remove('animation-paused');
+}
+
+function hideLanguageBox(){
+    LANGUAGES.classList.remove('languages--on');
 }
