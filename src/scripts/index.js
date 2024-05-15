@@ -101,7 +101,7 @@ MODAL__BUTTON__OPEN.onclick= () => {
 
     content+= `<h1 class='modal__title--main'>${data.simulation['main-title']}</h1>`;
     content+= data.simulation['description'].map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
-    content+= `<h3 class='modal__dev'>${data.simulation['dev-info']['info'][0]} <i class="fa-solid fa-heart icon"></i> ${data.simulation['dev-info']['info'][1]} <a class='modal__url' target="_blank" href=${data.simulation['dev-info']['url']}>${data.simulation['dev-info']['text']}</a>.</h3>`;
+    content+= `<h3 class='modal__dev'>${data.simulation['dev-info']['info'][0]} <span class="material-symbols-outlined modal__icon">favorite</span> ${data.simulation['dev-info']['info'][1]} <a class='modal__url' target="_blank" href=${data.simulation['dev-info']['url']}>${data.simulation['dev-info']['text']}</a>.</h3>`;
     content+= `<h2 class='modal__title--secondary'>${data.simulation['reference-title']}</h2>`;
     content+= data.simulation['references'].map(a => `<a class='modal__url' target="_blank" href=${a.url}>${a.text}</a>`).join('');
 

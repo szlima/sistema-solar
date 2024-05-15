@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://kit.fontawesome.com/15ee9f35ec.js" crossorigin="anonymous"></script>
     <script src="./src/scripts/index.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
 
     <link rel="stylesheet" type="text/css" href="./src/styles/variables.css"/>
     <link rel="stylesheet" type="text/css" href="./src/styles/reset.css"/>
@@ -88,17 +89,17 @@
     </div>
 
     <div class="languages" id="languages">
-        <i class="fa-solid fa-globe icon" id="languages__button"></i>
+        <span class="material-symbols-outlined button body__button" id="languages__button">language</span>
         <select class="languages__box" id="languages__box" size="2">
             <option class="languages__option" value="english">EN</option>
             <option class="languages__option" value="portuguese">PT</option>
         </select>
     </div>
 
-    <i class="fa-solid fa-circle-info icon modal__button--open" id="modal__button--open"></i>
+    <span class="material-symbols-outlined button body__button modal__button--open" id="modal__button--open">info</span>
     <div class="modal">
         <div class="modal__box">
-            <i class="fa-solid fa-xmark icon modal__button--close" id="modal__button--close"></i>
+            <span class="material-symbols-outlined button modal__button--close" id="modal__button--close">close</span>
             <div class="modal__content" id="modal__content"></div>
         </div>
     </div>

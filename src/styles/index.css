@@ -42,15 +42,22 @@ body{
     cursor: pointer;
 }
 
-.icon{
-    font-size: 2rem;
+.button{
     color: var(--color-white-02);
 }
 
-.icon:hover{
-    color: var(--color-white-01);
+.button:hover{
     cursor: pointer;
 }
+
+.body__button{
+    font-size: 3rem;
+}
+
+.body__button:hover{
+    color: var(--color-white-01);
+}
+
 
 /* ------- space general settings ------- */
 
