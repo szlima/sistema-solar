@@ -101,25 +101,17 @@
 }
 
 .modal__paragraph,
-.modal__url,
-.modal__list-item{
-    margin: .7rem .5rem;
-
-    letter-spacing: 1px;
-    font-size: 2rem;
-
+.modal__list-item,
+.modal__url{
     color: var(--color-white-01);
 }
 
-.modal__url{
-    display: block;
-
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-.modal__url:hover{
-    color: var(--color-yellow-02);
+.modal__paragraph,
+.modal__list-item,
+.modal__url--reference{
+    margin: .7rem .5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
 .modal__list{
@@ -153,6 +145,19 @@
     color: var(--modal-color);
 }
 
+.modal__url{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.modal__url:hover{
+    color: var(--color-yellow-02);
+}
+
+.modal__url--reference{
+    display: block;
+}
+
 @media only screen and (min-width: 720px){
 
     .modal__button--close{
@@ -168,8 +173,8 @@
     }
 
     .modal__paragraph,
-    .modal__url,
-    .modal__list-item{
+    .modal__list-item,
+    .modal__url--reference{
         font-size: 1.2rem;
     }
 }
@@ -216,13 +221,8 @@
 }
 
 .modal__dev,
-.modal__dev .modal__url{
+.modal__url--dev{
     font-size: 2.3rem;
-}
-
-.modal__dev .modal__url{
-    margin: 0;
-    display: initial;
 }
 
 .modal__icon{
@@ -234,7 +234,7 @@
 @media only screen and (min-width: 720px){
 
     .modal__dev,
-    .modal__dev .modal__url{
+    .modal__url--dev{
         font-size: 1.5rem;
     }
 
