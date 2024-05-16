@@ -303,13 +303,15 @@
 
 .modal__planet,
 .modal__planet--rings::before{
+    width: var(--size-celestial);
+    height: var(--size-celestial);
+
     transform-style: preserve-3d;
     border-radius: 50%;
 }
 
 .modal__planet{
-    width: 50vw;
-    height: 50vw;
+    --size-celestial: 50vw;
     margin: 0 auto 2rem;
 
     position: relative;
@@ -323,8 +325,7 @@
 }
 
 .modal__planet--rings:before{
-    width: 60vw;
-    height: 60vw;
+    --size-celestial: 60vw;
 
     position: absolute;
     top: 50%;
@@ -383,8 +384,7 @@
     and (min-height: 480px){
 
     .modal__planet{
-        width: 10rem;
-        height: 10rem;
+        --size-celestial: 10rem;
         margin: 0;
 
         position: fixed;
@@ -396,8 +396,7 @@
     }
 
     .modal__planet--rings::before{
-        width: 12rem;
-        height: 12rem;
+        --size-celestial: 12rem;
 
         border-width: .5rem;
     }
