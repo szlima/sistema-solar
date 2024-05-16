@@ -160,7 +160,7 @@
         ],
         "rotation-period": {
             "title": "Rotation Period",
-            "value": "1407.6",
+            "value": "1,407.6",
             "measure": "hours"
         },
         "orbital-period": {
@@ -174,7 +174,7 @@
         },
         "diameter": {
             "title": "Diameter",
-            "value": "4879 km"
+            "value": "4,879 km"
         },
         "distance-from-sun": {
             "title": "Distance from Sun",
@@ -209,7 +209,7 @@
         ],
         "rotation-period": {
             "title": "Rotation Period",
-            "value": "5832.5",
+            "value": "5,832.5",
             "measure": "hours"
         },
         "orbital-period": {
@@ -320,7 +320,7 @@
         },
         "diameter": {
             "title": "Diameter",
-            "value": "6792 km"
+            "value": "6,792 km"
         },
         "distance-from-sun": {
             "title": "Distance from Sun",
@@ -360,7 +360,7 @@
         },
         "orbital-period": {
             "title": "Orbital Period",
-            "value": "4331",
+            "value": "4,331",
             "measure": "days"
         },
         "gravity": {
@@ -422,7 +422,7 @@
         },
         "distance-from-sun": {
             "title": "Distance from Sun",
-            "value": "1432 (10⁶ km)"
+            "value": "1,432 (10⁶ km)"
         },
         "obliquity-to-orbit": {
             "title": "Obliquity to Orbit",
@@ -470,7 +470,7 @@
         },
         "distance-from-sun": {
             "title": "Distance from Sun",
-            "value": "2867 (10⁶ km)"
+            "value": "2,867 (10⁶ km)"
         },
         "obliquity-to-orbit": {
             "title": "Obliquity to Orbit",
@@ -515,11 +515,11 @@
         },
         "diameter": {
             "title": "Diameter",
-            "value": "49.528 km"
+            "value": "49,528 km"
         },
         "distance-from-sun": {
             "title": "Distance from Sun",
-            "value": "4515 (10⁶ km)"
+            "value": "4,515 (10⁶ km)"
         },
         "obliquity-to-orbit": {
             "title": "Obliquity to Orbit",
@@ -566,7 +566,7 @@
         },
         "mean-temperature": {
             "title": "Mean Temperature",
-            "value": "5500°C (surface)"
+            "value": "5,500°C (surface)"
         }
     },
     "solar-system": {
