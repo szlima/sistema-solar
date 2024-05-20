@@ -550,6 +550,7 @@
             "It's a yellow dwarf star, its classification is G2 V.",
             "The Sun's color is white. It looks yellow because of the Earth's atmosphere."
         ],
+        "comparison": "Comparison with our planet",
         "orbital-period": {
             "title": "Galactic orbital period",
             "value": "230",

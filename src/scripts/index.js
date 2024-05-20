@@ -10,6 +10,7 @@ const LANGUAGES= document.querySelector('#languages');
 const LANGUAGES__BUTTON= document.querySelector('#languages__button');
 const LANGUAGES__BOX= document.querySelector('#languages__box');
 
+const MODAL= document.querySelector("#modal");
 const MODAL__CONTENT= document.querySelector("#modal__content");
 const MODAL__BUTTON__OPEN= document.querySelector('#modal__button--open');
 const MODAL__BUTTON__CLOSE= document.querySelector('#modal__button--close');
@@ -47,9 +48,25 @@ SOLAR_SYSTEM.onmouseout= () => playAnimation();
 SUN.onclick= e => {
     let content= '';
     const element= e.target.id;
+    MODAL.classList.add('modal--comparison');
 
     content+= `<h1 class='modal__title--main'>${data[element].title}</h1>`;
     content+= data[element].description.map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
+
+    content+= `<div class='modal__comparison'>`;
+    content+= `<h2 class='modal__title--secondary'>${data[element].comparison}</h2>`;
+    content+= `<div class='comparison__wrapper'>`;
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='modal__sun'></div>`;
+    content+= `<div class='comparison__caption'>${data[element].title}</div>`;
+    content+= `</div>`;
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='modal__planet modal__planet--earth'></div>`;
+    content+= `<div class='comparison__caption'>${data.earth.title}</div>`;
+    content+= `</div>`;
+    content+= `</div>`;
+    content+= `</div>`;
+
     content+= `<ul class='modal__list'>`;
     content+= `<li class='modal__list-item'>${data[element]['orbital-period'].title}: ${data[element]['orbital-period'].value} ${data[element]['orbital-period'].measure}</li>`;
     content+= `<li class='modal__list-item'>${data[element]['diameter'].title}: ${data[element]['diameter'].value}</li>`;
@@ -64,7 +81,7 @@ PLANETS.map(e => {
     e.onclick= () => {
         let content= '';
         const element= e.id;
-        BODY.classList.add(`modal--${element}`);
+        MODAL.classList.add('modal--info', `modal--${element}`);
 
         const patternPlanetaryRings= /jupiter|saturn|uranus|neptune/;
         const classListModalPlanet= `modal__planet modal__planet--${element}` +
@@ -108,11 +125,14 @@ MODAL__BUTTON__OPEN.onclick= () => {
     openModal(content);
 };
 
-MODAL__BUTTON__CLOSE.onclick= () => BODY.classList.remove(
-    'modal--on', 'modal--mercury', 'modal--venus',
-    'modal--earth', 'modal--mars', 'modal--jupiter',
-    'modal--saturn', 'modal--uranus', 'modal--neptune'
-);
+MODAL__BUTTON__CLOSE.onclick= () => {
+    BODY.classList.remove('modal--on');
+
+    MODAL.classList.remove('modal--info', 'modal--comparison',
+        'modal--mercury', 'modal--venus',
+        'modal--earth', 'modal--mars', 'modal--jupiter',
+        'modal--saturn', 'modal--uranus', 'modal--neptune');
+};
 
 /* ------- ------- */
 

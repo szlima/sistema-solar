@@ -5,6 +5,16 @@
     content: "";
 }
 
+.modal__sun,
+.modal__planet,
+.modal__planet--rings::before{
+    width: var(--size-celestial);
+    height: var(--size-celestial);
+
+    transform-style: preserve-3d;
+    border-radius: 50%;
+}
+
 /* -------------- */
 
 .modal--on .header{
@@ -44,6 +54,10 @@
     display: none;
 
     background-color: var(--color-black-02);
+}
+
+.modal--comparison{
+    min-width: 350px;
 }
 
 .modal__box,
@@ -114,7 +128,7 @@
     letter-spacing: 1px;
 }
 
-.modal__list{
+.modal--info .modal__list{
     margin-top: 2rem;
     padding-top: 2rem;
 
@@ -301,32 +315,25 @@
     --modal-image-planet: var(--url-image-neptune);
 }
 
-.modal__planet,
-.modal__planet--rings::before{
-    width: var(--size-celestial);
-    height: var(--size-celestial);
+.modal__planet{
+    transform: rotateZ(var(--modal-tilt-planet));
 
-    transform-style: preserve-3d;
-    border-radius: 50%;
+    background: var(--modal-color) var(--modal-image-planet);
+    background-size: cover;
 }
 
-.modal__planet{
+.modal--info .modal__planet{
     --size-celestial: 50vw;
     margin: 0 auto 2rem;
 
     position: relative;
-    transform: rotateZ(var(--modal-tilt-planet));
     animation-duration: var(--modal-time-rotation-planet);
 
-    background: var(--modal-color) var(--modal-image-planet);
-    background-size: cover;
     box-shadow: inset -2rem 0 2.5rem 1rem var(--color-black-02),
         inset 2rem 0 2.5rem 1rem var(--color-white-02);
 }
 
 .modal__planet--rings:before{
-    --size-celestial: 60vw;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -337,12 +344,16 @@
     border-style: solid;
 }
 
-.modal__planet--venus{
+.modal--info .modal__planet--rings:before{
+    --size-celestial: 60vw;
+}
+
+.modal--info .modal__planet--venus{
     box-shadow: inset 2rem 0 2.5rem 1rem var(--color-black-02),
         inset -2rem 0 2.5rem 1rem var(--color-white-02);
 }
 
-.modal__planet--uranus{
+.modal--info .modal__planet--uranus{
     margin: 8rem auto;
 
     box-shadow: inset 0 2rem 2.5rem 1rem var(--color-black-02),
@@ -383,7 +394,7 @@
 @media only screen and (min-width: 720px)
     and (min-height: 480px){
 
-    .modal__planet{
+    .modal--info .modal__planet{
         --size-celestial: 10rem;
         margin: 0;
 
@@ -396,17 +407,19 @@
     }
 
     .modal__planet--rings::before{
-        --size-celestial: 12rem;
-
         border-width: .5rem;
     }
 
-    .modal__planet--venus{
+    .modal--info .modal__planet--rings::before{
+        --size-celestial: 12rem;
+    }
+
+    .modal--info .modal__planet--venus{
         box-shadow: inset .7rem 0 .8rem .1rem var(--color-black-02),
             inset -0.7rem 0 .8rem .1rem var(--color-white-02);
     }
 
-    .modal__planet--uranus{
+    .modal--info .modal__planet--uranus{
         margin: initial;
 
         bottom: 4rem;
@@ -442,4 +455,60 @@
         box-shadow: inset 0 0 .3rem .05rem var(--color-white-01),
             0 0 .3rem .1rem var(--color-white-01);
     }
+}
+
+/* ------- comparison box------- */
+
+.modal__comparison{
+    --modal-color: var(--color-sun);
+
+    width: 100%;
+
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: var(--color-sun);
+}
+
+.comparison__wrapper{
+    margin-top: 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.comparison__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.comparison__caption{
+    margin-top: 1rem;
+
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+}
+
+@media only screen and (min-width: 720px)
+    and (min-height: 480px){
+
+    .comparison__caption{
+        font-size: 1.3rem;
+    }
+}
+
+.modal__sun{
+    --size-celestial: var(--modal-comparison-size-sun);
+    background-color: var(--color-sun);
+}
+
+.modal__comparison .modal__planet--earth{
+    --size-celestial: var(--modal-comparison-size-earth);
 }
