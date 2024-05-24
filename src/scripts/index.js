@@ -35,38 +35,12 @@ HEADER__TITLE.onclick= () => {
     elementContent+= `<h2 class='modal__title--secondary'>${data[element].comparison}</h2>`;
     elementContent+= `<div class='comparison__wrapper'>`;
 
-    elementContent+= `<div class='comparison__box'>`;
-    elementContent+= `<div class='modal__planet modal__planet--mercury'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data.mercury.title}</div>`;
-    elementContent+= `</div>`;
-    elementContent+= `<div class='comparison__box'>`;
-    elementContent+= `<div class='modal__planet modal__planet--venus'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data.venus.title}</div>`;
-    elementContent+= `</div>`;
-    elementContent+= `<div class='comparison__box'>`;
-    elementContent+= `<div class='modal__planet modal__planet--earth'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data.earth.title}</div>`;
-    elementContent+= `</div>`;
-    elementContent+= `<div class='comparison__box'>`;
-    elementContent+= `<div class='modal__planet modal__planet--mars'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data.mars.title}</div>`;
-    elementContent+= `</div>`;
-    elementContent+= `<div class='comparison__box'>`;
-    elementContent+= `<div class='modal__planet modal__planet--jupiter modal__planet--rings'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data.jupiter.title}</div>`;
-    elementContent+= `</div>`;
-    elementContent+= `<div class='comparison__box'>`;
-    elementContent+= `<div class='modal__planet modal__planet--saturn modal__planet--rings'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data.saturn.title}</div>`;
-    elementContent+= `</div>`;
-    elementContent+= `<div class='comparison__box'>`;
-    elementContent+= `<div class='modal__planet modal__planet--uranus modal__planet--rings'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data.uranus.title}</div>`;
-    elementContent+= `</div>`;
-    elementContent+= `<div class='comparison__box'>`;
-    elementContent+= `<div class='modal__planet modal__planet--neptune modal__planet--rings'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data.neptune.title}</div>`;
-    elementContent+= `</div>`;
+    for(let i in data.planets){
+        elementContent+= `<div class='comparison__box'>`;
+        elementContent+= `<div class='${getClassListModalPlanet(i)}'></div>`;
+        elementContent+= `<div class='comparison__caption'>${data.planets[i].title}</div>`;
+        elementContent+= `</div>`;
+    }
 
     elementContent+= `</div>`;
     elementContent+= `</div>`;
@@ -99,7 +73,7 @@ SUN.onclick= e => {
     elementContent+= `</div>`;
     elementContent+= `<div class='comparison__box'>`;
     elementContent+= `<div class='modal__planet modal__planet--earth'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data.earth.title}</div>`;
+    elementContent+= `<div class='comparison__caption'>${data.planets.earth.title}</div>`;
     elementContent+= `</div>`;
 
     elementContent+= `</div>`;
@@ -120,21 +94,17 @@ PLANETS.map(e => {
         let elementContent= '';
         const element= e.id;
 
-        const patternPlanetaryRings= /jupiter|saturn|uranus|neptune/;
-        const classListModalPlanet= `modal__planet modal__planet--${element}` +
-            (patternPlanetaryRings.test(element) ? ' modal__planet--rings' : '');
-
         elementContent+= `<ul class='modal__list'>`;
-        elementContent+= `<div class='${classListModalPlanet}'></div>`;
-        elementContent+= `<li class='modal__list-item'>${data[element]['rotation-period'].title}: ${data[element]['rotation-period'].value} ${data[element]['rotation-period'].measure}</li>`;
-        elementContent+= `<li class='modal__list-item'>${data[element]['orbital-period'].title}: ${data[element]['orbital-period'].value} ${data[element]['orbital-period'].measure}</li>`;
-        elementContent+= `<li class='modal__list-item'>${data[element]['gravity'].title}: ${data[element]['gravity'].value}</li>`;
-        elementContent+= `<li class='modal__list-item'>${data[element]['diameter'].title}: ${data[element]['diameter'].value}</li>`;
-        elementContent+= `<li class='modal__list-item'>${data[element]['distance-from-sun'].title}: ${data[element]['distance-from-sun'].value}</li>`;
-        elementContent+= `<li class='modal__list-item'>${data[element]['obliquity-to-orbit'].title}: ${data[element]['obliquity-to-orbit'].value} ${data[element]['obliquity-to-orbit'].measure}</li>`;
-        elementContent+= `<li class='modal__list-item'>${data[element]['mean-temperature'].title}: ${data[element]['mean-temperature'].value}</li>`;
-        elementContent+= `<li class='modal__list-item'>${data[element]['ring-system'].title}: ${data[element]['ring-system'].value}</li>`;
-        elementContent+= `<li class='modal__list-item'>${data[element]['number-of-moons'].title}: ${data[element]['number-of-moons'].value}</li>`;
+        elementContent+= `<div class='${getClassListModalPlanet(element)}'></div>`;
+        elementContent+= `<li class='modal__list-item'>${data.planets[element]['rotation-period'].title}: ${data.planets[element]['rotation-period'].value} ${data.planets[element]['rotation-period'].measure}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data.planets[element]['orbital-period'].title}: ${data.planets[element]['orbital-period'].value} ${data.planets[element]['orbital-period'].measure}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data.planets[element]['gravity'].title}: ${data.planets[element]['gravity'].value}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data.planets[element]['diameter'].title}: ${data.planets[element]['diameter'].value}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data.planets[element]['distance-from-sun'].title}: ${data.planets[element]['distance-from-sun'].value}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data.planets[element]['obliquity-to-orbit'].title}: ${data.planets[element]['obliquity-to-orbit'].value} ${data.planets[element]['obliquity-to-orbit'].measure}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data.planets[element]['mean-temperature'].title}: ${data.planets[element]['mean-temperature'].value}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data.planets[element]['ring-system'].title}: ${data.planets[element]['ring-system'].value}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data.planets[element]['number-of-moons'].title}: ${data.planets[element]['number-of-moons'].value}</li>`;
         elementContent+= '</ul>';
 
         openModal(element, TEXT_INFO, elementContent);
@@ -184,12 +154,13 @@ function setTitle() {
 
 function openModal(element, modalType, elementContent){
     let modalContent= '';
+    const elementData= (modalType === TEXT_INFO) ? data.planets[element] : data[element];
 
     BODY.classList.add('modal--on');
     modalType ? MODAL.classList.add(`modal--${modalType}`, `modal--${element}`) : {};
 
-    modalContent+= `<h1 class='modal__title--main'>${data[element].title}</h1>`;
-    modalContent+= data[element].description.map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
+    modalContent+= `<h1 class='modal__title--main'>${elementData.title}</h1>`;
+    modalContent+= elementData.description.map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
 
     modalContent+= elementContent;
 
@@ -206,4 +177,10 @@ function playAnimation(){
 
 function hideLanguageBox(){
     LANGUAGES.classList.remove('languages--on');
+}
+
+function getClassListModalPlanet(element){
+    const patternPlanetaryRings= /jupiter|saturn|uranus|neptune/;
+    return `modal__planet modal__planet--${element}` +
+        (patternPlanetaryRings.test(element) ? ' modal__planet--rings' : '');
 }
