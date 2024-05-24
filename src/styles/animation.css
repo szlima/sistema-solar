@@ -8,7 +8,7 @@
     animation-play-state: paused;
 }
 
-.modal__planet,
+.modal--info .modal__planet,
 .universe__star,
 .solar-system__sun,
 .solar-system__orbit,
@@ -22,7 +22,7 @@
     animation-iteration-count: infinite;
 }
 
-.modal__planet{
+.modal--info .modal__planet{
     animation-name: rotation;
 }
 

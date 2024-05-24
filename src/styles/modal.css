@@ -257,61 +257,61 @@
     }
 }
 
-/* ------- planets information box------- */
+/* ------- planets information------- */
 
+.modal__comparison .modal__planet--mercury,
 .modal--mercury{
     --modal-color: var(--color-mercury);
     --modal-tilt-planet: var(--tilt-mercury);
-    --modal-time-rotation-planet: var(--time-rotation-mercury);
     --modal-image-planet: var(--url-image-mercury);
 }
 
+.modal__comparison .modal__planet--venus,
 .modal--venus{
     --modal-color: var(--color-venus);
     --modal-tilt-planet: var(--tilt-venus);
-    --modal-time-rotation-planet: var(--time-rotation-venus);
     --modal-image-planet: var(--url-image-venus);
 }
 
+.modal__comparison .modal__planet--earth,
 .modal--earth{
     --modal-color: var(--color-earth);
     --modal-tilt-planet: var(--tilt-earth);
-    --modal-time-rotation-planet: var(--time-rotation-earth);
     --modal-image-planet: var(--url-image-earth);
 }
 
+.modal__comparison .modal__planet--mars,
 .modal--mars{
     --modal-color: var(--color-mars);
     --modal-tilt-planet: var(--tilt-mars);
-    --modal-time-rotation-planet: var(--time-rotation-mars);
     --modal-image-planet: var(--url-image-mars);
 }
 
+.modal__comparison .modal__planet--jupiter,
 .modal--jupiter{
     --modal-color: var(--color-jupiter);
     --modal-tilt-planet: var(--tilt-jupiter);
-    --modal-time-rotation-planet: var(--time-rotation-jupiter);
     --modal-image-planet: var(--url-image-jupiter);
 }
 
+.modal__comparison .modal__planet--saturn,
 .modal--saturn{
     --modal-color: var(--color-saturn);
     --modal-tilt-planet: var(--tilt-saturn);
-    --modal-time-rotation-planet: var(--time-rotation-saturn);
     --modal-image-planet: var(--url-image-saturn);
 }
 
+.modal__comparison .modal__planet--uranus,
 .modal--uranus{
     --modal-color: var(--color-uranus);
     --modal-tilt-planet: var(--tilt-uranus);
-    --modal-time-rotation-planet: var(--time-rotation-uranus);
     --modal-image-planet: var(--url-image-uranus);
 }
 
+.modal__comparison .modal__planet--neptune,
 .modal--neptune{
     --modal-color: var(--color-neptune);
     --modal-tilt-planet: var(--tilt-neptune);
-    --modal-time-rotation-planet: var(--time-rotation-neptune);
     --modal-image-planet: var(--url-image-neptune);
 }
 
@@ -333,7 +333,7 @@
         inset 2rem 0 2.5rem 1rem var(--color-white-02);
 }
 
-.modal__planet--rings:before{
+.modal__planet--rings::before{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -344,13 +344,17 @@
     border-style: solid;
 }
 
-.modal--info .modal__planet--rings:before{
+.modal--info .modal__planet--rings::before{
     --size-celestial: 60vw;
 }
 
 .modal--info .modal__planet--venus{
     box-shadow: inset 2rem 0 2.5rem 1rem var(--color-black-02),
         inset -2rem 0 2.5rem 1rem var(--color-white-02);
+}
+
+.modal--comparison .modal__planet--uranus{
+    margin-bottom: 2.5rem;
 }
 
 .modal--info .modal__planet--uranus{
@@ -411,7 +415,7 @@
     }
 
     .modal--info .modal__planet--rings::before{
-        --size-celestial: 12rem;
+        --size-celestial: 14rem;
     }
 
     .modal--info .modal__planet--venus{
@@ -419,41 +423,23 @@
             inset -0.7rem 0 .8rem .1rem var(--color-white-02);
     }
 
+    .modal--info .modal__planet--jupiter,
+    .modal--info .modal__planet--saturn{
+        right: 7rem;
+    }
+
     .modal--info .modal__planet--uranus{
         margin: initial;
 
-        bottom: 4rem;
+        bottom: 5rem;
         right: 3rem;
 
         box-shadow: inset 0 .7rem .8rem .1rem var(--color-black-02),
             inset 0 -0.7rem .8rem .1rem var(--color-white-02);
     }
 
-    .modal__planet--jupiter::before{
-        box-shadow: inset 0 0 .8rem .4rem var(--color-gray),
-            0 0 .8rem .1rem var(--color-gray),
-            0 0 .8rem .2rem var(--color-brown);
-    }
-
-    .modal__planet--saturn::before{
-        box-shadow: inset 0 0 .1rem .05rem var(--color-beige-01),
-            0 0 .1rem .05rem var(--color-beige-01),
-            0 0 .1rem .1rem var(--color-beige-02),
-            0 0 .1rem .3rem var(--color-beige-01),
-            0 0 .1rem .4rem var(--color-beige-02),
-            0 0 .1rem .6rem var(--color-beige-01),
-            0 0 .1rem .8rem var(--color-beige-02);
-    }
-
-    .modal__planet--uranus::before{
-        box-shadow: inset 0 0 .3rem .05rem var(--color-white-02),
-            0 0 .3rem .2rem var(--color-white-01),
-            0 0 .3rem .4rem var(--color-white-02);
-    }
-
-    .modal__planet--neptune::before{
-        box-shadow: inset 0 0 .3rem .05rem var(--color-white-01),
-            0 0 .3rem .1rem var(--color-white-01);
+    .modal--info .modal__planet--neptune{
+        right: 5rem;
     }
 }
 
@@ -469,7 +455,7 @@
 
     border-width: 2px 0;
     border-style: solid;
-    border-color: var(--color-sun);
+    border-color: var(--modal-color);
 }
 
 .comparison__wrapper{
@@ -478,6 +464,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.modal--solar-system .comparison__wrapper{
+    padding: 0 1.5rem;
+    gap: 8rem;
+}
+
+.modal--sun .comparison__wrapper{
     gap: 4rem;
 }
 
@@ -504,11 +498,59 @@
     }
 }
 
+.modal--solar-system .modal__planet--mercury{
+    --size-celestial: var(--modal-comparison-planets-mercury);
+}
+
+.modal--solar-system .modal__planet--venus{
+    --size-celestial: var(--modal-comparison-planets-venus);
+}
+
+.modal--solar-system .modal__planet--earth{
+    --size-celestial: var(--modal-comparison-planets-earth);
+}
+
+.modal--solar-system .modal__planet--mars{
+    --size-celestial: var(--modal-comparison-planets-mars);
+}
+
+.modal--solar-system .modal__planet--jupiter{
+    --size-celestial: var(--modal-comparison-planets-jupiter);
+}
+
+.modal--solar-system .modal__planet--jupiter::before{
+    --size-celestial: calc(3.5rem + var(--modal-comparison-planets-jupiter));
+}
+
+.modal--solar-system .modal__planet--saturn{
+    --size-celestial: var(--modal-comparison-planets-saturn);
+}
+
+.modal--solar-system .modal__planet--saturn::before{
+    --size-celestial: calc(3.5rem + var(--modal-comparison-planets-saturn));
+}
+
+.modal--solar-system .modal__planet--uranus{
+    --size-celestial: var(--modal-comparison-planets-uranus);
+}
+
+.modal--solar-system .modal__planet--uranus::before{
+    --size-celestial: calc(3rem + var(--modal-comparison-planets-uranus));
+}
+
+.modal--solar-system .modal__planet--neptune{
+    --size-celestial: var(--modal-comparison-planets-neptune);
+}
+
+.modal--solar-system .modal__planet--neptune::before{
+    --size-celestial: calc(3rem + var(--modal-comparison-planets-neptune));
+}
+
 .modal__sun{
-    --size-celestial: var(--modal-comparison-size-sun);
+    --size-celestial: var(--modal-comparison-star-sun);
     background-color: var(--color-sun);
 }
 
-.modal__comparison .modal__planet--earth{
-    --size-celestial: var(--modal-comparison-size-earth);
+.modal--sun .modal__planet--earth{
+    --size-celestial: var(--modal-comparison-star-earth);
 }

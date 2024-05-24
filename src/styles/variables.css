@@ -126,12 +126,20 @@
 
     --modal-color: var(--color-yellow-04);
     --modal-tilt-planet: 0deg;
-    --modal-time-rotation-planet: 0s;
+    --modal-time-rotation-planet: 10s;
     --modal-image-planet: var(--url-image-earth);
 
-    --modal-comparison-size: 3px;
-    --modal-comparison-size-sun: calc(109.18 * var(--modal-comparison-size));
-    --modal-comparison-size-earth: var(--modal-comparison-size);
+    --modal-comparison-star-sun: calc(109.18 * var(--modal-comparison-star-earth));
+    --modal-comparison-star-earth: 3px;
+
+    --modal-comparison-planets-mercury: .38rem;
+    --modal-comparison-planets-venus: .95rem;
+    --modal-comparison-planets-earth: 1rem;
+    --modal-comparison-planets-mars: .53rem;
+    --modal-comparison-planets-jupiter: 11.21rem;
+    --modal-comparison-planets-saturn: 9.45rem;
+    --modal-comparison-planets-uranus: 4rem;
+    --modal-comparison-planets-neptune: 3.88rem;
 }
 
 @media only screen and (min-width: 980px){

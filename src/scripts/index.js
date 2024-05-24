@@ -27,9 +27,50 @@ window.onload= () => {
 HEADER__TITLE.onclick= () => {
     let content= '';
     const element= 'solar-system';
+    MODAL.classList.add('modal--comparison', `modal--${element}`);
 
     content+= `<h1 class='modal__title--main'>${data[element].title}</h1>`;
     content+= data[element].description.map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
+
+    content+= `<div class='modal__comparison'>`;
+    content+= `<h2 class='modal__title--secondary'>${data[element].comparison}</h2>`;
+    content+= `<div class='comparison__wrapper'>`;
+
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='modal__planet modal__planet--mercury'></div>`;
+    content+= `<div class='comparison__caption'>${data.mercury.title}</div>`;
+    content+= `</div>`;
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='modal__planet modal__planet--venus'></div>`;
+    content+= `<div class='comparison__caption'>${data.venus.title}</div>`;
+    content+= `</div>`;
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='modal__planet modal__planet--earth'></div>`;
+    content+= `<div class='comparison__caption'>${data.earth.title}</div>`;
+    content+= `</div>`;
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='modal__planet modal__planet--mars'></div>`;
+    content+= `<div class='comparison__caption'>${data.mars.title}</div>`;
+    content+= `</div>`;
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='modal__planet modal__planet--jupiter modal__planet--rings'></div>`;
+    content+= `<div class='comparison__caption'>${data.jupiter.title}</div>`;
+    content+= `</div>`;
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='modal__planet modal__planet--saturn modal__planet--rings'></div>`;
+    content+= `<div class='comparison__caption'>${data.saturn.title}</div>`;
+    content+= `</div>`;
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='modal__planet modal__planet--uranus modal__planet--rings'></div>`;
+    content+= `<div class='comparison__caption'>${data.uranus.title}</div>`;
+    content+= `</div>`;
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='modal__planet modal__planet--neptune modal__planet--rings'></div>`;
+    content+= `<div class='comparison__caption'>${data.neptune.title}</div>`;
+    content+= `</div>`;
+
+    content+= `</div>`;
+    content+= `</div>`;
 
     openModal(content);
 };
@@ -48,7 +89,7 @@ SOLAR_SYSTEM.onmouseout= () => playAnimation();
 SUN.onclick= e => {
     let content= '';
     const element= e.target.id;
-    MODAL.classList.add('modal--comparison');
+    MODAL.classList.add('modal--comparison', `modal--${element}`);
 
     content+= `<h1 class='modal__title--main'>${data[element].title}</h1>`;
     content+= data[element].description.map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
@@ -128,7 +169,8 @@ MODAL__BUTTON__OPEN.onclick= () => {
 MODAL__BUTTON__CLOSE.onclick= () => {
     BODY.classList.remove('modal--on');
 
-    MODAL.classList.remove('modal--info', 'modal--comparison',
+    MODAL.classList.remove('modal--comparison', 'modal--info',
+        'modal--solar-system', 'modal--sun',
         'modal--mercury', 'modal--venus',
         'modal--earth', 'modal--mars', 'modal--jupiter',
         'modal--saturn', 'modal--uranus', 'modal--neptune');
