@@ -1,6 +1,6 @@
 {
     "simulation": {
-        "main-title": "Sistema Solar",
+        "title": "Sistema Solar",
         "description": [
             "A simulação apresentada não apresenta dados em escala real.",
             "As informações foram definidas de forma a facilitar o entendimento, didaticamente."

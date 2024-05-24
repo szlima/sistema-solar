@@ -15,6 +15,9 @@ const MODAL__CONTENT= document.querySelector("#modal__content");
 const MODAL__BUTTON__OPEN= document.querySelector('#modal__button--open');
 const MODAL__BUTTON__CLOSE= document.querySelector('#modal__button--close');
 
+const TEXT_COMPARISON= 'comparison';
+const TEXT_INFO= 'info';
+
 let data;
 
 /* ------- ------- */
@@ -25,54 +28,50 @@ window.onload= () => {
 };
 
 HEADER__TITLE.onclick= () => {
-    let content= '';
+    let elementContent= '';
     const element= 'solar-system';
-    MODAL.classList.add('modal--comparison', `modal--${element}`);
 
-    content+= `<h1 class='modal__title--main'>${data[element].title}</h1>`;
-    content+= data[element].description.map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
+    elementContent+= `<div class='modal__comparison'>`;
+    elementContent+= `<h2 class='modal__title--secondary'>${data[element].comparison}</h2>`;
+    elementContent+= `<div class='comparison__wrapper'>`;
 
-    content+= `<div class='modal__comparison'>`;
-    content+= `<h2 class='modal__title--secondary'>${data[element].comparison}</h2>`;
-    content+= `<div class='comparison__wrapper'>`;
+    elementContent+= `<div class='comparison__box'>`;
+    elementContent+= `<div class='modal__planet modal__planet--mercury'></div>`;
+    elementContent+= `<div class='comparison__caption'>${data.mercury.title}</div>`;
+    elementContent+= `</div>`;
+    elementContent+= `<div class='comparison__box'>`;
+    elementContent+= `<div class='modal__planet modal__planet--venus'></div>`;
+    elementContent+= `<div class='comparison__caption'>${data.venus.title}</div>`;
+    elementContent+= `</div>`;
+    elementContent+= `<div class='comparison__box'>`;
+    elementContent+= `<div class='modal__planet modal__planet--earth'></div>`;
+    elementContent+= `<div class='comparison__caption'>${data.earth.title}</div>`;
+    elementContent+= `</div>`;
+    elementContent+= `<div class='comparison__box'>`;
+    elementContent+= `<div class='modal__planet modal__planet--mars'></div>`;
+    elementContent+= `<div class='comparison__caption'>${data.mars.title}</div>`;
+    elementContent+= `</div>`;
+    elementContent+= `<div class='comparison__box'>`;
+    elementContent+= `<div class='modal__planet modal__planet--jupiter modal__planet--rings'></div>`;
+    elementContent+= `<div class='comparison__caption'>${data.jupiter.title}</div>`;
+    elementContent+= `</div>`;
+    elementContent+= `<div class='comparison__box'>`;
+    elementContent+= `<div class='modal__planet modal__planet--saturn modal__planet--rings'></div>`;
+    elementContent+= `<div class='comparison__caption'>${data.saturn.title}</div>`;
+    elementContent+= `</div>`;
+    elementContent+= `<div class='comparison__box'>`;
+    elementContent+= `<div class='modal__planet modal__planet--uranus modal__planet--rings'></div>`;
+    elementContent+= `<div class='comparison__caption'>${data.uranus.title}</div>`;
+    elementContent+= `</div>`;
+    elementContent+= `<div class='comparison__box'>`;
+    elementContent+= `<div class='modal__planet modal__planet--neptune modal__planet--rings'></div>`;
+    elementContent+= `<div class='comparison__caption'>${data.neptune.title}</div>`;
+    elementContent+= `</div>`;
 
-    content+= `<div class='comparison__box'>`;
-    content+= `<div class='modal__planet modal__planet--mercury'></div>`;
-    content+= `<div class='comparison__caption'>${data.mercury.title}</div>`;
-    content+= `</div>`;
-    content+= `<div class='comparison__box'>`;
-    content+= `<div class='modal__planet modal__planet--venus'></div>`;
-    content+= `<div class='comparison__caption'>${data.venus.title}</div>`;
-    content+= `</div>`;
-    content+= `<div class='comparison__box'>`;
-    content+= `<div class='modal__planet modal__planet--earth'></div>`;
-    content+= `<div class='comparison__caption'>${data.earth.title}</div>`;
-    content+= `</div>`;
-    content+= `<div class='comparison__box'>`;
-    content+= `<div class='modal__planet modal__planet--mars'></div>`;
-    content+= `<div class='comparison__caption'>${data.mars.title}</div>`;
-    content+= `</div>`;
-    content+= `<div class='comparison__box'>`;
-    content+= `<div class='modal__planet modal__planet--jupiter modal__planet--rings'></div>`;
-    content+= `<div class='comparison__caption'>${data.jupiter.title}</div>`;
-    content+= `</div>`;
-    content+= `<div class='comparison__box'>`;
-    content+= `<div class='modal__planet modal__planet--saturn modal__planet--rings'></div>`;
-    content+= `<div class='comparison__caption'>${data.saturn.title}</div>`;
-    content+= `</div>`;
-    content+= `<div class='comparison__box'>`;
-    content+= `<div class='modal__planet modal__planet--uranus modal__planet--rings'></div>`;
-    content+= `<div class='comparison__caption'>${data.uranus.title}</div>`;
-    content+= `</div>`;
-    content+= `<div class='comparison__box'>`;
-    content+= `<div class='modal__planet modal__planet--neptune modal__planet--rings'></div>`;
-    content+= `<div class='comparison__caption'>${data.neptune.title}</div>`;
-    content+= `</div>`;
+    elementContent+= `</div>`;
+    elementContent+= `</div>`;
 
-    content+= `</div>`;
-    content+= `</div>`;
-
-    openModal(content);
+    openModal(element, TEXT_COMPARISON, elementContent);
 };
 
 UNIVERSE.onclick= e => {
@@ -87,63 +86,58 @@ SOLAR_SYSTEM.onmousemove= () => pauseAnimation();
 SOLAR_SYSTEM.onmouseout= () => playAnimation();
 
 SUN.onclick= e => {
-    let content= '';
+    let elementContent= '';
     const element= e.target.id;
-    MODAL.classList.add('modal--comparison', `modal--${element}`);
 
-    content+= `<h1 class='modal__title--main'>${data[element].title}</h1>`;
-    content+= data[element].description.map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
+    elementContent+= `<div class='modal__comparison'>`;
+    elementContent+= `<h2 class='modal__title--secondary'>${data[element].comparison}</h2>`;
+    elementContent+= `<div class='comparison__wrapper'>`;
 
-    content+= `<div class='modal__comparison'>`;
-    content+= `<h2 class='modal__title--secondary'>${data[element].comparison}</h2>`;
-    content+= `<div class='comparison__wrapper'>`;
-    content+= `<div class='comparison__box'>`;
-    content+= `<div class='modal__sun'></div>`;
-    content+= `<div class='comparison__caption'>${data[element].title}</div>`;
-    content+= `</div>`;
-    content+= `<div class='comparison__box'>`;
-    content+= `<div class='modal__planet modal__planet--earth'></div>`;
-    content+= `<div class='comparison__caption'>${data.earth.title}</div>`;
-    content+= `</div>`;
-    content+= `</div>`;
-    content+= `</div>`;
+    elementContent+= `<div class='comparison__box'>`;
+    elementContent+= `<div class='modal__sun'></div>`;
+    elementContent+= `<div class='comparison__caption'>${data[element].title}</div>`;
+    elementContent+= `</div>`;
+    elementContent+= `<div class='comparison__box'>`;
+    elementContent+= `<div class='modal__planet modal__planet--earth'></div>`;
+    elementContent+= `<div class='comparison__caption'>${data.earth.title}</div>`;
+    elementContent+= `</div>`;
 
-    content+= `<ul class='modal__list'>`;
-    content+= `<li class='modal__list-item'>${data[element]['orbital-period'].title}: ${data[element]['orbital-period'].value} ${data[element]['orbital-period'].measure}</li>`;
-    content+= `<li class='modal__list-item'>${data[element]['diameter'].title}: ${data[element]['diameter'].value}</li>`;
-    content+= `<li class='modal__list-item'>${data[element]['obliquity-to-orbit'].title}: ${data[element]['obliquity-to-orbit'].value} ${data[element]['obliquity-to-orbit'].measure}</li>`;
-    content+= `<li class='modal__list-item'>${data[element]['mean-temperature'].title}: ${data[element]['mean-temperature'].value}</li>`;
-    content+= '</ul>';
+    elementContent+= `</div>`;
+    elementContent+= `</div>`;
 
-    openModal(content);
+    elementContent+= `<ul class='modal__list'>`;
+    elementContent+= `<li class='modal__list-item'>${data[element]['orbital-period'].title}: ${data[element]['orbital-period'].value} ${data[element]['orbital-period'].measure}</li>`;
+    elementContent+= `<li class='modal__list-item'>${data[element]['diameter'].title}: ${data[element]['diameter'].value}</li>`;
+    elementContent+= `<li class='modal__list-item'>${data[element]['obliquity-to-orbit'].title}: ${data[element]['obliquity-to-orbit'].value} ${data[element]['obliquity-to-orbit'].measure}</li>`;
+    elementContent+= `<li class='modal__list-item'>${data[element]['mean-temperature'].title}: ${data[element]['mean-temperature'].value}</li>`;
+    elementContent+= '</ul>';
+
+    openModal(element, TEXT_COMPARISON, elementContent);
 };
 
 PLANETS.map(e => {
     e.onclick= () => {
-        let content= '';
+        let elementContent= '';
         const element= e.id;
-        MODAL.classList.add('modal--info', `modal--${element}`);
 
         const patternPlanetaryRings= /jupiter|saturn|uranus|neptune/;
         const classListModalPlanet= `modal__planet modal__planet--${element}` +
             (patternPlanetaryRings.test(element) ? ' modal__planet--rings' : '');
 
-        content+= `<h1 class='modal__title--main'>${data[element].title}</h1>`;
-        content+= data[element].description.map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
-        content+= `<ul class='modal__list'>`;
-        content+= `<div class='${classListModalPlanet}'></div>`;
-        content+= `<li class='modal__list-item'>${data[element]['rotation-period'].title}: ${data[element]['rotation-period'].value} ${data[element]['rotation-period'].measure}</li>`;
-        content+= `<li class='modal__list-item'>${data[element]['orbital-period'].title}: ${data[element]['orbital-period'].value} ${data[element]['orbital-period'].measure}</li>`;
-        content+= `<li class='modal__list-item'>${data[element]['gravity'].title}: ${data[element]['gravity'].value}</li>`;
-        content+= `<li class='modal__list-item'>${data[element]['diameter'].title}: ${data[element]['diameter'].value}</li>`;
-        content+= `<li class='modal__list-item'>${data[element]['distance-from-sun'].title}: ${data[element]['distance-from-sun'].value}</li>`;
-        content+= `<li class='modal__list-item'>${data[element]['obliquity-to-orbit'].title}: ${data[element]['obliquity-to-orbit'].value} ${data[element]['obliquity-to-orbit'].measure}</li>`;
-        content+= `<li class='modal__list-item'>${data[element]['mean-temperature'].title}: ${data[element]['mean-temperature'].value}</li>`;
-        content+= `<li class='modal__list-item'>${data[element]['ring-system'].title}: ${data[element]['ring-system'].value}</li>`;
-        content+= `<li class='modal__list-item'>${data[element]['number-of-moons'].title}: ${data[element]['number-of-moons'].value}</li>`;
-        content+= '</ul>';
+        elementContent+= `<ul class='modal__list'>`;
+        elementContent+= `<div class='${classListModalPlanet}'></div>`;
+        elementContent+= `<li class='modal__list-item'>${data[element]['rotation-period'].title}: ${data[element]['rotation-period'].value} ${data[element]['rotation-period'].measure}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data[element]['orbital-period'].title}: ${data[element]['orbital-period'].value} ${data[element]['orbital-period'].measure}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data[element]['gravity'].title}: ${data[element]['gravity'].value}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data[element]['diameter'].title}: ${data[element]['diameter'].value}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data[element]['distance-from-sun'].title}: ${data[element]['distance-from-sun'].value}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data[element]['obliquity-to-orbit'].title}: ${data[element]['obliquity-to-orbit'].value} ${data[element]['obliquity-to-orbit'].measure}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data[element]['mean-temperature'].title}: ${data[element]['mean-temperature'].value}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data[element]['ring-system'].title}: ${data[element]['ring-system'].value}</li>`;
+        elementContent+= `<li class='modal__list-item'>${data[element]['number-of-moons'].title}: ${data[element]['number-of-moons'].value}</li>`;
+        elementContent+= '</ul>';
 
-        openModal(content);
+        openModal(element, TEXT_INFO, elementContent);
     };
 });
 
@@ -155,15 +149,14 @@ LANGUAGES__BOX.onchange= () => {
 };
 
 MODAL__BUTTON__OPEN.onclick= () => {
-    let content= '';
+    let elementContent= '';
+    const element= 'simulation';
 
-    content+= `<h1 class='modal__title--main'>${data.simulation['main-title']}</h1>`;
-    content+= data.simulation['description'].map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
-    content+= `<h3 class='modal__dev'>${data.simulation['dev-info']['info'][0]} <span class="material-symbols-outlined modal__icon">favorite</span> ${data.simulation['dev-info']['info'][1]} <a class='modal__url modal__url--dev' target="_blank" href=${data.simulation['dev-info']['url']}>${data.simulation['dev-info']['text']}</a>.</h3>`;
-    content+= `<h2 class='modal__title--secondary'>${data.simulation['reference-title']}</h2>`;
-    content+= data.simulation['references'].map(a => `<a class='modal__url modal__url--reference' target="_blank" href=${a.url}>${a.text}</a>`).join('');
+    elementContent+= `<h3 class='modal__dev'>${data[element]['dev-info']['info'][0]} <span class="material-symbols-outlined modal__icon">favorite</span> ${data[element]['dev-info']['info'][1]} <a class='modal__url modal__url--dev' target="_blank" href=${data[element]['dev-info']['url']}>${data[element]['dev-info']['text']}</a>.</h3>`;
+    elementContent+= `<h2 class='modal__title--secondary'>${data[element]['reference-title']}</h2>`;
+    elementContent+= data[element]['references'].map(a => `<a class='modal__url modal__url--reference' target="_blank" href=${a.url}>${a.text}</a>`).join('');
 
-    openModal(content);
+    openModal(element, null, elementContent);
 };
 
 MODAL__BUTTON__CLOSE.onclick= () => {
@@ -185,13 +178,22 @@ async function setData(chosenLanguage){
 }
 
 function setTitle() {
-    HEADER__TITLE.innerHTML= data.simulation['main-title'];
-    document.title= data.simulation['main-title'];
+    HEADER__TITLE.innerHTML= data.simulation['title'];
+    document.title= data.simulation['title'];
 };
 
-function openModal(content){
+function openModal(element, modalType, elementContent){
+    let modalContent= '';
+
     BODY.classList.add('modal--on');
-    MODAL__CONTENT.innerHTML= `${content}`;
+    modalType ? MODAL.classList.add(`modal--${modalType}`, `modal--${element}`) : {};
+
+    modalContent+= `<h1 class='modal__title--main'>${data[element].title}</h1>`;
+    modalContent+= data[element].description.map(p => `<p class='modal__paragraph'>${p}</p>`).join('');
+
+    modalContent+= elementContent;
+
+    MODAL__CONTENT.innerHTML= `${modalContent}`;
 }
 
 function pauseAnimation(){

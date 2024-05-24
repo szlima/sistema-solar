@@ -1,6 +1,6 @@
 {
     "simulation": {
-        "main-title": "Solar System",
+        "title": "Solar System",
         "description": [
             "The simulation presented doesn't present full-scale data.",
             "The information was defined in a way to facilitate understanding."
