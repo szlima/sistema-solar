@@ -158,45 +158,47 @@
                 "Além de ser o planeta mais próximo do Sol ele também é o que faz a translação mais rápida, em apenas 88 dias terrestres!",
                 "Um ano em Mercúrio não é dividido em estações.",
                 "Ao invés de atmosfera, Mercúrio possui apenas uma fina camada de exosfera. Sua proximidade com o Sol e ausência de uma atmosfera para reter o calor faz com que o planeta tenha as mudanças de temperatura mais drásticas de todo o Sistema Solar."
-                ],
-            "rotation-period": {
-                "title": "Período de rotação",
-                "value": "1.407,6",
-                "measure": "horas"
-            },
-            "orbital-period": {
-                "title": "Período de translação",
-                "value": "88",
-                "measure": "dias"
-            },
-            "gravity": {
-                "title": "Gravidade",
-                "value": "3,7 m/s²"
-            },
-            "diameter": {
-                "title": "Diâmetro",
-                "value": "4.879 km"
-            },
-            "distance-from-sun": {
-                "title": "Distância do Sol",
-                "value": "57,9 (10⁶ km)"
-            },
-            "obliquity-to-orbit": {
-                "title": "Ângulo de inclinação",
-                "value": "0,034",
-                "measure": "graus"
-            },
-            "mean-temperature": {
-                "title": "Temperatura média",
-                "value": "167°C"
-            },
-            "ring-system": {
-                "title": "Sistema de anéis",
-                "value": "Não"
-            },
-            "number-of-moons": {
-                "title": "Número de satélites",
-                "value": 0
+            ],
+            "info-list": {
+                "rotation-period": {
+                    "title": "Período de rotação",
+                    "value": "1.407,6",
+                    "measure": "horas"
+                },
+                "orbital-period": {
+                    "title": "Período de translação",
+                    "value": "88",
+                    "measure": "dias"
+                },
+                "gravity": {
+                    "title": "Gravidade",
+                    "value": "3,7 m/s²"
+                },
+                "diameter": {
+                    "title": "Diâmetro",
+                    "value": "4.879 km"
+                },
+                "distance-from-sun": {
+                    "title": "Distância do Sol",
+                    "value": "57,9 (10⁶ km)"
+                },
+                "obliquity-to-orbit": {
+                    "title": "Ângulo de inclinação",
+                    "value": "0,034",
+                    "measure": "graus"
+                },
+                "mean-temperature": {
+                    "title": "Temperatura média",
+                    "value": "167°C"
+                },
+                "ring-system": {
+                    "title": "Sistema de anéis",
+                    "value": "Não"
+                },
+                "number-of-moons": {
+                    "title": "Número de satélites",
+                    "value": 0
+                }
             }
         },
         "venus": {
@@ -208,44 +210,46 @@
                 "Apesar de Mercúrio estar mais próximo ao Sol, Vênus é o planeta mais quente. Isto acontece por causa da sua alta concentração de gás carbônico.",
                 "Seu eixo de inclinação é tão alto que é como se o planeta estivesse de cabeça para baixo. Por isso, a sua rotação é considerada retrógrada, girando em sentido horário."
             ],
-            "rotation-period": {
-                "title": "Período de rotação",
-                "value": "5.832,5",
-                "measure": "horas"
-            },
-            "orbital-period": {
-                "title": "Período de translação",
-                "value": "224,7",
-                "measure": "dias"
-            },
-            "gravity": {
-                "title": "Gravidade",
-                "value": "8,9 m/s²"
-            },
-            "diameter": {
-                "title": "Diâmetro",
-                "value": "12.104 km"
-            },
-            "distance-from-sun": {
-                "title": "Distância do Sol",
-                "value": "108,2 (10⁶ km)"
-            },
-            "obliquity-to-orbit": {
-                "title": "Ângulo de inclinação",
-                "value": "177,4",
-                "measure": "graus"
-            },
-            "mean-temperature": {
-                "title": "Temperatura média",
-                "value": "464°C"
-            },
-            "ring-system": {
-                "title": "Sistema de anéis",
-                "value": "Não"
-            },
-            "number-of-moons": {
-                "title": "Número de satélites",
-                "value": 0
+            "info-list": {
+                "rotation-period": {
+                    "title": "Período de rotação",
+                    "value": "5.832,5",
+                    "measure": "horas"
+                },
+                "orbital-period": {
+                    "title": "Período de translação",
+                    "value": "224,7",
+                    "measure": "dias"
+                },
+                "gravity": {
+                    "title": "Gravidade",
+                    "value": "8,9 m/s²"
+                },
+                "diameter": {
+                    "title": "Diâmetro",
+                    "value": "12.104 km"
+                },
+                "distance-from-sun": {
+                    "title": "Distância do Sol",
+                    "value": "108,2 (10⁶ km)"
+                },
+                "obliquity-to-orbit": {
+                    "title": "Ângulo de inclinação",
+                    "value": "177,4",
+                    "measure": "graus"
+                },
+                "mean-temperature": {
+                    "title": "Temperatura média",
+                    "value": "464°C"
+                },
+                "ring-system": {
+                    "title": "Sistema de anéis",
+                    "value": "Não"
+                },
+                "number-of-moons": {
+                    "title": "Número de satélites",
+                    "value": 0
+                }
             }
         },
         "earth": {
@@ -257,44 +261,46 @@
                 "A Terra realiza vários tipos de movimentos, os principais são o de rotação e o de translação. No primeiro, o planeta gira em torno do próprio eixo, o que resulta nos dias e nas noites. No segundo, temos o caminho que a Terra percorre em volta do Sol. Este movimento dá origem ao ano civil e às estações do ano. Ambos os movimentos ocorrem em sentido anti-horário.",
                 "Ela é conhecida como planeta azul por ter 70% da sua superfície coberta por água."
             ],
-            "rotation-period": {
-                "title": "Período de rotação",
-                "value": "23,9",
-                "measure": "horas"
-            },
-            "orbital-period": {
-                "title": "Período de translação",
-                "value": "365,2",
-                "measure": "dias"
-            },
-            "gravity": {
-                "title": "Gravidade",
-                "value": "9,8 m/s²"
-            },
-            "diameter": {
-                "title": "Diâmetro",
-                "value": "12.756 km"
-            },
-            "distance-from-sun": {
-                "title": "Distância do Sol",
-                "value": "149,6 (10⁶ km)"
-            },
-            "obliquity-to-orbit": {
-                "title": "Ângulo de inclinação",
-                "value": "23,4",
-                "measure": "graus"
-            },
-            "mean-temperature": {
-                "title": "Temperatura média",
-                "value": "15°C"
-            },
-            "ring-system": {
-                "title": "Sistema de anéis",
-                "value": "Não"
-            },
-            "number-of-moons": {
-                "title": "Número de satélites",
-                "value": 1
+            "info-list": {
+                "rotation-period": {
+                    "title": "Período de rotação",
+                    "value": "23,9",
+                    "measure": "horas"
+                },
+                "orbital-period": {
+                    "title": "Período de translação",
+                    "value": "365,2",
+                    "measure": "dias"
+                },
+                "gravity": {
+                    "title": "Gravidade",
+                    "value": "9,8 m/s²"
+                },
+                "diameter": {
+                    "title": "Diâmetro",
+                    "value": "12.756 km"
+                },
+                "distance-from-sun": {
+                    "title": "Distância do Sol",
+                    "value": "149,6 (10⁶ km)"
+                },
+                "obliquity-to-orbit": {
+                    "title": "Ângulo de inclinação",
+                    "value": "23,4",
+                    "measure": "graus"
+                },
+                "mean-temperature": {
+                    "title": "Temperatura média",
+                    "value": "15°C"
+                },
+                "ring-system": {
+                    "title": "Sistema de anéis",
+                    "value": "Não"
+                },
+                "number-of-moons": {
+                    "title": "Número de satélites",
+                    "value": 1
+                }
             }
         },
         "mars": {
@@ -305,44 +311,46 @@
                 "Sua atmosfera é fina comparada a da Terra. A maior parte de sua composição consiste em gás carbônico.",
                 "Há expectativas no mundo científico sobre a existência de vida em Marte no passado."
             ],
-            "rotation-period": {
-                "title": "Período de rotação",
-                "value": "24,6",
-                "measure": "horas"
-            },
-            "orbital-period": {
-                "title": "Período de translação",
-                "value": "687",
-                "measure": "dias"
-            },
-            "gravity": {
-                "title": "Gravidade",
-                "value": "3,7 m/s²"
-            },
-            "diameter": {
-                "title": "Diâmetro",
-                "value": "6.792 km"
-            },
-            "distance-from-sun": {
-                "title": "Distância do Sol",
-                "value": "228 (10⁶ km)"
-            },
-            "obliquity-to-orbit": {
-                "title": "Ângulo de inclinação",
-                "value": "25,2",
-                "measure": "graus"
-            },
-            "mean-temperature": {
-                "title": "Temperatura média",
-                "value": "-65°C"
-            },
-            "ring-system": {
-                "title": "Sistema de anéis",
-                "value": "Não"
-            },
-            "number-of-moons": {
-                "title": "Número de satélites",
-                "value": 2
+            "info-list": {
+                "rotation-period": {
+                    "title": "Período de rotação",
+                    "value": "24,6",
+                    "measure": "horas"
+                },
+                "orbital-period": {
+                    "title": "Período de translação",
+                    "value": "687",
+                    "measure": "dias"
+                },
+                "gravity": {
+                    "title": "Gravidade",
+                    "value": "3,7 m/s²"
+                },
+                "diameter": {
+                    "title": "Diâmetro",
+                    "value": "6.792 km"
+                },
+                "distance-from-sun": {
+                    "title": "Distância do Sol",
+                    "value": "228 (10⁶ km)"
+                },
+                "obliquity-to-orbit": {
+                    "title": "Ângulo de inclinação",
+                    "value": "25,2",
+                    "measure": "graus"
+                },
+                "mean-temperature": {
+                    "title": "Temperatura média",
+                    "value": "-65°C"
+                },
+                "ring-system": {
+                    "title": "Sistema de anéis",
+                    "value": "Não"
+                },
+                "number-of-moons": {
+                    "title": "Número de satélites",
+                    "value": 2
+                }
             }
         },
         "jupiter": {
@@ -354,44 +362,46 @@
                 "Dentre os oito planetas, Júpiter possui o dia mais curto.",
                 "O seu satélite Ganimedes é o maior do Sistema Solar."
             ],
-            "rotation-period": {
-                "title": "Período de rotação",
-                "value": "9,9",
-                "measure": "horas"
-            },
-            "orbital-period": {
-                "title": "Período de translação",
-                "value": "4.331",
-                "measure": "dias"
-            },
-            "gravity": {
-                "title": "Gravidade",
-                "value": "23,1 m/s²"
-            },
-            "diameter": {
-                "title": "Diâmetro",
-                "value": "142.984 km"
-            },
-            "distance-from-sun": {
-                "title": "Distância do Sol",
-                "value": "778,5 (10⁶ km)"
-            },
-            "obliquity-to-orbit": {
-                "title": "Ângulo de inclinação",
-                "value": "3,1",
-                "measure": "graus"
-            },
-            "mean-temperature": {
-                "title": "Temperatura média",
-                "value": "-110°C"
-            },
-            "ring-system": {
-                "title": "Sistema de anéis",
-                "value": "Sim"
-            },
-            "number-of-moons": {
-                "title": "Número de satélites",
-                "value": 95
+            "info-list": {
+                "rotation-period": {
+                    "title": "Período de rotação",
+                    "value": "9,9",
+                    "measure": "horas"
+                },
+                "orbital-period": {
+                    "title": "Período de translação",
+                    "value": "4.331",
+                    "measure": "dias"
+                },
+                "gravity": {
+                    "title": "Gravidade",
+                    "value": "23,1 m/s²"
+                },
+                "diameter": {
+                    "title": "Diâmetro",
+                    "value": "142.984 km"
+                },
+                "distance-from-sun": {
+                    "title": "Distância do Sol",
+                    "value": "778,5 (10⁶ km)"
+                },
+                "obliquity-to-orbit": {
+                    "title": "Ângulo de inclinação",
+                    "value": "3,1",
+                    "measure": "graus"
+                },
+                "mean-temperature": {
+                    "title": "Temperatura média",
+                    "value": "-110°C"
+                },
+                "ring-system": {
+                    "title": "Sistema de anéis",
+                    "value": "Sim"
+                },
+                "number-of-moons": {
+                    "title": "Número de satélites",
+                    "value": 95
+                }
             }
         },
         "saturn": {
@@ -403,44 +413,46 @@
                 "Saturno é visível a olho nu, mas seus anéis não.",
                 "É o planeta que possui menor densidade. Ele e Júpiter possuem grande parte de sua composição formada por hidrogênio e hélio, que também são os principais componentes do Sol."
             ],
-            "rotation-period": {
-                "title": "Período de rotação",
-                "value": "10,7",
-                "measure": "horas"
-            },
-            "orbital-period": {
-                "title": "Período de translação",
-                "value": "10.747",
-                "measure": "dias"
-            },
-            "gravity": {
-                "title": "Gravidade",
-                "value": "9 m/s²"
-            },
-            "diameter": {
-                "title": "Diâmetro",
-                "value": "120.536 km"
-            },
-            "distance-from-sun": {
-                "title": "Distância do Sol",
-                "value": "1.432 (10⁶ km)"
-            },
-            "obliquity-to-orbit": {
-                "title": "Ângulo de inclinação",
-                "value": "26,7",
-                "measure": "graus"
-            },
-            "mean-temperature": {
-                "title": "Temperatura média",
-                "value": "-140°C"
-            },
-            "ring-system": {
-                "title": "Sistema de anéis",
-                "value": "Sim"
-            },
-            "number-of-moons": {
-                "title": "Número de satélites",
-                "value": 146
+            "info-list": {
+                "rotation-period": {
+                    "title": "Período de rotação",
+                    "value": "10,7",
+                    "measure": "horas"
+                },
+                "orbital-period": {
+                    "title": "Período de translação",
+                    "value": "10.747",
+                    "measure": "dias"
+                },
+                "gravity": {
+                    "title": "Gravidade",
+                    "value": "9 m/s²"
+                },
+                "diameter": {
+                    "title": "Diâmetro",
+                    "value": "120.536 km"
+                },
+                "distance-from-sun": {
+                    "title": "Distância do Sol",
+                    "value": "1.432 (10⁶ km)"
+                },
+                "obliquity-to-orbit": {
+                    "title": "Ângulo de inclinação",
+                    "value": "26,7",
+                    "measure": "graus"
+                },
+                "mean-temperature": {
+                    "title": "Temperatura média",
+                    "value": "-140°C"
+                },
+                "ring-system": {
+                    "title": "Sistema de anéis",
+                    "value": "Sim"
+                },
+                "number-of-moons": {
+                    "title": "Número de satélites",
+                    "value": 146
+                }
             }
         },
         "uranus": {
@@ -451,44 +463,46 @@
                 "Sua cor é azul esverdeada devido a presença do gás metano na atmosfera.",
                 "Apesar de ainda ser visível a olho nu não conhecia-se sua classificação por causa do seu brilho fraco e translação lenta. Ele foi identificado como planeta através de um telescópio no final do século XVIII."
             ],
-            "rotation-period": {
-                "title": "Período de rotação",
-                "value": "17,2",
-                "measure": "horas"
-            },
-            "orbital-period": {
-                "title": "Período de translação",
-                "value": "30.589",
-                "measure": "dias"
-            },
-            "gravity": {
-                "title": "Gravidade",
-                "value": "8,7 m/s²"
-            },
-            "diameter": {
-                "title": "Diâmetro",
-                "value": "51.118 km"
-            },
-            "distance-from-sun": {
-                "title": "Distância do Sol",
-                "value": "2.867 (10⁶ km)"
-            },
-            "obliquity-to-orbit": {
-                "title": "Ângulo de inclinação",
-                "value": "97,8",
-                "measure": "graus"
-            },
-            "mean-temperature": {
-                "title": "Temperatura média",
-                "value": "-195°C"
-            },
-            "ring-system": {
-                "title": "Sistema de anéis",
-                "value": "Sim"
-            },
-            "number-of-moons": {
-                "title": "Número de satélites",
-                "value": 28
+            "info-list": {
+                "rotation-period": {
+                    "title": "Período de rotação",
+                    "value": "17,2",
+                    "measure": "horas"
+                },
+                "orbital-period": {
+                    "title": "Período de translação",
+                    "value": "30.589",
+                    "measure": "dias"
+                },
+                "gravity": {
+                    "title": "Gravidade",
+                    "value": "8,7 m/s²"
+                },
+                "diameter": {
+                    "title": "Diâmetro",
+                    "value": "51.118 km"
+                },
+                "distance-from-sun": {
+                    "title": "Distância do Sol",
+                    "value": "2.867 (10⁶ km)"
+                },
+                "obliquity-to-orbit": {
+                    "title": "Ângulo de inclinação",
+                    "value": "97,8",
+                    "measure": "graus"
+                },
+                "mean-temperature": {
+                    "title": "Temperatura média",
+                    "value": "-195°C"
+                },
+                "ring-system": {
+                    "title": "Sistema de anéis",
+                    "value": "Sim"
+                },
+                "number-of-moons": {
+                    "title": "Número de satélites",
+                    "value": 28
+                }
             }
         },
         "neptune": {
@@ -500,44 +514,46 @@
                 "Em Netuno, os ventos são mais fortes do que em outros planetas. A velocidade pode atingir mais de 2.000 quilômetros por hora, quebrando a barreira do som.",
                 "É o primeiro planeta a ser descoberto usando Matemática."
             ],
-            "rotation-period": {
-                "title": "Período de rotação",
-                "value": "16,1",
-                "measure": "horas"
-            },
-            "orbital-period": {
-                "title": "Período de translação",
-                "value": "59.800",
-                "measure": "dias"
-            },
-            "gravity": {
-                "title": "Gravidade",
-                "value": "11 m/s²"
-            },
-            "diameter": {
-                "title": "Diâmetro",
-                "value": "49.528 km"
-            },
-            "distance-from-sun": {
-                "title": "Distância do Sol",
-                "value": "4.515 (10⁶ km)"
-            },
-            "obliquity-to-orbit": {
-                "title": "Ângulo de inclinação",
-                "value": "28,3",
-                "measure": "graus"
-            },
-            "mean-temperature": {
-                "title": "Temperatura média",
-                "value": "-200°C"
-            },
-            "ring-system": {
-                "title": "Sistema de anéis",
-                "value": "Sim"
-            },
-            "number-of-moons": {
-                "title": "Número de satélites",
-                "value": 16
+            "info-list": {
+                "rotation-period": {
+                    "title": "Período de rotação",
+                    "value": "16,1",
+                    "measure": "horas"
+                },
+                "orbital-period": {
+                    "title": "Período de translação",
+                    "value": "59.800",
+                    "measure": "dias"
+                },
+                "gravity": {
+                    "title": "Gravidade",
+                    "value": "11 m/s²"
+                },
+                "diameter": {
+                    "title": "Diâmetro",
+                    "value": "49.528 km"
+                },
+                "distance-from-sun": {
+                    "title": "Distância do Sol",
+                    "value": "4.515 (10⁶ km)"
+                },
+                "obliquity-to-orbit": {
+                    "title": "Ângulo de inclinação",
+                    "value": "28,3",
+                    "measure": "graus"
+                },
+                "mean-temperature": {
+                    "title": "Temperatura média",
+                    "value": "-200°C"
+                },
+                "ring-system": {
+                    "title": "Sistema de anéis",
+                    "value": "Sim"
+                },
+                "number-of-moons": {
+                    "title": "Número de satélites",
+                    "value": 16
+                }
             }
         }
     },
@@ -553,23 +569,25 @@
             "A cor do Sol é branca. Ele nos parece amarelo devido à atmosfera da Terra."
         ],
         "comparison": "Comparação com o nosso planeta",
-        "orbital-period": {
-            "title": "Período orbital galáctico",
-            "value": "230",
-            "measure": "milhões de anos"
-        },
-        "diameter": {
-            "title": "Diâmetro",
-            "value": "1.392.684 km"
-        },
-        "obliquity-to-orbit": {
-            "title": "Ângulo de inclinação",
-            "value": "7,25",
-            "measure": "graus"
-        },
-        "mean-temperature": {
-            "title": "Temperatura média",
-            "value": "5.500°C (superfície)"
+        "info-list": {
+            "orbital-period": {
+                "title": "Período orbital galáctico",
+                "value": "230",
+                "measure": "milhões de anos"
+            },
+            "diameter": {
+                "title": "Diâmetro",
+                "value": "1.392.684 km"
+            },
+            "obliquity-to-orbit": {
+                "title": "Ângulo de inclinação",
+                "value": "7,25",
+                "measure": "graus"
+            },
+            "mean-temperature": {
+                "title": "Temperatura média",
+                "value": "5.500°C (superfície)"
+            }
         }
     },
     "solar-system": {
