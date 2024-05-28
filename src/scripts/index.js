@@ -32,19 +32,10 @@ HEADER__TITLE.onclick= () => {
     const element= 'solar-system';
     let elementContent= '';
 
-    elementContent+= `<div class='modal__comparison'>`;
-    elementContent+= `<h2 class='modal__title--secondary'>${data[element].comparison}</h2>`;
-    elementContent+= `<div class='comparison__wrapper'>`;
+    for(let i in data.planets)
+        elementContent+= getElementComparisonBox(i);
 
-    for(let i in data.planets){
-        elementContent+= `<div class='comparison__box'>`;
-        elementContent+= `<div class='${getClassListModalPlanet(i)}'></div>`;
-        elementContent+= `<div class='comparison__caption'>${data.planets[i].title}</div>`;
-        elementContent+= `</div>`;
-    }
-
-    elementContent+= `</div>`;
-    elementContent+= `</div>`;
+    elementContent= getComparisonBox(element, elementContent);
 
     openModal(element, TEXT_COMPARISON, elementContent);
 };
@@ -64,22 +55,10 @@ SUN.onclick= e => {
     const element= e.target.id;
     let elementContent= '';
 
-    elementContent+= `<div class='modal__comparison'>`;
-    elementContent+= `<h2 class='modal__title--secondary'>${data[element].comparison}</h2>`;
-    elementContent+= `<div class='comparison__wrapper'>`;
+    elementContent+= getElementComparisonBox(element);
+    elementContent+= getElementComparisonBox('earth');
 
-    elementContent+= `<div class='comparison__box'>`;
-    elementContent+= `<div class='modal__sun'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data[element].title}</div>`;
-    elementContent+= `</div>`;
-    elementContent+= `<div class='comparison__box'>`;
-    elementContent+= `<div class='modal__planet modal__planet--earth'></div>`;
-    elementContent+= `<div class='comparison__caption'>${data.planets.earth.title}</div>`;
-    elementContent+= `</div>`;
-
-    elementContent+= `</div>`;
-    elementContent+= `</div>`;
-
+    elementContent= getComparisonBox(element, elementContent);
     elementContent+= getInfoList(element);
 
     openModal(element, TEXT_COMPARISON, elementContent);
@@ -191,6 +170,34 @@ function getInfoList(element){
 
 function getElementData(element){
     return isPlanet(element) ? data.planets[element] : data[element];
+}
+
+function getElementComparisonBox(element){
+    const classList= isPlanet(element) ? getClassListModalPlanet(element) : 'modal__sun';
+    const elementData= getElementData(element);
+    let content= '';
+
+    content+= `<div class='comparison__box'>`;
+    content+= `<div class='${classList}'></div>`;
+    content+= `<div class='comparison__caption'>${elementData.title}</div>`;
+    content+= `</div>`;
+
+    return content;
+}
+
+function getComparisonBox(element, elementContent){
+    let content= '';
+
+    content+= `<div class='modal__comparison'>`;
+    content+= `<h2 class='modal__title--secondary'>${data[element].comparison}</h2>`;
+    content+= `<div class='comparison__wrapper'>`;
+
+    content+= elementContent;
+
+    content+= `</div>`;
+    content+= `</div>`;
+
+    return content;
 }
 
 function isPlanet(element){
