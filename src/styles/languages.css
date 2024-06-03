@@ -4,7 +4,7 @@
 
     position: fixed;
     bottom: 1rem;
-    right: 1rem;
+    right: 2rem;
 
     display: flex;
     flex-direction: column-reverse;
