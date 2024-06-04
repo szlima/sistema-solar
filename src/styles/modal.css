@@ -6,15 +6,17 @@
 }
 
 .modal__sun,
-.modal__planet,
-.modal__planet--rings::before{
+.modal__planet{
     width: var(--size-celestial);
     height: var(--size-celestial);
+}
 
+.modal__sun,
+.modal__planet,
+.modal__planet--rings::before{
     transform-style: preserve-3d;
     border-radius: 50%;
 }
-
 /* -------------- */
 
 .modal--on .header{
@@ -316,6 +318,7 @@
 }
 
 .modal__planet{
+    position: relative;
     transform: rotateZ(var(--modal-tilt-planet));
 
     background: var(--modal-color) var(--modal-image-planet);
@@ -326,7 +329,6 @@
     --size-celestial: 50vw;
     margin: 0 auto 2rem;
 
-    position: relative;
     animation-duration: var(--modal-time-rotation-planet);
 
     box-shadow: inset -2rem 0 2.5rem 1rem var(--color-black-02),
@@ -335,9 +337,8 @@
 
 .modal__planet--rings::before{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateX(var(--angle-system))
+
+    transform: rotateX(var(--angle-system))
         rotateZ(var(--modal-tilt-planet));
 
     border-width: .8rem;
@@ -345,7 +346,11 @@
 }
 
 .modal--info .modal__planet--rings::before{
-    --size-celestial: 60vw;
+    inset: -4rem;
+}
+
+.modal--comparison .modal__planet--rings::before{
+    inset: -2.5rem;
 }
 
 .modal--info .modal__planet--venus{
@@ -415,7 +420,7 @@
     }
 
     .modal--info .modal__planet--rings::before{
-        --size-celestial: 14rem;
+        inset: -2.5rem;
     }
 
     .modal--info .modal__planet--venus{
