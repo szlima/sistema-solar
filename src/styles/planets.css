@@ -8,11 +8,9 @@
 
 .solar-system__planet--mercury{
     --celestial-size: var(--size-planet-mercury);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
-        rotateZ(var(--tilt-mercury));
-
-    background: var(--color-mercury) var(--url-image-mercury);
+    --celestial-tilt: var(--tilt-mercury);
+    --celestial-color: var(--color-mercury);
+    --celestial-image: var(--url-image-mercury);
 }
 
 /* ------- venus settings ------- */
@@ -24,11 +22,9 @@
 
 .solar-system__planet--venus{
     --celestial-size: var(--size-planet-venus);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
-        rotateZ(var(--tilt-venus));
-
-    background: var(--color-venus) var(--url-image-venus);
+    --celestial-tilt: var(--tilt-venus);
+    --celestial-color: var(--color-venus);
+    --celestial-image: var(--url-image-venus);
 }
 
 /* ------- earth settings ------- */
@@ -40,11 +36,9 @@
 
 .solar-system__planet--earth{
     --celestial-size: var(--size-planet-earth);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
-        rotateZ(var(--tilt-earth));
-
-    background: var(--color-earth) var(--url-image-earth);
+    --celestial-tilt: var(--tilt-earth);
+    --celestial-color: var(--color-earth);
+    --celestial-image: var(--url-image-earth);
 }
 
 /* ------- earth moon settings ------- */
@@ -68,11 +62,9 @@
 
 .solar-system__planet--mars{
     --celestial-size: var(--size-planet-mars);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
-        rotateZ(var(--tilt-mars));
-
-    background: var(--color-mars) var(--url-image-mars);
+    --celestial-tilt: var(--tilt-mars);
+    --celestial-color: var(--color-mars);
+    --celestial-image: var(--url-image-mars);
 }
 
 /* ------- mars moons settings ------- */
@@ -93,17 +85,14 @@
 
 .solar-system__orbit--jupiter{
     --celestial-size: var(--size-orbit-jupiter);
-    --celestial-tilt: var(--tilt-jupiter);
     z-index: 5;
 }
 
 .solar-system__planet--jupiter{
     --celestial-size: var(--size-planet-jupiter);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
-        rotateZ(var(--tilt-jupiter));
-
-    background: var(--color-jupiter) var(--url-image-jupiter);
+    --celestial-tilt: var(--tilt-jupiter);
+    --celestial-color: var(--color-jupiter);
+    --celestial-image: var(--url-image-jupiter);
 }
 
 .solar-system__planet--jupiter::before{
@@ -133,17 +122,14 @@
 
 .solar-system__orbit--saturn{
     --celestial-size: var(--size-orbit-saturn);
-    --celestial-tilt: var(--tilt-saturn);
     z-index: 4;
 }
 
 .solar-system__planet--saturn{
     --celestial-size: var(--size-planet-saturn);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
-        rotateZ(var(--tilt-saturn));
-
-    background: var(--color-saturn) var(--url-image-saturn);
+    --celestial-tilt: var(--tilt-saturn);
+    --celestial-color: var(--color-saturn);
+    --celestial-image: var(--url-image-saturn);
 }
 
 .solar-system__planet--saturn::before{
@@ -185,17 +171,14 @@
 
 .solar-system__orbit--uranus{
     --celestial-size: var(--size-orbit-uranus);
-    --celestial-tilt: var(--tilt-uranus);
     z-index: 3;
 }
 
 .solar-system__planet--uranus{
     --celestial-size: var(--size-planet-uranus);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
-        rotateZ(var(--tilt-uranus));
-
-    background: var(--color-uranus) var(--url-image-uranus);
+    --celestial-tilt: var(--tilt-uranus);
+    --celestial-color: var(--color-uranus);
+    --celestial-image: var(--url-image-uranus);
 }
 
 .solar-system__planet--uranus::before{
@@ -225,17 +208,14 @@
 
 .solar-system__orbit--neptune{
     --celestial-size: var(--size-orbit-neptune);
-    --celestial-tilt: var(--tilt-neptune);
     z-index: 2;
 }
 
 .solar-system__planet--neptune{
     --celestial-size: var(--size-planet-neptune);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
-        rotateZ(var(--tilt-neptune));
-
-    background: var(--color-neptune) var(--url-image-neptune);
+    --celestial-tilt: var(--tilt-neptune);
+    --celestial-color: var(--color-neptune);
+    --celestial-image: var(--url-image-neptune);
 }
 
 .solar-system__planet--neptune::before{

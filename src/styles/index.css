@@ -186,6 +186,14 @@ body{
     border: .01rem dashed var(--color-white-02);
 }
 
+.solar-system__planet{
+    transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
+        rotateZ(var(--celestial-tilt));
+
+    background-color: var(--celestial-color);
+    background-image: var(--celestial-image);
+}
+
 .solar-system__planet,
 .planet__satellite--double::after{
     position: absolute;
