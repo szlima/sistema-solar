@@ -132,6 +132,7 @@ body{
 }
 
 .universe__star,
+.solar-system__planet--rings::before,
 .satellite__img{
     position: absolute;
 }
@@ -144,15 +145,22 @@ body{
 .planet__satellite,
 .planet__satellite::before,
 .planet__satellite--double::after{
+    border-radius: 50%;
+}
+
+.universe__star,
+.solar-system__sun,
+.solar-system__orbit,
+.solar-system__planet,
+.planet__satellite,
+.planet__satellite::before,
+.planet__satellite--double::after{
     width: var(--size-celestial);
     height: var(--size-celestial);
-
-    border-radius: 50%;
 }
 
 .solar-system__sun,
 .solar-system__orbit,
-.solar-system__planet--rings::before,
 .planet__satellite{
     position: absolute;
     top: 50%;
@@ -183,6 +191,13 @@ body{
     position: absolute;
     top: 50%;
     left: 100%;
+}
+
+.solar-system__planet--rings::before{
+    inset: var(--size-celestial);
+
+    transform: rotateX(var(--angle-system))
+        rotateZ(var(--celestial-tilt));
 }
 
 .solar-system__planet--rings::before,

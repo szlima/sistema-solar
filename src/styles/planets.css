@@ -93,6 +93,7 @@
 
 .solar-system__orbit--jupiter{
     --size-celestial: var(--size-orbit-jupiter);
+    --celestial-tilt: var(--tilt-jupiter);
     z-index: 5;
 }
 
@@ -106,10 +107,7 @@
 }
 
 .solar-system__planet--jupiter::before{
-    --size-celestial: var(--size-rings-jupiter);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system))
-        rotateZ(var(--tilt-jupiter));
+    --size-celestial: var(--distance-rings-jupiter);
 
     border: .05rem solid var(--color-gray);
     box-shadow: inset 0 0 .1rem .05rem var(--color-brown),
@@ -135,6 +133,7 @@
 
 .solar-system__orbit--saturn{
     --size-celestial: var(--size-orbit-saturn);
+    --celestial-tilt: var(--tilt-saturn);
     z-index: 4;
 }
 
@@ -148,10 +147,7 @@
 }
 
 .solar-system__planet--saturn::before{
-    --size-celestial: var(--size-rings-saturn);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system))
-        rotateZ(var(--tilt-saturn));
+    --size-celestial: var(--distance-rings-saturn);
 
     border: .1rem solid var(--color-beige-01);
     box-shadow: inset 0 0 .1rem .05rem var(--color-beige-01),
@@ -189,6 +185,7 @@
 
 .solar-system__orbit--uranus{
     --size-celestial: var(--size-orbit-uranus);
+    --celestial-tilt: var(--tilt-uranus);
     z-index: 3;
 }
 
@@ -202,10 +199,7 @@
 }
 
 .solar-system__planet--uranus::before{
-    --size-celestial: var(--size-rings-uranus);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system))
-        rotateZ(var(--tilt-uranus));
+    --size-celestial: var(--distance-rings-uranus);
 
     border: .2rem solid transparent;
     box-shadow: inset 0 0 .01rem .03rem var(--color-white-02),
@@ -231,6 +225,7 @@
 
 .solar-system__orbit--neptune{
     --size-celestial: var(--size-orbit-neptune);
+    --celestial-tilt: var(--tilt-neptune);
     z-index: 2;
 }
 
@@ -244,10 +239,7 @@
 }
 
 .solar-system__planet--neptune::before{
-    --size-celestial: var(--size-rings-neptune);
-
-    transform: translate(-50%, -50%) rotateX(var(--angle-system))
-        rotateZ(var(--tilt-neptune));
+    --size-celestial: var(--distance-rings-neptune);
 
     border: .1rem solid transparent;
     box-shadow: inset 0 0 .05rem .01rem var(--color-white-01),
