@@ -155,8 +155,8 @@ body{
 .planet__satellite,
 .planet__satellite::before,
 .planet__satellite--double::after{
-    width: var(--size-celestial);
-    height: var(--size-celestial);
+    width: var(--celestial-size);
+    height: var(--celestial-size);
 }
 
 .solar-system__sun,
@@ -194,7 +194,7 @@ body{
 }
 
 .solar-system__planet--rings::before{
-    inset: var(--size-celestial);
+    inset: var(--celestial-size);
 
     transform: rotateX(var(--angle-system))
         rotateZ(var(--celestial-tilt));

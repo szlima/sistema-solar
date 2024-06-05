@@ -1,6 +1,6 @@
 
 .solar-system__sun{
-    --size-celestial: var(--size-sun);
+    --celestial-size: var(--size-sun);
     z-index: 10;
 
     transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted));
@@ -19,7 +19,7 @@
 }
 
 .universe__star{
-    --size-celestial: var(--size-star);
+    --celestial-size: var(--size-star);
 
     background-color: var(--color-white-01);
     box-shadow: 0 0 .1rem .1rem var(--color-white-01),

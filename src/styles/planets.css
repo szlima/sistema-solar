@@ -2,12 +2,12 @@
 /* ------- mercury settings ------- */
 
 .solar-system__orbit--mercury{
-    --size-celestial: var(--size-orbit-mercury);
+    --celestial-size: var(--size-orbit-mercury);
     z-index: 9;
 }
 
 .solar-system__planet--mercury{
-    --size-celestial: var(--size-planet-mercury);
+    --celestial-size: var(--size-planet-mercury);
 
     transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
         rotateZ(var(--tilt-mercury));
@@ -18,12 +18,12 @@
 /* ------- venus settings ------- */
 
 .solar-system__orbit--venus{
-    --size-celestial: var(--size-orbit-venus);
+    --celestial-size: var(--size-orbit-venus);
     z-index: 8;
 }
 
 .solar-system__planet--venus{
-    --size-celestial: var(--size-planet-venus);
+    --celestial-size: var(--size-planet-venus);
 
     transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
         rotateZ(var(--tilt-venus));
@@ -34,12 +34,12 @@
 /* ------- earth settings ------- */
 
 .solar-system__orbit--earth{
-    --size-celestial: var(--size-orbit-earth);
+    --celestial-size: var(--size-orbit-earth);
     z-index: 7;
 }
 
 .solar-system__planet--earth{
-    --size-celestial: var(--size-planet-earth);
+    --celestial-size: var(--size-planet-earth);
 
     transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
         rotateZ(var(--tilt-earth));
@@ -50,11 +50,11 @@
 /* ------- earth moon settings ------- */
 
 .planet__satellite--earth{
-    --size-celestial: var(--size-revolution-satellite-earth);
+    --celestial-size: var(--size-revolution-satellite-earth);
 }
 
 .planet__satellite--earth::before{
-    --size-celestial: var(--size-satellite-earth);
+    --celestial-size: var(--size-satellite-earth);
 
     background: var(--color-moon) var(--url-image-moon);
 }
@@ -62,12 +62,12 @@
 /* ------- mars settings ------- */
 
 .solar-system__orbit--mars{
-    --size-celestial: var(--size-orbit-mars);
+    --celestial-size: var(--size-orbit-mars);
     z-index: 6;
 }
 
 .solar-system__planet--mars{
-    --size-celestial: var(--size-planet-mars);
+    --celestial-size: var(--size-planet-mars);
 
     transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
         rotateZ(var(--tilt-mars));
@@ -78,27 +78,27 @@
 /* ------- mars moons settings ------- */
 
 .planet__satellite--mars{
-    --size-celestial: var(--size-revolution-satellite-mars);
+    --celestial-size: var(--size-revolution-satellite-mars);
 }
 
 .planet__satellite--mars::before{
-    --size-celestial: var(--size-satellite-mars-1);
+    --celestial-size: var(--size-satellite-mars-1);
 }
 
 .planet__satellite--mars::after{
-    --size-celestial: var(--size-satellite-mars-2);
+    --celestial-size: var(--size-satellite-mars-2);
 }
 
 /* ------- jupiter settings ------- */
 
 .solar-system__orbit--jupiter{
-    --size-celestial: var(--size-orbit-jupiter);
+    --celestial-size: var(--size-orbit-jupiter);
     --celestial-tilt: var(--tilt-jupiter);
     z-index: 5;
 }
 
 .solar-system__planet--jupiter{
-    --size-celestial: var(--size-planet-jupiter);
+    --celestial-size: var(--size-planet-jupiter);
 
     transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
         rotateZ(var(--tilt-jupiter));
@@ -107,7 +107,7 @@
 }
 
 .solar-system__planet--jupiter::before{
-    --size-celestial: var(--distance-rings-jupiter);
+    --celestial-size: var(--distance-rings-jupiter);
 
     border: .05rem solid var(--color-gray);
     box-shadow: inset 0 0 .1rem .05rem var(--color-brown),
@@ -118,27 +118,27 @@
 /* ------- jupiter moons settings ------- */
 
 .planet__satellite--jupiter{
-    --size-celestial: var(--size-revolution-satellite-jupiter);
+    --celestial-size: var(--size-revolution-satellite-jupiter);
 }
 
 .planet__satellite--jupiter::before{
-    --size-celestial: var(--size-satellite-jupiter-1);
+    --celestial-size: var(--size-satellite-jupiter-1);
 }
 
 .planet__satellite--jupiter::after{
-    --size-celestial: var(--size-satellite-jupiter-2);
+    --celestial-size: var(--size-satellite-jupiter-2);
 }
 
 /* ------- saturn settings ------- */
 
 .solar-system__orbit--saturn{
-    --size-celestial: var(--size-orbit-saturn);
+    --celestial-size: var(--size-orbit-saturn);
     --celestial-tilt: var(--tilt-saturn);
     z-index: 4;
 }
 
 .solar-system__planet--saturn{
-    --size-celestial: var(--size-planet-saturn);
+    --celestial-size: var(--size-planet-saturn);
 
     transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
         rotateZ(var(--tilt-saturn));
@@ -147,7 +147,7 @@
 }
 
 .solar-system__planet--saturn::before{
-    --size-celestial: var(--distance-rings-saturn);
+    --celestial-size: var(--distance-rings-saturn);
 
     border: .1rem solid var(--color-beige-01);
     box-shadow: inset 0 0 .1rem .05rem var(--color-beige-01),
@@ -162,35 +162,35 @@
 /* ------- saturn moons settings ------- */
 
 .planet__satellite--saturn:nth-child(1){
-    --size-celestial: var(--size-revolution-satellite-saturn-1);
+    --celestial-size: var(--size-revolution-satellite-saturn-1);
 }
 
 .planet__satellite--saturn:nth-child(2){
-    --size-celestial: var(--size-revolution-satellite-saturn-2);
+    --celestial-size: var(--size-revolution-satellite-saturn-2);
 }
 
 .planet__satellite--saturn:nth-child(1)::before{
-    --size-celestial: var(--size-satellite-saturn-1);
+    --celestial-size: var(--size-satellite-saturn-1);
 }
 
 .planet__satellite--saturn:nth-child(1)::after{
-    --size-celestial: var(--size-satellite-saturn-2);
+    --celestial-size: var(--size-satellite-saturn-2);
 }
 
 .planet__satellite--saturn:nth-child(2)::before{
-    --size-celestial: var(--size-satellite-saturn-3);
+    --celestial-size: var(--size-satellite-saturn-3);
 }
 
 /* ------- uranus settings ------- */
 
 .solar-system__orbit--uranus{
-    --size-celestial: var(--size-orbit-uranus);
+    --celestial-size: var(--size-orbit-uranus);
     --celestial-tilt: var(--tilt-uranus);
     z-index: 3;
 }
 
 .solar-system__planet--uranus{
-    --size-celestial: var(--size-planet-uranus);
+    --celestial-size: var(--size-planet-uranus);
 
     transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
         rotateZ(var(--tilt-uranus));
@@ -199,7 +199,7 @@
 }
 
 .solar-system__planet--uranus::before{
-    --size-celestial: var(--distance-rings-uranus);
+    --celestial-size: var(--distance-rings-uranus);
 
     border: .2rem solid transparent;
     box-shadow: inset 0 0 .01rem .03rem var(--color-white-02),
@@ -210,27 +210,27 @@
 /* ------- uranus moons settings ------- */
 
 .planet__satellite--uranus{
-    --size-celestial: var(--size-revolution-satellite-uranus);
+    --celestial-size: var(--size-revolution-satellite-uranus);
 }
 
 .planet__satellite--uranus::before{
-    --size-celestial: var(--size-satellite-uranus-1);
+    --celestial-size: var(--size-satellite-uranus-1);
 }
 
 .planet__satellite--uranus::after{
-    --size-celestial: var(--size-satellite-uranus-2);
+    --celestial-size: var(--size-satellite-uranus-2);
 }
 
 /* ------- neptune settings ------- */
 
 .solar-system__orbit--neptune{
-    --size-celestial: var(--size-orbit-neptune);
+    --celestial-size: var(--size-orbit-neptune);
     --celestial-tilt: var(--tilt-neptune);
     z-index: 2;
 }
 
 .solar-system__planet--neptune{
-    --size-celestial: var(--size-planet-neptune);
+    --celestial-size: var(--size-planet-neptune);
 
     transform: translate(-50%, -50%) rotateX(var(--angle-system-inverted))
         rotateZ(var(--tilt-neptune));
@@ -239,7 +239,7 @@
 }
 
 .solar-system__planet--neptune::before{
-    --size-celestial: var(--distance-rings-neptune);
+    --celestial-size: var(--distance-rings-neptune);
 
     border: .1rem solid transparent;
     box-shadow: inset 0 0 .05rem .01rem var(--color-white-01),
@@ -249,25 +249,25 @@
 /* ------- neptune moons settings ------- */
 
 .planet__satellite--neptune:nth-child(1){
-    --size-celestial: var(--size-revolution-satellite-neptune-1);
+    --celestial-size: var(--size-revolution-satellite-neptune-1);
 }
 
 .planet__satellite--neptune:nth-child(2){
-    --size-celestial: var(--size-revolution-satellite-neptune-2);
+    --celestial-size: var(--size-revolution-satellite-neptune-2);
 }
 
 .planet__satellite--neptune:nth-child(1)::before{
-    --size-celestial: var(--size-satellite-neptune-1);
+    --celestial-size: var(--size-satellite-neptune-1);
 }
 
 .planet__satellite--neptune:nth-child(1)::after{
-    --size-celestial: var(--size-satellite-neptune-2);
+    --celestial-size: var(--size-satellite-neptune-2);
 }
 
 .planet__satellite--neptune:nth-child(2)::before{
-    --size-celestial: var(--size-satellite-neptune-3);
+    --celestial-size: var(--size-satellite-neptune-3);
 }
 
 .planet__satellite--neptune:nth-child(2)::after{
-    --size-celestial: var(--size-satellite-neptune-4);
+    --celestial-size: var(--size-satellite-neptune-4);
 }

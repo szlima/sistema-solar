@@ -122,14 +122,6 @@
     --color-moon: #7c7c7c;
     --color-satellite-default: #b3aa8c;
 
-    --size-celestial: 1px;
-    --celestial-tilt: 0deg;
-
-    --modal-color: var(--color-yellow-04);
-    --modal-tilt-planet: 0deg;
-    --modal-time-rotation-planet: 10s;
-    --modal-image-planet: var(--url-image-earth);
-
     --modal-comparison-star-sun: calc(109.18 * var(--modal-comparison-star-earth));
     --modal-comparison-star-earth: 3px;
 
@@ -141,6 +133,12 @@
     --modal-comparison-planets-saturn: 9.45rem;
     --modal-comparison-planets-uranus: 4rem;
     --modal-comparison-planets-neptune: 3.88rem;
+
+    --celestial-size: 1px;
+    --celestial-tilt: 0deg;
+    --celestial-time: 10s;
+    --celestial-color: var(--color-yellow-04);
+    --celestial-image: var(--url-image-earth);
 }
 
 @media only screen and (min-width: 980px){
