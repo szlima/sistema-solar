@@ -61,14 +61,14 @@
     --distance-rings-uranus: -0.5rem;
     --distance-rings-neptune: -0.6rem;
 
-    --size-revolution-satellite-earth: 2.58rem;
-    --size-revolution-satellite-mars: 1.5rem;
-    --size-revolution-satellite-jupiter: 6.5rem;
-    --size-revolution-satellite-saturn-1: 6.5rem;
-    --size-revolution-satellite-saturn-2: 7.2rem;
-    --size-revolution-satellite-uranus: 4.2rem;
-    --size-revolution-satellite-neptune-1: 3.9rem;
-    --size-revolution-satellite-neptune-2: 4.5rem;
+    --distance-satellite-earth: -0.4rem;
+    --distance-satellite-mars: -0.2rem;
+    --distance-satellite-jupiter: -0.8rem;
+    --distance-satellite-saturn-1: -1.5rem;
+    --distance-satellite-saturn-2: -1.65rem;
+    --distance-satellite-uranus: -0.6rem;
+    --distance-satellite-neptune-1: -0.5rem;
+    --distance-satellite-neptune-2: -0.8rem;
 
     --size-satellite-earth: .6rem;
     --size-satellite-mars-1: .15rem;

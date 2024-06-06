@@ -44,7 +44,7 @@
 /* ------- earth moon settings ------- */
 
 .planet__satellite--earth{
-    --celestial-size: var(--size-revolution-satellite-earth);
+    --celestial-size: var(--distance-satellite-earth);
 }
 
 .planet__satellite--earth::before{
@@ -70,7 +70,7 @@
 /* ------- mars moons settings ------- */
 
 .planet__satellite--mars{
-    --celestial-size: var(--size-revolution-satellite-mars);
+    --celestial-size: var(--distance-satellite-mars);
 }
 
 .planet__satellite--mars::before{
@@ -107,7 +107,7 @@
 /* ------- jupiter moons settings ------- */
 
 .planet__satellite--jupiter{
-    --celestial-size: var(--size-revolution-satellite-jupiter);
+    --celestial-size: var(--distance-satellite-jupiter);
 }
 
 .planet__satellite--jupiter::before{
@@ -148,11 +148,11 @@
 /* ------- saturn moons settings ------- */
 
 .planet__satellite--saturn:nth-child(1){
-    --celestial-size: var(--size-revolution-satellite-saturn-1);
+    --celestial-size: var(--distance-satellite-saturn-1);
 }
 
 .planet__satellite--saturn:nth-child(2){
-    --celestial-size: var(--size-revolution-satellite-saturn-2);
+    --celestial-size: var(--distance-satellite-saturn-2);
 }
 
 .planet__satellite--saturn:nth-child(1)::before{
@@ -193,7 +193,7 @@
 /* ------- uranus moons settings ------- */
 
 .planet__satellite--uranus{
-    --celestial-size: var(--size-revolution-satellite-uranus);
+    --celestial-size: var(--distance-satellite-uranus);
 }
 
 .planet__satellite--uranus::before{
@@ -229,11 +229,11 @@
 /* ------- neptune moons settings ------- */
 
 .planet__satellite--neptune:nth-child(1){
-    --celestial-size: var(--size-revolution-satellite-neptune-1);
+    --celestial-size: var(--distance-satellite-neptune-1);
 }
 
 .planet__satellite--neptune:nth-child(2){
-    --celestial-size: var(--size-revolution-satellite-neptune-2);
+    --celestial-size: var(--distance-satellite-neptune-2);
 }
 
 .planet__satellite--neptune:nth-child(1)::before{
